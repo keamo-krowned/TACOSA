@@ -20,6 +20,8 @@
         </div>
         <asp:ListBox ID="ListBox1" runat="server" Height="201px" Width="258px"></asp:ListBox>
         <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>
