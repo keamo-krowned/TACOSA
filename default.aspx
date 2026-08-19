@@ -18,6 +18,8 @@
             <asp:Label ID="lblTitle" runat="server" Text="Welcome to TACOSA"></asp:Label>
             </strong>
         </div>
+        <asp:ListBox ID="ListBox1" runat="server" Height="201px" Width="258px"></asp:ListBox>
+        <asp:Button ID="Button1" runat="server" Text="Button" />
     </form>
 </body>
 </html>
