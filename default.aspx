@@ -26,6 +26,8 @@
                 <td class="auto-style1">&nbsp;</td>
             </tr>
         </table>
+        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" Text="Enter your name"></asp:Label>
     </form>
 </body>
 </html>
