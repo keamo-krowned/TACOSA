@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="defualt.aspx.cs" Inherits="TACOSA.defualt" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="TACOSA.defualt" %>
 
 <!DOCTYPE html>
 
@@ -24,6 +24,19 @@
         <asp:Label ID="lblTitle" runat="server" Text="Welcome To TACOSA" CssClass="auto-style2"></asp:Label>
             </strong>
         </div>
-    </form>
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    <asp:Button ID="Btn1" runat="server" Text="Button" />
+                </td>
+                <td>
+                    <asp:Button ID="btn2" runat="server" Text="Button" />
+                </td>
+                <td>
+                    <asp:Button ID="bnt3" runat="server" Text="Button" />
+                </td>
+            </tr>
+        </table>
+        </form>
 </body>
 </html>
