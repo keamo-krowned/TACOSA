@@ -68,7 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="homepage.aspx" />
+    <Content Include="Images\56e06a3c7219bdf861826f9445f68cfa.jpg" />
+    <Content Include="Images\5a7ed66ada4a74dc2c525662e6e8f823.jpg" />
+    <Content Include="Images\68a75ae806854261c3cbab6a4ed913b8.jpg" />
+    <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="pngtree-white-torn-paper-strips-with-cutout-edges-png-image_21138218.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +84,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
