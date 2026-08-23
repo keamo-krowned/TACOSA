@@ -71,6 +71,7 @@
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\Login.png" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
