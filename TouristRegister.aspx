@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="TACOSA.Register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TouristRegister.aspx.cs" Inherits="TACOSA.Register" %>
 
 <!DOCTYPE html>
 
@@ -230,7 +230,7 @@
                 <td class="auto-style12">&nbsp;</td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="btnContinue" runat="server" BorderColor="#000066" BorderStyle="Solid" Text="Continue" />
+                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3366FF" OnClick="BtnHomePage_Click" Text="Continue" />
                 </td>
             </tr>
         </table>
