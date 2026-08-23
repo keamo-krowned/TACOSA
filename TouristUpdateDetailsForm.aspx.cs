@@ -14,7 +14,7 @@ namespace TACOSA
 
         }
 
-        protected void BtnHomePage_Click(object sender, EventArgs e)
+        protected void btnSubmitChanges_Click(object sender, EventArgs e)
         {
             /* validate all fields with an if statement, If any of the fields are empty print
              * "No Fields changes", else Print "Changed following fileds/ Changes Successfull"

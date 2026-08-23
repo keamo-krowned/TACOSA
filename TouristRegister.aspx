@@ -113,6 +113,40 @@
             width: 373px;
             height: 218px;
         }
+        .auto-style49 {
+            width: 390px;
+            height: 60px;
+        }
+        .auto-style50 {
+            width: 209px;
+            text-align: right;
+            height: 60px;
+        }
+        .auto-style51 {
+            width: 202px;
+            height: 60px;
+        }
+        .auto-style52 {
+            width: 373px;
+            height: 60px;
+        }
+        .auto-style53 {
+            width: 390px;
+            height: 51px;
+        }
+        .auto-style54 {
+            width: 209px;
+            text-align: right;
+            height: 51px;
+        }
+        .auto-style55 {
+            width: 202px;
+            height: 51px;
+        }
+        .auto-style56 {
+            width: 373px;
+            height: 51px;
+        }
     </style>
 </head>
 <body style="background-color: #FFF3A3">
@@ -145,7 +179,7 @@
                     <asp:Label ID="lblFName" runat="server" Text="Name:"></asp:Label>
                 </td>
                 <td class="auto-style36">
-                    <asp:TextBox ID="txtFName" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtFName" runat="server" Width="207px"></asp:TextBox>
                 </td>
                 <td class="auto-style37">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFName" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -157,7 +191,7 @@
                     <asp:Label ID="lblLName" runat="server" Text="Lastname:"></asp:Label>
                 </td>
                 <td class="auto-style43">
-                    <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLName" runat="server" Width="204px"></asp:TextBox>
                 </td>
                 <td class="auto-style44">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLName" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -184,14 +218,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style38"></td>
-                <td class="auto-style39">
+                <td class="auto-style53"></td>
+                <td class="auto-style54">
                     <asp:Label ID="lblCOO" runat="server" Text="Country Of Origin:"></asp:Label>
                 </td>
-                <td class="auto-style40">
-                    <asp:TextBox ID="txtCOO" runat="server"></asp:TextBox>
+                <td class="auto-style55">
+                    <asp:TextBox ID="txtCOO" runat="server" Width="207px"></asp:TextBox>
                 </td>
-                <td class="auto-style41">
+                <td class="auto-style56">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtCOO" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -201,7 +235,7 @@
                     <asp:Label ID="lblId" runat="server" Text="ID:"></asp:Label>
                 </td>
                 <td class="auto-style40">
-                    <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtId" runat="server" Width="206px"></asp:TextBox>
                 </td>
                 <td class="auto-style41">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtId" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -213,24 +247,25 @@
                     <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
                 </td>
                 <td class="auto-style36">
-                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" Width="203px"></asp:TextBox>
                 </td>
                 <td class="auto-style37">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtEmail" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style49"></td>
+                <td class="auto-style50"></td>
+                <td class="auto-style51"></td>
+                <td class="auto-style52">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style12">&nbsp;</td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3366FF" OnClick="BtnHomePage_Click" Text="Continue" />
+                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3333FF" Text="Continue" Width="142px" />
                 </td>
             </tr>
         </table>

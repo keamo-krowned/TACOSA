@@ -22,10 +22,10 @@
         }
         .auto-style5 {
             height: 26px;
-            width: 311px;
+            width: 317px;
         }
         .auto-style6 {
-            width: 311px;
+            width: 317px;
         }
         .auto-style7 {
             width: 401px;
@@ -40,7 +40,7 @@
             height: 34px;
         }
         .auto-style10 {
-            width: 311px;
+            width: 317px;
             height: 34px;
         }
         .auto-style11 {
@@ -74,7 +74,7 @@
                 <td class="auto-style10">
                     <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
                 </td>
-                <td class="auto-style11"></td>
+                <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2"></td>
@@ -85,6 +85,11 @@
                 <td class="auto-style2"></td>
                 <td class="auto-style5"></td>
                 <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7">&nbsp;</td>
