@@ -10,7 +10,7 @@
             font-size: large;
         }
         .auto-style7 {
-            width: 213px;
+            width: 209px;
             height: 26px;
         }
         .auto-style9 {
@@ -18,11 +18,11 @@
             width: 373px;
         }
         .auto-style12 {
-            width: 213px;
+            width: 209px;
             text-align: right;
         }
         .auto-style13 {
-            width: 213px;
+            width: 209px;
             height: 47px;
             text-align: right;
         }
@@ -55,7 +55,7 @@
             height: 48px;
         }
         .auto-style35 {
-            width: 213px;
+            width: 209px;
             text-align: right;
             height: 48px;
         }
@@ -72,7 +72,7 @@
             height: 49px;
         }
         .auto-style39 {
-            width: 213px;
+            width: 209px;
             text-align: right;
             height: 49px;
         }
@@ -101,7 +101,7 @@
             height: 218px;
         }
         .auto-style46 {
-            width: 213px;
+            width: 209px;
             text-align: right;
             height: 218px;
         }
