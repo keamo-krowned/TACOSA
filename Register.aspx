@@ -115,7 +115,7 @@
         }
     </style>
 </head>
-<body style="background-color: #FFFF99">
+<body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
         <div>
         </div>
@@ -147,7 +147,9 @@
                 <td class="auto-style36">
                     <asp:TextBox ID="txtFName" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style37"></td>
+                <td class="auto-style37">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFName" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style42"></td>
@@ -157,7 +159,9 @@
                 <td class="auto-style43">
                     <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style44"></td>
+                <td class="auto-style44">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLName" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style45"></td>
@@ -165,7 +169,7 @@
                     <asp:Label ID="lblDOB" runat="server" Text="Date Of Birth:"></asp:Label>
                 </td>
                 <td class="auto-style47">
-                    <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="200px" OnSelectionChanged="Calendar1_SelectionChanged" ShowGridLines="True" Width="220px">
+                    <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="200px" OnSelectionChanged="Calendar1_SelectionChanged" ShowGridLines="True" Width="220px" SelectedDate="08/23/2026 16:41:13">
                         <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
                         <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
                         <OtherMonthDayStyle ForeColor="#CC9966" />
@@ -175,7 +179,9 @@
                         <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
                     </asp:Calendar>
                 </td>
-                <td class="auto-style48"></td>
+                <td class="auto-style48">
+                    <asp:CustomValidator ID="CustomValidatorCalender" runat="server" ErrorMessage="*Required field / Date may not be in the future" ForeColor="Red" OnServerValidate="CustomValidatorCalender_ServerValidate"></asp:CustomValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style38"></td>
@@ -185,7 +191,9 @@
                 <td class="auto-style40">
                     <asp:TextBox ID="txtCOO" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style41"></td>
+                <td class="auto-style41">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtCOO" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style38"></td>
@@ -195,7 +203,9 @@
                 <td class="auto-style40">
                     <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style41"></td>
+                <td class="auto-style41">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtId" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style34"></td>
@@ -205,7 +215,9 @@
                 <td class="auto-style36">
                     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style37"></td>
+                <td class="auto-style37">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtEmail" ErrorMessage="*Required field" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style25">&nbsp;</td>

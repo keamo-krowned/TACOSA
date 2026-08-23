@@ -60,6 +60,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtFName;
 
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
         /// lblLName control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLName;
+
+        /// <summary>
+        /// RequiredFieldValidator7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
 
         /// <summary>
         /// lblDOB control.
@@ -96,6 +114,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
+        /// CustomValidatorCalender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidatorCalender;
+
+        /// <summary>
         /// lblCOO control.
         /// </summary>
         /// <remarks>
@@ -112,6 +139,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCOO;
+
+        /// <summary>
+        /// RequiredFieldValidator9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
 
         /// <summary>
         /// lblId control.
@@ -132,6 +168,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
+        /// RequiredFieldValidator10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+
+        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -148,6 +193,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// RequiredFieldValidator11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
 
         /// <summary>
         /// btnContinue control.

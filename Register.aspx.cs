@@ -18,5 +18,21 @@ namespace TACOSA
         {
 
         }
+
+        protected void CustomValidatorCalender_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if (Calendar1.SelectedDate == DateTime.MinValue)
+            {
+                args.IsValid = false;
+            }
+            else if (Calendar1.SelectedDate > DateTime.Today)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+        }
     }
 }
