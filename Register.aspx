@@ -130,7 +130,7 @@
             </tr>
             <tr>
                 <td class="auto-style23" colspan="4">
-                    <asp:Image ID="Image1" runat="server" BorderColor="Black" BorderStyle="Solid" Height="109px" ImageUrl="~/Images/Login.png" Width="145px" />
+                    <asp:Image ID="Image1" runat="server" BorderColor="#000066" BorderStyle="Solid" Height="109px" ImageUrl="~/Images/Login.png" Width="145px" />
                 </td>
             </tr>
             <tr>
@@ -217,7 +217,9 @@
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style12">&nbsp;</td>
                 <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style22">
+                    <asp:Button ID="btnContinue" runat="server" BorderColor="#000066" BorderStyle="Solid" Text="Continue" />
+                </td>
             </tr>
         </table>
     </form>
