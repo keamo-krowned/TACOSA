@@ -68,10 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accommodations.aspx" />
+    <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Landing.png" />
-    <Content Include="Register.aspx" />
+    <Content Include="Images\Login.png" />
+    <Content Include="TouristRegister.aspx" />
+    <Content Include="TouristMaintainForm.aspx" />
+    <Content Include="TouristUpdateDetailsForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +85,13 @@
     </Compile>
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attractions.aspx.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attractions.aspx.designer.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -97,12 +108,26 @@
       <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="TouristRegister.aspx.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="TouristRegister.aspx.designer.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.designer.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.designer.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class Attractions : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
