@@ -31,9 +31,54 @@
         }
         .auto-style16 {
             width: 188px;
+            text-align: right;
         }
         .auto-style17 {
             width: 226px;
+            text-align: right;
+        }
+        .auto-style18 {
+            width: 1039px;
+        }
+        .auto-style19 {
+            font-size: 26pt;
+        }
+        .auto-style20 {
+            text-align: center;
+        }
+        .auto-style21 {
+            margin-left: 0px;
+        }
+        .auto-style22 {
+            text-align: center;
+            width: 394px;
+        }
+        .auto-style23 {
+            width: 394px;
+        }
+        .auto-style24 {
+            width: 1039px;
+            height: 62px;
+        }
+        .auto-style25 {
+            height: 62px;
+        }
+        .auto-style26 {
+            font-size: 16px;
+        }
+        .auto-style27 {
+            text-align: left;
+        }
+        .auto-style28 {
+            text-align: right;
+        }
+        .auto-style29 {
+            text-align: center;
+            width: 575px;
+        }
+        .auto-style31 {
+            width: 1039px;
+            text-align: center;
         }
     </style>
 
@@ -53,7 +98,7 @@
 
     <!-- TACOSA -->
     <tr>
-        <td colspan="5" style="padding-left:6%; padding-bottom:18px;">
+        <td colspan="5" style="padding-left:6%; padding-bottom:18px;" class="auto-style27">
 
             <asp:Label
                 ID="lblTacosa"
@@ -75,11 +120,10 @@
     <tr>
 
         <!-- LEFT EMPTY SPACE -->
-        <td class="auto-style15"></td>
+        <td class="auto-style15">&nbsp;</td>
 
         <!-- REGISTER -->
         <td style="
-            text-align:center;
             padding:0 25px;
             white-space:nowrap;
         " class="auto-style16">
@@ -101,7 +145,6 @@
 
         <!-- ACCOMMODATIONS -->
         <td style="
-            text-align:center;
             padding:0 25px;
             white-space:nowrap;
         " class="auto-style17">
@@ -123,10 +166,9 @@
 
         <!-- ATTRACTIONS -->
         <td style="
-            text-align:center;
             padding:0 25px;
             white-space:nowrap;
-        ">
+        " class="auto-style28">
 
             <asp:Label
                 ID="lblAttractions"
@@ -145,15 +187,14 @@
 
         <!-- BOOK NOW -->
         <td style="
-            text-align:center;
             padding:0 25px;
             white-space:nowrap;
-        ">
+        " class="auto-style28">
 
             <asp:Label
                 ID="Label5"
                 runat="server"
-                Text="BOOK NOW"
+                Text="BOOKINGS"
                 style="
                     display:inline-block;
                     padding:12px 32px;
@@ -166,8 +207,7 @@
                     font-weight:bold;
                     letter-spacing:2px;
                     white-space:nowrap;
-                ">
-            </asp:Label>
+                "></asp:Label>
 
         </td>
 
@@ -186,18 +226,65 @@
     <tr>
         <td colspan="3" style="padding:0; margin:0;">
 
-            <!-- MAIN IMAGE -->
-            <asp:Image 
-                ID="Image2" 
-                runat="server" 
-                ImageUrl="~/Images/ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg"
-                style="
-                    width:100%;
-                    height:500px;
-                    object-fit:cover;
-                    object-position:center;
-                    display:block;
-                " />
+            <!-- HERO IMAGE WITH SLOGAN -->
+<div style="position:relative; width:100%;">
+
+    <asp:Image 
+        ID="Image1" 
+        runat="server" 
+        ImageUrl="~/Images/ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg"
+        style="
+            width:100%;
+            height:500px;
+            object-fit:cover;
+            object-position:center;
+            display:block;
+        " />
+
+    <!-- SLOGAN -->
+    <div style="
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        text-align:center;
+        color:white;
+        width:80%;
+        text-shadow:2px 2px 8px #333;
+    ">
+
+        <div style="
+            font-family:Georgia,serif;
+            font-size:48px;
+            font-weight:bold;
+            letter-spacing:5px;
+        ">
+            SEE CAPE TOWN
+        </div>
+
+        <div style="
+            font-family:Georgia,serif;
+            font-size:48px;
+            font-weight:bold;
+            letter-spacing:5px;
+        ">
+            DIFFERENTLY
+        </div>
+
+        <div style="
+            font-family:Georgia,serif;
+            font-size:17px;
+            letter-spacing:4px;
+            margin-top:18px;
+        ">
+            EXPLORE • EXPERIENCE • ENJOY
+        </div>
+
+    </div>
+
+</div>
+
+           
 
             <!-- RAGGED PAINT EDGE -->
             <svg
@@ -384,6 +471,131 @@
     </tr>
 
 </table>
+
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style18"><strong>
+                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style19" Font-Names="Georgia" ForeColor="#6B4226" Text="Discover South Africa with TACOSA"></asp:Label>
+                    </strong></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style24">
+                    <asp:Label ID="Label6" runat="server" Font-Names="Georgia" ForeColor="#6B4226" Text="From Cape Town's breathtaking landscapes to it's beautiful skies and unforgettable experiences. TACOSA helps you discover,plan and book your perfect South African adventure."></asp:Label>
+                </td>
+                <td class="auto-style25"></td>
+                <td class="auto-style25"></td>
+            </tr>
+            <tr>
+                <td class="auto-style24">&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style25">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style31"><strong>
+                    <asp:Label ID="lblTitle1" runat="server" CssClass="auto-style19" Font-Names="Georgia" ForeColor="#6B4226" Text="FIND ACCOMMODATION"></asp:Label>
+                    </strong></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table style="width:100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style29">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style23">
+                    <asp:Image ID="Image5" runat="server" Height="300px" ImageUrl="~/Images/CEACH HOUSE.jpg" Width="300px" />
+                </td>
+                <td class="auto-style29">
+                    <asp:Image ID="Image7" runat="server" CssClass="auto-style21" Height="300px" ImageUrl="~/Images/HOTEL.jpg" Width="300px" />
+                </td>
+                <td>
+                    <asp:Image ID="Image6" runat="server" Height="300px" ImageUrl="~/Images/gUEST HOUSE.jpg" Width="300px" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style22">
+
+            <asp:Label
+                ID="lblRegister0"
+                runat="server"
+                Text="BEACH HOUSES"
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style26"></asp:Label>
+
+                </td>
+                <td class="auto-style29">
+
+            <asp:Label
+                ID="lblRegister1"
+                runat="server"
+                Text="HOTELS"
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style26"></asp:Label>
+
+                </td>
+                <td class="auto-style20">
+
+            <asp:Label
+                ID="lblRegister2"
+                runat="server"
+                Text="GUEST HOUSES"
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style26"></asp:Label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style29">&nbsp;</td>
+                <td class="auto-style20">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style29">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table style="width:100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style20">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style20"><strong>
+                    <asp:Label ID="lblTitle2" runat="server" CssClass="auto-style19" Font-Names="Georgia" ForeColor="#6B4226" Text="EXPLORE ATTRACTIONS"></asp:Label>
+                    </strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
 
     </form>
     </body>
