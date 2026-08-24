@@ -69,16 +69,18 @@
             </tr>
             <tr>
                 <td class="auto-style9">
-                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style10">
-                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style11">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2"></td>
-                <td class="auto-style5"></td>
+                <td class="auto-style2">
+                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" />
+                </td>
+                <td class="auto-style5">
+                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
+                </td>
                 <td class="auto-style1"></td>
             </tr>
             <tr>

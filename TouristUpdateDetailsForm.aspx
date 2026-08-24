@@ -94,7 +94,7 @@
             </tr>
             <tr>
                 <td class="auto-style35">
-                    <asp:Label ID="lblFName" runat="server" Text="Name:"></asp:Label>
+                    <asp:Label ID="lblFName" runat="server" Text="First Name:"></asp:Label>
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtFName" runat="server" Width="226px"></asp:TextBox>
@@ -102,7 +102,7 @@
             </tr>
             <tr>
                 <td class="auto-style13">
-                    <asp:Label ID="lblLName" runat="server" Text="Lastname:"></asp:Label>
+                    <asp:Label ID="lblLName" runat="server" Text="Last Name:"></asp:Label>
                 </td>
                 <td class="auto-style43">
                     <asp:TextBox ID="txtLName" runat="server" Width="225px"></asp:TextBox>
