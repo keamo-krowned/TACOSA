@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FF6600">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #fff383">
 <head runat="server">
     <title></title>
     <style type="text/css">
@@ -39,14 +39,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="font-size: xx-large; text-align: left; color: #3366FF">
-            <asp:Label ID="Label1" runat="server" style="font-style: italic; font-weight: 700; text-decoration: underline; color: #0000FF" Text="SECURE PAYMENT PORTAL"></asp:Label>
+        <div style="font-size: xx-large; text-align: center; color: #3366FF">
+            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300" Text="SECURE PAYMENT PORTAL"></asp:Label>
         </div>
         <table style="width: 100%; height: 499px;">
             <tr>
                 <td class="auto-style2" colspan="3">
                     <br />
-            <asp:Label ID="Label13" runat="server" style="font-style: italic; font-weight: 700; text-decoration: underline; color: #0000FF; font-size: xx-large;" Text="TACOSA!"></asp:Label>
+            <asp:Label ID="Label13" runat="server" style="font-weight: 700; color: #663300; font-size: xx-large;" Text="TACOSA!" ForeColor="#996633"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -58,13 +58,14 @@
                 </td>
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style5">
-            <asp:Label ID="Label14" runat="server" style="font-style: italic; font-weight: 700; text-decoration: underline; color: #0000FF; font-size: xx-large;" Text="Payment Summary:"></asp:Label>
+            <asp:Label ID="Label14" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300; font-size: xx-large;" Text="Payment Summary:" ForeColor="#990033"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">
                     <asp:Label ID="Label5" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                     <asp:Label ID="Label8" runat="server" Text="Card Holder name:" style="font-size: large"></asp:Label>
+                    <br />
                     <br />
                     <asp:TextBox ID="txtCardholderName" runat="server" ToolTip="ENTER NAME OF CARD" Width="279px" Height="30px"> </asp:TextBox>
                 </td>
@@ -94,6 +95,7 @@
                     <asp:Label ID="Label10" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                     <asp:Label ID="Label11" runat="server" Text="CVV:"></asp:Label>
                     <br />
+                    <br />
                     <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="35px"></asp:TextBox>
                 </td>
             </tr>
@@ -107,13 +109,13 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Button ID="btnPayment" runat="server" BackColor="#336600" BorderColor="#339933" Height="35px" style="text-align: center" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="179px" />
+                    <asp:Button ID="btnPayment" runat="server" BackColor="#336600" BorderColor="#339933" Height="35px" style="text-align: center" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="286px" />
                     <br />
                     <br />
                     <asp:Label ID="Label12" runat="server" Text="---------------------OR-------------------------"></asp:Label>
                     <br />
                     <br />
-                    <asp:Button ID="Button1" runat="server" BackColor="Red" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" />
+                    <asp:Button ID="btnCancel" runat="server" BackColor="Red" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" />
                     <br />
                     <br />
                 </td>

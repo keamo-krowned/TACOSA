@@ -17,5 +17,10 @@ namespace TACOSA
            txtCVVNumber.Attributes["placeholder"] = "123";
            CalExpirydate.Attributes["placeholder"] = "Select Expiry Date";
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
