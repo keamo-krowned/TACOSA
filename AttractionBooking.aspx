@@ -57,6 +57,7 @@
             <asp:Label ID="Label4" runat="server" Text="Is it Open:"></asp:Label>
             <asp:Label ID="lblAvailable" runat="server"></asp:Label>
             <br />
+            <br />
            
             
 
@@ -72,6 +73,29 @@
 
 
        </div>
+        <div>
+
+            <asp:Label ID="Label5" runat="server" Font-Names="Algerian" Text="Book your Experience:"></asp:Label>
+
+        </div>
+        <p>
+            <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
+            <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
+        </p>
+        <div>
+
+            <asp:Label ID="Label7" runat="server" Text="Number of visitors:"></asp:Label>
+            <asp:TextBox ID="txtVisitors" runat="server"></asp:TextBox>
+            <br />
+            <br />
+
+        </div>
+        <div>
+
+            <asp:Button ID="btnBook" runat="server" OnClick="Button1_Click" Text="Book Now" Width="228px" />
+            <br />
+
+        </div>
     </form>
     </body>
 </html>
