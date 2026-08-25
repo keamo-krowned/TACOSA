@@ -138,6 +138,17 @@
                         .auto-style13 {
                             border-color: #663300;
                         }
+                        .auto-style15 {
+                            text-align: center;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            height: 26px;
+                            border-color: #663300;
+                            background-color: #FFFFFF;
+                        }
+                        .auto-style15 {
+                            background-color: #FFFFCC;
+                        }
                     </style>
                     
                     <td class="auto-style11" >
@@ -209,7 +220,7 @@ Includes: Cableway + photo stops. Duration: 4 hours"></asp:Label>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style13" >
+                    <td class="auto-style13" style="border-color: #663300; border-spacing: 500px" >
                         <asp:Image ID="Image7" runat="server" Height="380px" ImageUrl="~/Images/download (3).jfif" style="text-align: center" Width="488px" />
                         <br />
                         <asp:Label ID="lblName2" runat="server" ForeColor="#663300" Text="Indlu YamaGwebu Ocean Tours"></asp:Label>
@@ -265,19 +276,25 @@ Includes: Aquarium + IMAX 3D shows. Free entry for kids under 3"></asp:Label>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style13" colspan="3" >
-                        &nbsp;</td>
+                    <td class="auto-style15" colspan="3" >
+                        <asp:LinkButton ID="LnkReadMore" runat="server" OnClick="LnkReadMore_Click">Show More&gt;</asp:LinkButton>
+                        </td>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style13" >
-                        &nbsp;</td>
-                    <td class="auto-style12">
-                        &nbsp;</td>
-                    <td class="auto-style1">
-                        &nbsp;</td>
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image10" runat="server" Height="366px" ImageUrl="~/Images/WhatsApp Image 2026-08-25 at 18.52.45.jpeg" style="text-align: center" Width="455px" />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image11" runat="server" Height="378px" ImageUrl="~/Images/South Africa.jfif" style="text-align: center" Width="465px" />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image12" runat="server" Height="366px" ImageUrl="~/Images/WhatsApp Image 2026-08-25 at 18.52.44.jpeg" style="text-align: center" Width="455px" />
+                        </td>
                 </tr>
-            </table>
+                </table>
         </div>
         <p>
             &nbsp;</p>
