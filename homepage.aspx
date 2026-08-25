@@ -80,6 +80,9 @@
             width: 1039px;
             text-align: center;
         }
+        .auto-style32 {
+            font-size: large;
+        }
     </style>
 
 
@@ -106,11 +109,10 @@
                 Text="TACOSA"
                 style="
                     font-family:Georgia, serif;
-                    font-size:22px;
                     font-weight:bold;
                     color:#6B4226;
                     letter-spacing:1px;
-                ">
+                " CssClass="auto-style32">
             </asp:Label>
 
         </td>
