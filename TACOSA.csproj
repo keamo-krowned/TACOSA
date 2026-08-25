@@ -84,7 +84,10 @@
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
-    <Content Include="pngtree-white-torn-paper-strips-with-cutout-edges-png-image_21138218.png" />
+    <Content Include="TouristMaintainForm.aspx" />
+    <Content Include="TouristRegister.aspx" />
+    <Content Include="TouristUpdateDetailsForm.aspx" />
+    <Content Include="transactionPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +150,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".github\copilot-instructions.md" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
