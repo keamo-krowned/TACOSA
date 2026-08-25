@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accommodations.aspx" />
-    <Content Include="AttractionBookings.aspx" />
+    <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
@@ -102,12 +102,12 @@
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AttractionBookings.aspx.cs">
-      <DependentUpon>AttractionBookings.aspx</DependentUpon>
+    <Compile Include="AttractionBooking.aspx.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AttractionBookings.aspx.designer.cs">
-      <DependentUpon>AttractionBookings.aspx</DependentUpon>
+    <Compile Include="AttractionBooking.aspx.designer.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Attractions.aspx.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
