@@ -18,5 +18,10 @@ namespace TACOSA
         {
 
         }
+
+        protected void btnView_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
