@@ -18,7 +18,7 @@
             width: 401px;
         }
         .auto-style4 {
-            font-size: x-large;
+            font-size: xx-large;
         }
         .auto-style5 {
             height: 26px;

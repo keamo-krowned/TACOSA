@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style4 {
-            font-size: large;
+            font-size: x-large;
         }
         .auto-style7 {
             width: 209px;
