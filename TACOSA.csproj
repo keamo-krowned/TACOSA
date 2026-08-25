@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -53,6 +54,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -68,8 +70,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accommodations.aspx" />
+    <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="homepage.aspx" />
+    <Content Include="Images\56e06a3c7219bdf861826f9445f68cfa.jpg" />
+    <Content Include="Images\5a7ed66ada4a74dc2c525662e6e8f823.jpg" />
+    <Content Include="Images\68a75ae806854261c3cbab6a4ed913b8.jpg" />
+    <Content Include="Images\Aesrhetics 1.jpg" />
+    <Content Include="Images\Aesrhetics 2.jpg" />
+    <Content Include="Images\Aesrhetics 3.jpg" />
+    <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
+    <Content Include="Images\CEACH HOUSE.jpg" />
+    <Content Include="Images\gUEST HOUSE.jpg" />
+    <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="TouristMaintainForm.aspx" />
+    <Content Include="TouristRegister.aspx" />
+    <Content Include="TouristUpdateDetailsForm.aspx" />
+    <Content Include="transactionPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +98,13 @@
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Attractions.aspx.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attractions.aspx.designer.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,8 +113,39 @@
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TouristRegister.aspx.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristRegister.aspx.designer.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.designer.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.designer.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transactionPage.aspx.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transactionPage.aspx.designer.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".github\copilot-instructions.md" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
