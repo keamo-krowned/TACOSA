@@ -1,0 +1,135 @@
+﻿.attraction-details {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.attraction-header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+    .attraction-header img {
+        width: 500px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+.attraction-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+    .attraction-title h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .attraction-title span {
+        font-size: 18px;
+    }
+
+
+.attraction-description {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+    .attraction-description h2 {
+        margin-top: 0;
+        font-family ="Algerian";
+        color: brown;
+    }
+
+
+.attraction-information {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+    .attraction-information h2 {
+        margin-top: 0;
+    }
+
+    .attraction-information p {
+        font-size: 17px;
+        margin: 12px 0;
+    }
+
+
+
+.booking-section {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+    .booking-section h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .booking-section p {
+        margin: 15px 0;
+        font-size: 17px;
+    }
+
+
+
+    .booking-section input[type="text"],
+    .booking-section input[type="date"] {
+        padding: 10px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+
+
+    .booking-section input[type="submit"] {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 6px;
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .booking-section input[type="submit"]:hover {
+            opacity: 0.85;
+        }
+
+@media (max-width: 768px) {
+
+    .attraction-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .attraction-header img {
+            width: 100%;
+            height: auto;
+        }
+
+    .attraction-title h1 {
+        font-size: 30px;
+    }
+
+    .attraction-details {
+        width: 95%;
+    }
+}
