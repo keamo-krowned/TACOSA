@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body style="background-color:lightgoldenrodyellow;">
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <form id="form1" runat="server">
 
         <div>
