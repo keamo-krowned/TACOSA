@@ -1,8 +1,4 @@
-﻿/* ============================
-   Base / page layout
-   ============================ */
-
-body {
+﻿body {
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -14,11 +10,6 @@ form {
     padding-bottom: 60px;
 }
 
-
-    /* ============================
-   Header / logo section
-   (first div: site label + image)
-   ============================ */
 
     form > div:first-of-type {
         text-align: center;
@@ -36,11 +27,6 @@ form {
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
-
-
-/* ============================
-   Attraction name / category / rating
-   ============================ */
 
 #lblName {
     font-size: 30px;
@@ -63,6 +49,13 @@ form {
     color: #7a5b00;
     font-weight: bold;
 }
+.block {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
 
 
 
@@ -106,9 +99,6 @@ form > div:nth-of-type(3) {
 }
 
 
-/* ============================
-   Booking section
-   ============================ */
 
 #Label5 {
     display: inline-block;
@@ -116,7 +106,7 @@ form > div:nth-of-type(3) {
 }
 
 form > div:nth-of-type(5) {
-    /* wraps "Book your Experience" heading */
+    
     margin-bottom: 10px;
 }
 
@@ -148,9 +138,7 @@ p, form > div:nth-of-type(6), form > div:nth-of-type(7) {
     }
 
 
-/* ============================
-   Book Now button
-   ============================ */
+
 
 #btnBook {
     padding: 12px 0;
@@ -168,9 +156,7 @@ p, form > div:nth-of-type(6), form > div:nth-of-type(7) {
     }
 
 
-/* ============================
-   Responsive
-   ============================ */
+
 
 @media (max-width: 600px) {
 

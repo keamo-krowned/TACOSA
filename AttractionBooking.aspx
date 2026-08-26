@@ -27,7 +27,7 @@
        
     <div>
 
-        <asp:Label ID="Label1" runat="server" Font-Names="Algerian" Text="About the Attraction"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Font-Names="Ink Free" Text="About the Attraction" Font-Size="X-Large"></asp:Label>
 
         <br />
         <br />
@@ -50,7 +50,7 @@
 
             <br />
             <br />
-            <asp:Label ID="Label2" runat="server" Font-Names="Algerian" Text="Information"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Font-Names="Ink Free" Text="Information"></asp:Label>
             <br />
             <asp:Label ID="Label3" runat="server" Text="Location: "></asp:Label>
             <asp:Label ID="lblLocation" runat="server"></asp:Label>
@@ -76,10 +76,14 @@
        </div>
         <div>
 
-            <asp:Label ID="Label5" runat="server" Font-Names="Algerian" Text="Book your Experience:"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Font-Names="Ink Free" Text="Book your Experience:"></asp:Label>
 
         </div>
+        <div class:"block">
+
+       
         <p>
+
             <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
             <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
         </p>
@@ -91,6 +95,7 @@
             <br />
 
         </div>
+             </div>
         <div>
 
             <asp:Button ID="btnBook" runat="server" OnClick="Button1_Click" Text="Book Now" Width="228px" />
