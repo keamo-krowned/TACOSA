@@ -204,13 +204,14 @@ Includes: Cableway + photo stops. Duration: 4 hours"></asp:Label>
                         <br />
                         <asp:Label ID="lblDescrp1" runat="server" Text="Restoring dignity and life through food parcels, counseling, and community upliftment in Cape Town." BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
                         <br />
+                        <br />
                         <asp:Label ID="lblprice1" runat="server" Text="Price: R120 per adult | R60 per child | R300 Family Ticket" BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
                         <br />
                         <asp:Label ID="lblAvailable1" runat="server" Text="Available" ForeColor="#663300"></asp:Label>
                         <br />
                         <br />
-                        <br />
                         <asp:Button ID="btnView1" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <br />
                     </td>
                 </tr>
                 <tr>
