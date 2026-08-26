@@ -93,6 +93,7 @@
     <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.45.jpeg" />
     <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.46.jpeg" />
     <Content Include="Images\🇿🇦.jfif" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
