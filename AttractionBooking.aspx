@@ -79,7 +79,7 @@
             <asp:Label ID="Label5" runat="server" Font-Names="Ink Free" Text="Book your Experience:"></asp:Label>
 
         </div>
-        <div class:"block">
+        <div class="attraction-section">
 
        
         <p>

@@ -49,12 +49,7 @@ form {
     color: #7a5b00;
     font-weight: bold;
 }
-.block {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 20px;
-}
+
 
 
 
@@ -180,4 +175,11 @@ p, form > div:nth-of-type(6), form > div:nth-of-type(7) {
     #btnBook {
         width: 100% !important;
     }
+}
+
+.attraction-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px;
 }
