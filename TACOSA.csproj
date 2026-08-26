@@ -70,24 +70,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accommodations.aspx" />
+    <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\56e06a3c7219bdf861826f9445f68cfa.jpg" />
     <Content Include="Images\5a7ed66ada4a74dc2c525662e6e8f823.jpg" />
     <Content Include="Images\68a75ae806854261c3cbab6a4ed913b8.jpg" />
+    <Content Include="Images\Acquarium.jpg" />
     <Content Include="Images\Aesrhetics 1.jpg" />
     <Content Include="Images\Aesrhetics 2.jpg" />
     <Content Include="Images\Aesrhetics 3.jpg" />
     <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
+    <Content Include="Images\Aqua.jpg" />
     <Content Include="Images\Belmond.jpg" />
     <Content Include="Images\CapeGrace.jpg" />
     <Content Include="Images\CEACH HOUSE.jpg" />
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\Login.png" />
     <Content Include="Images\SiloHotel.jpg" />
     <Content Include="Images\Twelveon1stHotel.jpg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 15.44.16.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.44.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.45.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.46.jpeg" />
     <Content Include="Images\ZestBoutique.jpg" />
     <Content Include="TouristMaintainForm.aspx" />
     <Content Include="TouristRegister.aspx" />
@@ -103,8 +111,16 @@
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AttractionBooking.aspx.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttractionBooking.aspx.designer.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Attractions.aspx.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
@@ -115,6 +131,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TouristRegister.aspx.cs">
@@ -149,6 +172,7 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include=".github\copilot-instructions.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
