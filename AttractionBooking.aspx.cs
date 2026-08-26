@@ -7,15 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class homepage : System.Web.UI.Page
+    public partial class AttractionBooking : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_Click(System.Object sender, System.EventArgs e)
         {
+
 
         }
     }
