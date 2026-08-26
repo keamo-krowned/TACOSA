@@ -158,6 +158,7 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include=".github\copilot-instructions.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
