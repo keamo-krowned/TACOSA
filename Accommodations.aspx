@@ -25,9 +25,16 @@
         }
         .scrollable{
             overflow-x: auto;
+            gap: 10px;
         }
         .auto-style19 {
             height: 31px;
+        }
+        .card{
+            background-color: white;
+            border: 1px solid #c9c5bc;
+            border-radius: 15px;
+
         }
     </style>
 </head>
@@ -70,18 +77,14 @@
             white-space:nowrap;
         " class="auto-style16">
 
-            <asp:Label
-                ID="lblRegister"
-                runat="server"
-                Text="REGISTER"
+            <asp:HyperLink ID="hlkRegister" runat="server"
                 style="
-                    font-family:Georgia, serif;
-                    font-size:18px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                ">
-            </asp:Label>
+                font-family:Georgia, serif;
+                font-size:18px;
+                font-weight:bold;
+                color:#6B4226;
+                letter-spacing:1px;
+            ">REGISTER</asp:HyperLink>
 
         </td>
 
@@ -91,18 +94,17 @@
             white-space:nowrap;
         " class="auto-style17">
 
-            <asp:Label
-                ID="lblAccommadations"
-                runat="server"
-                Text="ACCOMMODATIONS"
+            <asp:HyperLink ID="hlkAcc" runat="server"
                 style="
-                    font-family:Georgia, serif;
-                    font-size:18px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                ">
-            </asp:Label>
+    font-family:Georgia, serif;
+    font-size:18px;
+    font-weight:bold;
+    color:#6B4226;
+    letter-spacing:1px;
+">
+                
+                
+                ACCOMMODATIONS</asp:HyperLink>
 
         </td>
 
@@ -112,18 +114,14 @@
             white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="lblAttractions"
-                runat="server"
-                Text="ATTRACTIONS"
+            <asp:HyperLink ID="hlkAttractions" runat="server"
                 style="
                     font-family:Georgia, serif;
                     font-size:18px;
                     font-weight:bold;
                     color:#6B4226;
                     letter-spacing:1px;
-                ">
-            </asp:Label>
+                ">ATTRACTIONS</asp:HyperLink>
 
         </td>
 
@@ -133,22 +131,14 @@
             white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="lblHeaderBookings"
-                runat="server"
-                Text="MY BOOKINGS"
+            <asp:HyperLink ID="hlkBookings" runat="server"
                 style="
-                    display:inline-block;
-                    padding:12px 32px;
-                    
-                    color:#6B4226;
-                   
                     font-family:Georgia, serif;
                     font-size:18px;
                     font-weight:bold;
-                    letter-spacing:2px;
-                    white-space:nowrap;
-                "></asp:Label>
+                    color:#6B4226;
+                    letter-spacing:1px;
+">BOOKINGS</asp:HyperLink>
 
         </td>
 
@@ -169,15 +159,15 @@
         <section style ="display:flex; flex-direction: row; align-items: flex-start;" class= "scrollable";>
 
         <div>
-            <table style="width: 28%; height: 228px; flex: 1;">
+            <table style="width: 28%; height: 228px; flex: 1; "class ="card">
                 <tr>
                     <td class="auto-style18">
-                        <asp:Image ID="imgHotel1" runat="server" Height="184px" Width="343px" />
+                        <asp:Image ID="imgHotel1" runat="server" Height="184px" Width="343px" ImageUrl="~/Images/ZestBoutique.jpg" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style18">
-                        <asp:Label ID="lblHotelName1" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblHotelName1" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                         <br />
                         <asp:Label ID="lblHotelLo1" runat="server" Text="Label"></asp:Label>
                         <br />
@@ -193,7 +183,7 @@
         </div>
         
        <div>
-            <table style="width: 28%; height: 228px; flex: 1;">
+            <table style="width: 28%; height: 228px; flex: 1;"class ="card">
                 <tr>
                     <td class="auto-style18">
                         <asp:Image ID="imgHotel2" runat="server" Height="184px" Width="343px" />
@@ -218,7 +208,7 @@
        </div>
 
        <div>
-     <table style="width: 28%; height: 228px; flex: 1;">
+     <table style="width: 28%; height: 228px; flex: 1;" class ="card">
          <tr>
              <td class="auto-style18">
                  <asp:Image ID="imgHotel3" runat="server" Height="184px" Width="343px" />
@@ -240,13 +230,54 @@
          </tr>
      </table>
 
+        </div>
+            <div>
+    <table style="width: 28%; height: 228px; flex: 1; "class ="card">
+        <tr>
+            <td class="auto-style18">
+                <asp:Image ID="Image1" runat="server" Height="184px" Width="343px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:HyperLink ID="HyperLink7" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+</div>
+            <div>
+    <table style="width: 28%; height: 228px; flex: 1; "class ="card">
+        <tr>
+            <td class="auto-style18">
+                <asp:Image ID="Image2" runat="server" Height="184px" Width="343px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:HyperLink ID="HyperLink8" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
 </div>
 
-
-
-
-
-            
         </section>
         
          <table style="width:100%; margin-top: 50px;">
@@ -259,7 +290,7 @@
  </table>
         <section style ="display:flex; flex-direction: row; align-items: flex-start;" class= "scrollable";>
                 <div>
-            <table style="width: 28%; height: 228px; flex: 1;">
+            <table style="width: 28%; height: 228px; flex: 1;" class ="card">
                 <tr>
                     <td class="auto-style18">
                         <asp:Image ID="imgGH1" runat="server" Height="184px" Width="343px" />
@@ -283,7 +314,7 @@
         </div>
         
        <div>
-            <table style="width: 28%; height: 228px; flex: 1;">
+            <table style="width: 28%; height: 228px; flex: 1;" class ="card">
                 <tr>
                     <td class="auto-style18">
                         <asp:Image ID="Image5" runat="server" Height="184px" Width="343px" />
@@ -308,7 +339,7 @@
        </div>
 
        <div>
-     <table style="width: 28%; height: 228px; flex: 1;">
+     <table style="width: 28%; height: 228px; flex: 1;" class ="card">
          <tr>
              <td class="auto-style18">
                  <asp:Image ID="Image6" runat="server" Height="184px" Width="343px" />
@@ -330,6 +361,52 @@
          </tr>
      </table>
 
+</div>
+                    <div>
+    <table style="width: 28%; height: 228px; flex: 1;" class ="card">
+        <tr>
+            <td class="auto-style18">
+                <asp:Image ID="Image3" runat="server" Height="184px" Width="343px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:HyperLink ID="HyperLink9" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+</div>
+                    <div>
+    <table style="width: 28%; height: 228px; flex: 1;" class ="card">
+        <tr>
+            <td class="auto-style18">
+                <asp:Image ID="Image4" runat="server" Height="184px" Width="343px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18">
+                <asp:HyperLink ID="HyperLink10" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
 </div>
         </section>
 

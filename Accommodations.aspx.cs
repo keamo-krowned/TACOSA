@@ -11,7 +11,9 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            hlkAcc.Attributes["style"] = "color: white !important;";
+            hlkAcc.BackColor = System.Drawing.ColorTranslator.FromHtml("#6B4226");
+            
         }
 
         protected void Button3_Click(object sender, EventArgs e)

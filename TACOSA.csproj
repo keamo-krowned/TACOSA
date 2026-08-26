@@ -84,6 +84,7 @@
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\ZestBoutique.jpg" />
     <Content Include="TouristMaintainForm.aspx" />
     <Content Include="TouristRegister.aspx" />
     <Content Include="TouristUpdateDetailsForm.aspx" />
