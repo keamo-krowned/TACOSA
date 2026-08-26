@@ -50,7 +50,7 @@
 
         <table class="auto-style14">
             <tr>
-                <!-- LEFT CARD BOX -->
+               
                 <td style="vertical-align: top;" class="auto-style16">
                     <div class="card-box">
                         <asp:Label ID="Label3" runat="server" style="color: #CC0000" Text="*"></asp:Label>
@@ -91,7 +91,6 @@
                     </div>
                 </td>
 
-                <!-- RIGHT CARD BOX -->
                 <td style="width: 50%; vertical-align: top;">
                     <div class="card-box">
                         <asp:Label ID="Label14" runat="server" style="font-weight: 700; text-decoration: underline; color: #FFFFFF; font-size: xx-large;" Text="Payment Summary:" ForeColor="#990033"></asp:Label>
@@ -144,7 +143,7 @@
             <tr>
                 <td class="auto-style15" style="text-align: center">
 
-                        <asp:Button ID="btnPayment" runat="server" BackColor="#336600" BorderColor="#339933" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" />
+                        <asp:Button ID="btnPayment" runat="server" BackColor="#336600" BorderColor="#339933" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" OnClick="btnPayment_Click" />
                         </td>
             </tr>
             <tr>
