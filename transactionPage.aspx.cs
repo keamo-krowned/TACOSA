@@ -20,7 +20,8 @@ namespace TACOSA
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            //we wanna ensure that when the user clicks this button , the user is redirected to the previous page to edit any information they want to change
+            Response.Redirect("");
         }
     }
 }
