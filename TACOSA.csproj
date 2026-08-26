@@ -80,10 +80,15 @@
     <Content Include="Images\Aesrhetics 2.jpg" />
     <Content Include="Images\Aesrhetics 3.jpg" />
     <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
+    <Content Include="Images\Belmond.jpg" />
+    <Content Include="Images\CapeGrace.jpg" />
     <Content Include="Images\CEACH HOUSE.jpg" />
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\SiloHotel.jpg" />
+    <Content Include="Images\Twelveon1stHotel.jpg" />
+    <Content Include="Images\ZestBoutique.jpg" />
     <Content Include="TouristMaintainForm.aspx" />
     <Content Include="TouristRegister.aspx" />
     <Content Include="TouristUpdateDetailsForm.aspx" />
