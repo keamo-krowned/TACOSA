@@ -65,7 +65,7 @@ namespace TACOSA
                 try
                 {
                     conn.Open();
-                    //var newId = cmd.ExecuteScalar();
+                    var newId = cmd.ExecuteScalar();
                     Response.Redirect("Accommodations.aspx");
                 }
                 catch (SqlException ex)

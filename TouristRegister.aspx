@@ -263,7 +263,7 @@
             <tr>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style12">
-                    <asp:Label ID="lblError" runat="server"></asp:Label>
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                 </td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
