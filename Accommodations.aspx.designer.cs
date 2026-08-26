@@ -114,13 +114,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice1;
 
         /// <summary>
-        /// HyperLink1 control.
+        /// hplView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.HyperLink hplView1;
 
         /// <summary>
         /// imgHotel2 control.
@@ -159,13 +159,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice2;
 
         /// <summary>
-        /// HyperLink2 control.
+        /// hplView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.HyperLink hplView2;
 
         /// <summary>
         /// imgHotel3 control.
@@ -186,121 +186,121 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelName3;
 
         /// <summary>
-        /// lblHotelLocation3 control.
+        /// lblHotelLo3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotelLocation3;
+        protected global::System.Web.UI.WebControls.Label lblHotelLo3;
 
         /// <summary>
-        /// lblHotelPrice control.
+        /// lblHotelPrice3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotelPrice;
+        protected global::System.Web.UI.WebControls.Label lblHotelPrice3;
 
         /// <summary>
-        /// HyperLink3 control.
+        /// hplView3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
+        protected global::System.Web.UI.WebControls.HyperLink hplView3;
 
         /// <summary>
-        /// Image1 control.
+        /// imgHotel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image imgHotel4;
 
         /// <summary>
-        /// Label2 control.
+        /// lblHotelName4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblHotelName4;
 
         /// <summary>
-        /// Label3 control.
+        /// lblHotelLo4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblHotelLo4;
 
         /// <summary>
-        /// Label4 control.
+        /// lblHotelPrice4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label lblHotelPrice4;
 
         /// <summary>
-        /// HyperLink7 control.
+        /// hplView4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
+        protected global::System.Web.UI.WebControls.HyperLink hplView4;
 
         /// <summary>
-        /// Image2 control.
+        /// imgHotel5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image imgHotel5;
 
         /// <summary>
-        /// Label5 control.
+        /// lblHotelName5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label lblHotelName5;
 
         /// <summary>
-        /// Label6 control.
+        /// lblHotelLo5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label lblHotelLo5;
 
         /// <summary>
-        /// Label7 control.
+        /// lblHotelPrice5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label lblHotelPrice5;
 
         /// <summary>
-        /// HyperLink8 control.
+        /// hplView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink8;
+        protected global::System.Web.UI.WebControls.HyperLink hplView5;
 
         /// <summary>
         /// Label11 control.
