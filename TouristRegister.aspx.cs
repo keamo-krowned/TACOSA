@@ -11,7 +11,12 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // we want to have placeholder values for ease of use
+            txtFName.Attributes["placeholder"] = "John / Jane ";
+            txtLName.Attributes["placeholder"] = "Doe";
+            txtCOO.Attributes["placeholder"] = "South Africa";
+            txtId.Attributes["placeholder"] = "1234567890123";
+            txtEmail.Attributes["placeholder"] = "JohnDoe@gmail.com";
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)

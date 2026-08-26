@@ -105,7 +105,6 @@
     </Compile>
     <Compile Include="Attractions.aspx.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
@@ -148,7 +147,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".github\copilot-instructions.md" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <None Include="packages.config" />
