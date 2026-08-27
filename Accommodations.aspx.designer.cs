@@ -114,13 +114,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice1;
 
         /// <summary>
-        /// hplView1 control.
+        /// hplHotelView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplView1;
+        protected global::System.Web.UI.WebControls.HyperLink hplHotelView1;
 
         /// <summary>
         /// imgHotel2 control.
@@ -159,13 +159,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice2;
 
         /// <summary>
-        /// hplView2 control.
+        /// hplHotelView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplView2;
+        protected global::System.Web.UI.WebControls.HyperLink hplHotelView2;
 
         /// <summary>
         /// imgHotel3 control.
@@ -204,13 +204,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice3;
 
         /// <summary>
-        /// hplView3 control.
+        /// hplHotelView3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplView3;
+        protected global::System.Web.UI.WebControls.HyperLink hplHotelView3;
 
         /// <summary>
         /// imgHotel4 control.
@@ -249,13 +249,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice4;
 
         /// <summary>
-        /// hplView4 control.
+        /// hplHotelView4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplView4;
+        protected global::System.Web.UI.WebControls.HyperLink hplHotelView4;
 
         /// <summary>
         /// imgHotel5 control.
@@ -294,13 +294,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice5;
 
         /// <summary>
-        /// hplView5 control.
+        /// hplHotelView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplView5;
+        protected global::System.Web.UI.WebControls.HyperLink hplHotelView5;
 
         /// <summary>
         /// Label11 control.
@@ -330,13 +330,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHName1;
 
         /// <summary>
-        /// lblGHLocation1 control.
+        /// lblGHLo1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGHLocation1;
+        protected global::System.Web.UI.WebControls.Label lblGHLo1;
 
         /// <summary>
         /// lblGHPrice1 control.
@@ -348,22 +348,22 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHPrice1;
 
         /// <summary>
-        /// HyperLink4 control.
+        /// hplGHView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.HyperLink hplGHView1;
 
         /// <summary>
-        /// Image5 control.
+        /// imgGH2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image5;
+        protected global::System.Web.UI.WebControls.Image imgGH2;
 
         /// <summary>
         /// lblGHName2 control.
@@ -375,13 +375,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHName2;
 
         /// <summary>
-        /// lblGHLocation2 control.
+        /// lblGHLo2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGHLocation2;
+        protected global::System.Web.UI.WebControls.Label lblGHLo2;
 
         /// <summary>
         /// lblGHPrice2 control.
@@ -393,147 +393,147 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHPrice2;
 
         /// <summary>
-        /// HyperLink5 control.
+        /// hplGHView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+        protected global::System.Web.UI.WebControls.HyperLink hplGHView2;
 
         /// <summary>
-        /// Image6 control.
+        /// imgGH3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image6;
+        protected global::System.Web.UI.WebControls.Image imgGH3;
 
         /// <summary>
-        /// Label18 control.
+        /// lblGHName3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label18;
+        protected global::System.Web.UI.WebControls.Label lblGHName3;
 
         /// <summary>
-        /// Label19 control.
+        /// lblGHLo3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label19;
+        protected global::System.Web.UI.WebControls.Label lblGHLo3;
 
         /// <summary>
-        /// Label20 control.
+        /// lblGHPrice3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label20;
+        protected global::System.Web.UI.WebControls.Label lblGHPrice3;
 
         /// <summary>
-        /// HyperLink6 control.
+        /// hplGHView3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
+        protected global::System.Web.UI.WebControls.HyperLink hplGHView3;
 
         /// <summary>
-        /// Image3 control.
+        /// imgGH4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.Image imgGH4;
 
         /// <summary>
-        /// Label8 control.
+        /// lblGHName4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Label lblGHName4;
 
         /// <summary>
-        /// Label9 control.
+        /// lblGHLo4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label lblGHLo4;
 
         /// <summary>
-        /// Label10 control.
+        /// lblGHPrice4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label10;
+        protected global::System.Web.UI.WebControls.Label lblGHPrice4;
 
         /// <summary>
-        /// HyperLink9 control.
+        /// hplGHView4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink9;
+        protected global::System.Web.UI.WebControls.HyperLink hplGHView4;
 
         /// <summary>
-        /// Image4 control.
+        /// imgGH5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image4;
+        protected global::System.Web.UI.WebControls.Image imgGH5;
 
         /// <summary>
-        /// Label12 control.
+        /// lblGHName5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label12;
+        protected global::System.Web.UI.WebControls.Label lblGHName5;
 
         /// <summary>
-        /// Label13 control.
+        /// lblGHLo5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label13;
+        protected global::System.Web.UI.WebControls.Label lblGHLo5;
 
         /// <summary>
-        /// Label14 control.
+        /// lblGHPrice5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
+        protected global::System.Web.UI.WebControls.Label lblGHPrice5;
 
         /// <summary>
-        /// HyperLink10 control.
+        /// hplGHView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink10;
+        protected global::System.Web.UI.WebControls.HyperLink hplGHView5;
     }
 }
