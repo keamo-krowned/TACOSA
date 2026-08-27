@@ -64,10 +64,19 @@ namespace TACOSA
                 cmd.Parameters.AddWithValue("@IdentificationDoc", txtId.Text.Trim());
                 cmd.Parameters.AddWithValue("@TouristEmail", txtEmail.Text.Trim());
 
+                // Add cookies for tourist name after register
                 try
                 {
                     conn.Open();
-                    int newId = Convert.ToInt32(cmd.ExecuteScalar());
+                    int newId = -1;
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            newId = Convert.ToInt32(reader["NewTouristID"]);
+                        }
+                    }
 
                     if (newId == -1)
                     {
@@ -75,7 +84,15 @@ namespace TACOSA
                     }
                     else
                     {
-                        Response.Redirect("Accommodations.aspx");
+                        Session["TouristID"] = newId;
+
+                        string fullName = txtFName.Text.Trim() + " " + txtLName.Text.Trim();
+                        HttpCookie userCookie = new HttpCookie("TouristCookie");
+                        userCookie["Name"] = fullName;
+                        userCookie.Expires = DateTime.Now.AddDays(1);
+                        Response.Cookies.Add(userCookie);
+
+                        Response.Redirect("homepage.aspx");
                     }
                 }
                 catch (SqlException ex)

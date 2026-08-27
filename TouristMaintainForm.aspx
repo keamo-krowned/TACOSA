@@ -69,14 +69,15 @@
             </tr>
             <tr>
                 <td class="auto-style9">
-                    &nbsp;</td>
+                    </td>
                 <td class="auto-style10">
-                    &nbsp;</td>
-                <td class="auto-style11">&nbsp;</td>
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
+                <td class="auto-style11"></td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" />
+                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" OnClick="BtnDeleteAccount_Click" />
                 </td>
                 <td class="auto-style5">
                     <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
@@ -89,9 +90,9 @@
                 <td class="auto-style1"></td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style2"></td>
+                <td class="auto-style5"></td>
+                <td class="auto-style1"></td>
             </tr>
             <tr>
                 <td class="auto-style7">&nbsp;</td>
