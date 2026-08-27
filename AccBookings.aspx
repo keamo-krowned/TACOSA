@@ -15,15 +15,8 @@
         .auto-style5 {
             height: 305px;
         }
-        .auto-style6 {
-            color: #663300;
-            font-size: large;
-        }
         .auto-style8 {
             height: 29px;
-        }
-        .auto-style9 {
-            font-size: x-large;
         }
         .auto-style12 {
             font-size: small;
@@ -32,13 +25,23 @@
             color: #3399FF;
             background-color: #CCFFCC;
         }
+        .auto-style14 {
+            color: #663300;
+            font-size: x-large;
+        }
+        .auto-style15 {
+            font-size: larger;
+        }
+        .auto-style16 {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="auto-style1">
             <h1>
-                <asp:Label ID="Label1" runat="server" CssClass="auto-style2" ForeColor="#603000" Text="Accomodation Bookings"></asp:Label>
+                <asp:Label ID="Label1" runat="server" CssClass="auto-style15" ForeColor="#603000" Text="Accomodation Bookings"></asp:Label>
             </h1>
         </div>
         <table style="width:100%;">
@@ -49,7 +52,7 @@
                     <asp:Image ID="Image3" runat="server" Height="309px" Width="388px" />
                     <br />
                     <strong>
-                    <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style9" ForeColor="#663300"></asp:Label>
+                    <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style2" ForeColor="#663300"></asp:Label>
                     </strong>
                     <br />
                     <asp:Image ID="Image4" runat="server" Height="24px" ImageAlign="Baseline" ImageUrl="~/Images/pngtree-flat-red-location-sign-png-image_8927579.png" Width="25px" />
@@ -61,14 +64,14 @@
                     <br />
                     <br />
                     <strong>
-                    <asp:Label ID="label2" runat="server" CssClass="auto-style6">About the Accommodation</asp:Label>
+                    <asp:Label ID="label2" runat="server" CssClass="auto-style14">About the Accommodation</asp:Label>
                     </strong>
                     <br />
                     <asp:Label ID="lblAccDescription" runat="server"></asp:Label>
                     <br />
                     <br />
                     <strong>
-                    <asp:Label ID="label3" runat="server" CssClass="auto-style6">Accommodation Details</asp:Label>
+                    <asp:Label ID="label3" runat="server" CssClass="auto-style14">Accommodation Details</asp:Label>
                     </strong>
                     <br />
                     <strong>
@@ -89,7 +92,7 @@
                     <br />
                     <br />
                     <strong>
-                    <asp:Label ID="label4" runat="server" CssClass="auto-style6">Accommodation Contact Details</asp:Label>
+                    <asp:Label ID="label4" runat="server" CssClass="auto-style14">Accommodation Contact Details</asp:Label>
                     <br />
                     <asp:Label ID="lblLabel3" runat="server">Cell Number:</asp:Label>
                     </strong>
@@ -105,28 +108,26 @@
             </tr>
             <tr>
                 <td colspan="3"><strong>
-                    <asp:Label ID="label" runat="server" CssClass="auto-style6">Book Here Now</asp:Label>
+                    <asp:Label ID="label" runat="server" CssClass="auto-style14">Book Here Now</asp:Label>
 &nbsp;</strong></td>
             </tr>
             <tr>
-                <td class="auto-style8" style="background-color: #FFFFFF"><strong>
-                    <asp:Label ID="lblLabel" runat="server">Rooms Available:</asp:Label>
+                <td class="auto-style8" colspan="3" style="background-color: #FFFFFF"><strong>
+                    <asp:Label ID="lblLabel" runat="server" CssClass="auto-style16">Rooms Available:</asp:Label>
                     </strong>&nbsp;<asp:Label ID="lblRoomsAvailable" runat="server"></asp:Label>
                     <br />
                     <strong>&nbsp;</strong><strong><br />
                     <br />
-                    <asp:Label ID="lblLabel7" runat="server">Check In Date:</asp:Label>
+                    <asp:Label ID="lblLabel7" runat="server" CssClass="auto-style16">Check In Date:</asp:Label>
                     <br />
 &nbsp;<asp:Calendar ID="Calendar1" runat="server" BackColor="#FFC6C6" BorderColor="Maroon" ForeColor="Maroon"></asp:Calendar>
                     <br />
                     <br />
-                    <asp:Label ID="lblLabel9" runat="server">Check Out Date:</asp:Label>
+                    <asp:Label ID="lblLabel9" runat="server" CssClass="auto-style16">Check Out Date:</asp:Label>
                     <br />
                     <asp:Calendar ID="Calendar2" runat="server" BackColor="#FFC6C6" BorderColor="Maroon" ForeColor="Maroon"></asp:Calendar>
                     <br />
                     </strong></td>
-                <td class="auto-style8" style="background-color: #FFFFFF"></td>
-                <td class="auto-style8" style="background-color: #FFFFFF"></td>
             </tr>
             <tr>
                 <td>
