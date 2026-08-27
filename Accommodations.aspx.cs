@@ -12,7 +12,7 @@ namespace TACOSA
     public partial class Accommodations : System.Web.UI.Page
     {
        
-        private String connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+        private String connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             hlkAcc.Attributes["style"] = "color: white !important;";
