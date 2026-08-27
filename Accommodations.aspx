@@ -7,9 +7,6 @@
     <title></title>
     <style type="text/css">
 
-        .auto-style15 {
-            width: 21%;
-        }
         .auto-style16 {
             width: 188px;
         }
@@ -56,6 +53,14 @@
             outline: 2px solid darkolivegreen;
             outline-offset: 2px
         }
+        .headerLinks{
+            
+             font-family:Georgia, serif;
+             font-size:18px;
+             font-weight:bold;
+             color:#6B4226;
+             letter-spacing:1px;
+        }
     </style>
 </head>
 <body >
@@ -65,11 +70,11 @@
        <table style="width:100%; border-collapse:collapse; background-color:#FFF3A3; margin-bottom:20px;">
 
     <tr>
-        <td colspan="5" style="height:20px;"></td>
+        <td colspan="4" style="height:20px;"></td>
     </tr>
 
     <tr>
-        <td colspan="5" style="padding-left:6%; padding-bottom:18px;">
+        <td colspan="4" style="padding-left:6%; padding-bottom:18px;">
 
             <asp:Label
                 ID="lblTacosa"
@@ -77,7 +82,7 @@
                 Text="TACOSA"
                 style="
                     font-family:Georgia, serif;
-                    font-size:22px;
+                    font-size:35px;
                     font-weight:bold;
                     color:#6B4226;
                     letter-spacing:1px;
@@ -88,24 +93,13 @@
 
     <tr>
 
-        <td class="auto-style15"></td>
-
         <td style="
             text-align:center;
             padding:0 25px;
             white-space:nowrap;
         " class="auto-style16">
 
-            <asp:HyperLink ID="hlkRegister" runat="server"
-                style="
-                font-family:Georgia, serif;
-                font-size:18px;
-                font-weight:bold;
-                color:#6B4226;
-                letter-spacing:1px;
-            ">REGISTER</asp:HyperLink>
-
-        </td>
+            &nbsp;</td>
 
         <td style="
             text-align:center;
@@ -131,13 +125,8 @@
         ">
 
             <asp:HyperLink ID="hlkAttractions" runat="server"
-                style="
-                    font-family:Georgia, serif;
-                    font-size:18px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                ">ATTRACTIONS</asp:HyperLink>
+               CssClass ="headerLinks"
+                >ATTRACTIONS</asp:HyperLink>
 
         </td>
 
@@ -148,13 +137,7 @@
         ">
 
             <asp:HyperLink ID="hlkBookings" runat="server"
-                style="
-                    font-family:Georgia, serif;
-                    font-size:18px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-">BOOKINGS</asp:HyperLink>
+                CssClass ="headerLinks">BOOKINGS</asp:HyperLink>
 
         </td>
 
