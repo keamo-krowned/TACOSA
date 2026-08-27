@@ -28,6 +28,10 @@
         .auto-style12 {
             font-size: small;
         }
+        .auto-style13 {
+            color: #3399FF;
+            background-color: #CCFFCC;
+        }
     </style>
 </head>
 <body>
@@ -41,8 +45,8 @@
             <tr>
                 <td class="auto-style5" colspan="3">
                     <asp:Image ID="Image1" runat="server" Height="316px" Width="426px" />
-                    <asp:Image ID="Image2" runat="server" Height="311px" Width="353px" />
-                    <asp:Image ID="Image3" runat="server" Height="309px" Width="363px" />
+                    <asp:Image ID="Image2" runat="server" Height="311px" Width="428px" />
+                    <asp:Image ID="Image3" runat="server" Height="309px" Width="388px" />
                     <br />
                     <strong>
                     <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style9" ForeColor="#663300"></asp:Label>
@@ -52,7 +56,7 @@
                     <asp:Label ID="lblAccommodationLocation" runat="server" CssClass="auto-style12"></asp:Label>
                     <br />
                     <asp:Label ID="lblAccRating" runat="server" BackColor="#CCFFCC" CssClass="auto-style12" ForeColor="#3399FF"></asp:Label>
-&nbsp;<asp:Label ID="lblLabel5" runat="server">rating</asp:Label>
+&nbsp;<asp:Label ID="lblLabel5" runat="server" CssClass="auto-style13"> rating</asp:Label>
                     <br />
                     <br />
                     <br />
