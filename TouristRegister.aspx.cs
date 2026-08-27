@@ -45,8 +45,10 @@ namespace TACOSA
 
         protected void BtnContinue_Click(object sender, EventArgs e)
         {
-            Page.Validate();
-            if (!Page.IsValid) return;
+            if (!Page.IsValid)
+            {
+                return;
+            }
 
             string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
 
@@ -65,8 +67,16 @@ namespace TACOSA
                 try
                 {
                     conn.Open();
-                    var newId = cmd.ExecuteScalar();
-                    Response.Redirect("Accommodations.aspx");
+                    int newId = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (newId == -1)
+                    {
+                        lblError.Text = "A tourist with this ID document already exists.";
+                    }
+                    else
+                    {
+                        Response.Redirect("Accommodations.aspx");
+                    }
                 }
                 catch (SqlException ex)
                 {
