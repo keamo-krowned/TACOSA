@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: x-large;
+        }
+    </style>
 </head>
 <body style="background-color:lightgoldenrodyellow;">
     <link href="StyleSheet1.css" rel="stylesheet" />
@@ -12,7 +17,7 @@
 
         <div>
              <br />
-             <asp:Label ID="lblLabel" runat="server" Font-Names="Algerian" Text="TACOSA"></asp:Label>
+             <asp:Label ID="lblLabel" runat="server" Font-Names="Algerian" Text="TACOSA" CssClass="auto-style1" ForeColor="#663300"></asp:Label>
              <br />
              <asp:Image ID="Image1" runat="server" Width="189px" />
         </div>
@@ -27,7 +32,7 @@
        
     <div>
 
-        <asp:Label ID="Label1" runat="server" Font-Names="Ink Free" Text="About the Attraction" Font-Size="X-Large"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Font-Names="Ink Free" Text="About the Attraction" Font-Size="X-Large" ForeColor="#663300"></asp:Label>
 
         <br />
         <br />
