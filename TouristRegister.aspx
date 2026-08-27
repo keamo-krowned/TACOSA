@@ -156,7 +156,7 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style17" colspan="4"><strong>
-                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Register A New Tourist"></asp:Label>
+                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Register A New Tourist" ForeColor="#663300"></asp:Label>
                     </strong></td>
             </tr>
             <tr>
@@ -262,10 +262,12 @@
             </tr>
             <tr>
                 <td class="auto-style25">&nbsp;</td>
-                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style12">
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+                </td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3333FF" Text="Continue" Width="142px" />
+                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3333FF" Text="Continue" Width="142px" OnClick="BtnContinue_Click" />
                 </td>
             </tr>
         </table>
