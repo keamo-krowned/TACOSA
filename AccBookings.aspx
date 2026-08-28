@@ -35,6 +35,16 @@
         .auto-style16 {
             font-size: large;
         }
+        .picContainer{
+            display:grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            height: 500px;
+        }
+        .2Pics{
+            display:block;
+
+        }
     </style>
 </head>
 <body>
@@ -47,9 +57,15 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style5" colspan="3">
-                    <asp:Image ID="Image1" runat="server" Height="316px" Width="426px" />
-                    <asp:Image ID="Image2" runat="server" Height="311px" Width="428px" />
-                    <asp:Image ID="Image3" runat="server" Height="309px" Width="388px" />
+                    <div class ="picContainer">
+                        <asp:Image ID="img1" runat="server" Height="316px" Width="426px" />
+                        <div class ="2Pics">
+                            <asp:Image ID="img2" runat="server" Height="311px" Width="428px" />
+                            <asp:Image ID="img3" runat="server" Height="309px" Width="388px" />
+                        </div>
+                        
+                    </div>
+                    
                     <br />
                     <strong>
                     <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style2" ForeColor="#663300"></asp:Label>
@@ -77,10 +93,6 @@
                     <strong>
                     <asp:Label ID="lblLabel0" runat="server">Max Capacity:</asp:Label>
                     </strong>&nbsp;<asp:Label ID="lblAccCapacity" runat="server"></asp:Label>
-                    <br />
-                    <strong>
-                    <asp:Label ID="lblLabel1" runat="server">Rooms available:</asp:Label>
-                    </strong>&nbsp;<asp:Label ID="lblAccAvail" runat="server"></asp:Label>
                     <br />
                     <strong>
                     <asp:Label ID="lblLabel2" runat="server">Price Per Night:</asp:Label>

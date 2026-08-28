@@ -73,7 +73,7 @@
     <Content Include="Accommodations.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
-    <Content Include="Bookings.aspx" />
+   
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Acquarium.jpg" />
@@ -152,13 +152,7 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Bookings.aspx.cs">
-      <DependentUpon>Bookings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Bookings.aspx.designer.cs">
-      <DependentUpon>Bookings.aspx</DependentUpon>
-    </Compile>
+    
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
