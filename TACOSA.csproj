@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E029A0FC-EFF7-155B-2E35-044DA416BC3B}</ProjectGuid>
+    <ProjectGuid>{771B285F-42BE-492F-B4F1-A8F2FB01166B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -69,9 +69,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="Bookings.aspx" />
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Acquarium.jpg" />
@@ -102,6 +104,7 @@
     <Content Include="Images\Belmond.jpg" />
     <Content Include="Images\CapeGrace.jpg" />
     <Content Include="Images\CEACH HOUSE.jpg" />
+    <Content Include="Images\eat-play-do-icon-map-marker-115548254600u9yjx6qhj.png" />
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
@@ -121,6 +124,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccBookings.aspx.cs">
+      <DependentUpon>AccBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccBookings.aspx.designer.cs">
+      <DependentUpon>AccBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accommodations.aspx.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -142,12 +152,16 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
