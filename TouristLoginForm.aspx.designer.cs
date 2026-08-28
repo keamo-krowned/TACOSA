@@ -11,7 +11,7 @@ namespace TACOSA
 {
 
 
-    public partial class TouristMaintainForm
+    public partial class TouristLoginForm
     {
 
         /// <summary>
@@ -24,6 +24,15 @@ namespace TACOSA
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lblTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTitle;
+
+        /// <summary>
         /// Image1 control.
         /// </summary>
         /// <remarks>
@@ -33,13 +42,31 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// lblWelcome control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWelcome;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
+
+        /// <summary>
+        /// txtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// btnLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
         /// lblError control.
@@ -51,30 +78,21 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// BtnDeleteAccount control.
+        /// lblRedirectToReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnDeleteAccount;
+        protected global::System.Web.UI.WebControls.Label lblRedirectToReg;
 
         /// <summary>
-        /// BtnUpdateDetails control.
+        /// hplRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUpdateDetails;
-
-        /// <summary>
-        /// BtnHomePage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnHomePage;
+        protected global::System.Web.UI.WebControls.HyperLink hplRegister;
     }
 }
