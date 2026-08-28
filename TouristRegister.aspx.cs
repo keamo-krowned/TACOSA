@@ -64,36 +64,24 @@ namespace TACOSA
                 cmd.Parameters.AddWithValue("@IdentificationDoc", txtId.Text.Trim());
                 cmd.Parameters.AddWithValue("@TouristEmail", txtEmail.Text.Trim());
 
-                // Add cookies for tourist name after register
                 try
                 {
                     conn.Open();
-                    int newId = -1;
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            newId = Convert.ToInt32(reader["NewTouristID"]);
+                            Session["TouristID"] = Convert.ToInt32(reader["NewTouristID"]);
                         }
                     }
 
-                    if (newId == -1)
-                    {
-                        lblError.Text = "A tourist with this ID document already exists.";
-                    }
-                    else
-                    {
-                        Session["TouristID"] = newId;
+                    string fullName = txtFName.Text.Trim() + " " + txtLName.Text.Trim();
+                    HttpCookie userCookie = new HttpCookie("TouristCookie");
+                    userCookie["Name"] = fullName;
+                    Response.Cookies.Add(userCookie);
 
-                        string fullName = txtFName.Text.Trim() + " " + txtLName.Text.Trim();
-                        HttpCookie userCookie = new HttpCookie("TouristCookie");
-                        userCookie["Name"] = fullName;
-                        userCookie.Expires = DateTime.Now.AddDays(1);
-                        Response.Cookies.Add(userCookie);
-
-                        Response.Redirect("homepage.aspx");
-                    }
+                    Response.Redirect("homepage.aspx");
                 }
                 catch (SqlException ex)
                 {

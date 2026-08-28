@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 273px;
+            width: 203px;
         }
         .auto-style2 {
             font-size: x-large;
@@ -17,7 +17,7 @@
             width: 688px;
         }
         .auto-style5 {
-            width: 273px;
+            width: 203px;
             height: 71px;
         }
         .auto-style6 {
@@ -28,7 +28,7 @@
             height: 71px;
         }
         .auto-style8 {
-            width: 273px;
+            width: 203px;
             height: 26px;
         }
         .auto-style9 {
@@ -44,7 +44,7 @@
             height: 146px;
         }
         .auto-style13 {
-            width: 273px;
+            width: 203px;
             height: 146px;
         }
         .auto-style14 {

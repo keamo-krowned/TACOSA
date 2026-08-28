@@ -59,7 +59,7 @@
                 </td>
                 <td class="auto-style5"></td>
                 <td class="auto-style1">
-                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4" Text="Welcome"></asp:Label>
+                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4"></asp:Label>
                 </td>
             </tr>
             <tr>

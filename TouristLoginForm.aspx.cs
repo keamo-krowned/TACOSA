@@ -55,7 +55,6 @@ namespace TACOSA
 
                                 HttpCookie userCookie = new HttpCookie("TouristCookie");
                                 userCookie["Name"] = fullName;
-                                userCookie.Expires = DateTime.Now.AddDays(1);
                                 Response.Cookies.Add(userCookie);
 
                                 Response.Redirect("homepage.aspx");

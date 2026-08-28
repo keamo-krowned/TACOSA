@@ -14,7 +14,20 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie userCookie = Request.Cookies["TouristCookie"];
 
+            if (userCookie != null)
+            {
+                string name = userCookie["Name"];
+                lblWelcome.Text = "Welcome back, " + name + "!";
+            }
+
+            if (Session["UpdateMessage"] != null)
+            {
+                lblError.ForeColor = System.Drawing.Color.Green;
+                lblError.Text = Session["UpdateMessage"].ToString();
+                Session.Remove("UpdateMessage");
+            }
         }
 
         protected void BtnHomePage_Click(object sender, EventArgs e)
