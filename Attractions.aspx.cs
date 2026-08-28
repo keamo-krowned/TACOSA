@@ -136,16 +136,7 @@ namespace TACOSA
 
         }
 
-        protected void btnView_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LnkReadMore_Click(object sender, EventArgs e)
-        {
-            ViewState["VisibleCount"] = (int)ViewState["VisibleCount"] + 6;
-            //LoadAttractions();
-        }
+         
 
         protected void btnView_Click(object sender, EventArgs e)
         {

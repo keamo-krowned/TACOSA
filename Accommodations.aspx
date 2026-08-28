@@ -61,6 +61,11 @@
              color:#6B4226;
              letter-spacing:1px;
         }
+        .auto-style21 {
+            width: 461px;
+            text-align: center;
+            height: 84px;
+        }
     </style>
 </head>
 <body >
@@ -166,7 +171,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style18">
+                    <td class="auto-style21">
                         <asp:Label ID="lblHotelName1" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                         <br />
                         <asp:Label ID="lblHotelLo1" runat="server" Text="Label"></asp:Label>
@@ -176,7 +181,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style20">
-                        <asp:HyperLink ID="hplHotelView1" runat="server" CssClass ="links" Font-Bold="False">View Details</asp:HyperLink>
+                        <asp:HyperLink ID="hplHotelView1" runat="server" CssClass ="links" Font-Bold="False" NavigateUrl="AccBookings.aspx?id=17">View Details</asp:HyperLink>
                     </td>
                 </tr>
             </table>
@@ -200,7 +205,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style20">
-                        <asp:HyperLink ID="hplHotelView2" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                        <asp:HyperLink ID="hplHotelView2" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=18">View Details</asp:HyperLink>
                     </td>
                 </tr>
             </table>
@@ -225,7 +230,7 @@
          </tr>
          <tr>
              <td class="auto-style20">
-                 <asp:HyperLink ID="hplHotelView3" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                 <asp:HyperLink ID="hplHotelView3" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=19">View Details</asp:HyperLink>
              </td>
          </tr>
      </table>
@@ -249,7 +254,7 @@
         </tr>
         <tr>
             <td class="auto-style20">
-                <asp:HyperLink ID="hplHotelView4" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                <asp:HyperLink ID="hplHotelView4" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=20">View Details</asp:HyperLink>
             </td>
         </tr>
     </table>
@@ -272,7 +277,7 @@
         </tr>
         <tr>
             <td class="auto-style20">
-                <asp:HyperLink ID="hplHotelView5" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                <asp:HyperLink ID="hplHotelView5" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=21">View Details</asp:HyperLink>
             </td>
         </tr>
     </table>
@@ -307,7 +312,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style20">
-                        <asp:HyperLink ID="hplGHView1" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                        <asp:HyperLink ID="hplGHView1" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=1">View Details</asp:HyperLink>
                     </td>
                 </tr>
             </table>
@@ -331,7 +336,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style20">
-                        <asp:HyperLink ID="hplGHView2" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                        <asp:HyperLink ID="hplGHView2" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=5">View Details</asp:HyperLink>
                     </td>
                 </tr>
             </table>
@@ -356,7 +361,7 @@
          </tr>
          <tr>
              <td class="auto-style20">
-                 <asp:HyperLink ID="hplGHView3" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                 <asp:HyperLink ID="hplGHView3" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=7">View Details</asp:HyperLink>
              </td>
          </tr>
      </table>
@@ -380,7 +385,7 @@
         </tr>
         <tr>
             <td class="auto-style20">
-                <asp:HyperLink ID="hplGHView4" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                <asp:HyperLink ID="hplGHView4" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=8">View Details</asp:HyperLink>
             </td>
         </tr>
     </table>
@@ -403,7 +408,7 @@
         </tr>
         <tr>
             <td class="auto-style20">
-                <asp:HyperLink ID="hplGHView5" runat="server" CssClass ="links">View Details</asp:HyperLink>
+                <asp:HyperLink ID="hplGHView5" runat="server" CssClass ="links" NavigateUrl="AccBookings.aspx?id=14">View Details</asp:HyperLink>
             </td>
         </tr>
     </table>
