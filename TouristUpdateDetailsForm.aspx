@@ -152,6 +152,7 @@
                 <td class="auto-style49">
                     </td>
                 <td class="auto-style50">
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                     </td>
             </tr>
             <tr>

@@ -67,16 +67,21 @@ namespace TACOSA
                 try
                 {
                     conn.Open();
-                    int newId = Convert.ToInt32(cmd.ExecuteScalar());
 
-                    if (newId == -1)
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        lblError.Text = "A tourist with this ID document already exists.";
+                        if (reader.Read())
+                        {
+                            Session["TouristID"] = Convert.ToInt32(reader["NewTouristID"]);
+                        }
                     }
-                    else
-                    {
-                        Response.Redirect("Accommodations.aspx");
-                    }
+
+                    string fullName = txtFName.Text.Trim() + " " + txtLName.Text.Trim();
+                    HttpCookie userCookie = new HttpCookie("TouristCookie");
+                    userCookie["Name"] = fullName;
+                    Response.Cookies.Add(userCookie);
+
+                    Response.Redirect("homepage.aspx");
                 }
                 catch (SqlException ex)
                 {

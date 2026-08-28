@@ -97,6 +97,7 @@
     <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.45.jpeg" />
     <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.46.jpeg" />
     <Content Include="Images\ZestBoutique.jpg" />
+    <Content Include="TouristLoginForm.aspx" />
     <Content Include="TouristMaintainForm.aspx" />
     <Content Include="TouristRegister.aspx" />
     <Content Include="TouristUpdateDetailsForm.aspx" />
@@ -140,6 +141,13 @@
       <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TouristLoginForm.aspx.cs">
+      <DependentUpon>TouristLoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristLoginForm.aspx.designer.cs">
+      <DependentUpon>TouristLoginForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TouristRegister.aspx.cs">
       <DependentUpon>TouristRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
