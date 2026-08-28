@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E029A0FC-EFF7-155B-2E35-044DA416BC3B}</ProjectGuid>
+    <ProjectGuid>{771B285F-42BE-492F-B4F1-A8F2FB01166B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -53,6 +54,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -67,21 +69,119 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+    <Content Include="Accommodations.aspx" />
+    <Content Include="AttractionBooking.aspx" />
+    <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="homepage.aspx" />
+    <Content Include="Images\56e06a3c7219bdf861826f9445f68cfa.jpg" />
+    <Content Include="Images\5a7ed66ada4a74dc2c525662e6e8f823.jpg" />
+    <Content Include="Images\68a75ae806854261c3cbab6a4ed913b8.jpg" />
+    <Content Include="Images\Acquarium.jpg" />
+    <Content Include="Images\Aesrhetics 1.jpg" />
+    <Content Include="Images\Aesrhetics 2.jpg" />
+    <Content Include="Images\Aesrhetics 3.jpg" />
+    <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
+    <Content Include="Images\Aqua.jpg" />
+    <Content Include="Images\Belmond.jpg" />
+    <Content Include="Images\CapeGrace.jpg" />
+    <Content Include="Images\CEACH HOUSE.jpg" />
+    <Content Include="Images\gUEST HOUSE.jpg" />
+    <Content Include="Images\HOTEL.jpg" />
+=======
+    <Content Include="Bookings.aspx" />
+>>>>>>> Stashed changes
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\SiloHotel.jpg" />
+    <Content Include="Images\Twelveon1stHotel.jpg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 15.44.16.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.44.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.45.jpeg" />
+    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.46.jpeg" />
+    <Content Include="Images\ZestBoutique.jpg" />
+    <Content Include="TouristMaintainForm.aspx" />
+    <Content Include="TouristRegister.aspx" />
+    <Content Include="TouristUpdateDetailsForm.aspx" />
+    <Content Include="transactionPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+<<<<<<< Updated upstream
+    <Compile Include="Accommodations.aspx.cs">
+      <DependentUpon>Accommodations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
+    <Compile Include="Accommodations.aspx.designer.cs">
+      <DependentUpon>Accommodations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttractionBooking.aspx.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttractionBooking.aspx.designer.cs">
+      <DependentUpon>AttractionBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attractions.aspx.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attractions.aspx.designer.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
+=======
+    <Compile Include="Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+>>>>>>> Stashed changes
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TouristRegister.aspx.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristRegister.aspx.designer.cs">
+      <DependentUpon>TouristRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristMaintainForm.aspx.designer.cs">
+      <DependentUpon>TouristMaintainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TouristUpdateDetailsForm.aspx.designer.cs">
+      <DependentUpon>TouristUpdateDetailsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transactionPage.aspx.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transactionPage.aspx.designer.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".github\copilot-instructions.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,7 +213,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63117</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44321/</IISUrl>
+          <IISUrl>http://localhost:44321/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:44321/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
