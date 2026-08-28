@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
@@ -87,17 +88,10 @@
     <Content Include="Images\Belmond.jpg" />
     <Content Include="Images\CapeGrace.jpg" />
     <Content Include="Images\CEACH HOUSE.jpg" />
+    <Content Include="Images\eat-play-do-icon-map-marker-115548254600u9yjx6qhj.png" />
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
-    <Content Include="Images\Login.png" />
-    <Content Include="Images\SiloHotel.jpg" />
-    <Content Include="Images\Twelveon1stHotel.jpg" />
-    <Content Include="Images\WhatsApp Image 2026-08-25 at 15.44.16.jpeg" />
-    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.44.jpeg" />
-    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.45.jpeg" />
-    <Content Include="Images\WhatsApp Image 2026-08-25 at 18.52.46.jpeg" />
-    <Content Include="Images\ZestBoutique.jpg" />
     <Content Include="TouristMaintainForm.aspx" />
     <Content Include="TouristRegister.aspx" />
     <Content Include="TouristUpdateDetailsForm.aspx" />
@@ -105,6 +99,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccBookings.aspx.cs">
+      <DependentUpon>AccBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccBookings.aspx.designer.cs">
+      <DependentUpon>AccBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accommodations.aspx.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
