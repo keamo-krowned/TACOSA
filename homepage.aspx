@@ -163,7 +163,7 @@
         ">
 
             <asp:Label
-                ID="lblAccommadations"
+                ID="lblAccommadation"
                 runat="server"
                 Text="ACCOMMODATIONS"
                 style="
@@ -173,8 +173,7 @@
                     color:#6B4226;
                     letter-spacing:1px;
                     white-space:nowrap;
-                ">
-            </asp:Label>
+                "></asp:Label>
 
         </td>
 
