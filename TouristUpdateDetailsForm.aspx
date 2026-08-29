@@ -12,7 +12,7 @@
             text-align: center;
         }
         .auto-style4 {
-            font-size: large;
+            font-size: x-large;
         }
         .auto-style7 {
             width: 211px;
@@ -152,6 +152,7 @@
                 <td class="auto-style49">
                     </td>
                 <td class="auto-style50">
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                     </td>
             </tr>
             <tr>
