@@ -13,5 +13,50 @@ namespace TACOSA
         {
 
         }
+
+        protected void lblAbout_Click(object sender, EventArgs e)
+        {
+            pnlAbout.Visible = true;
+            pnlContact.Visible = false;
+            pnlHelp.Visible = false;
+
+            ScriptManager.RegisterStartupScript(
+                this,
+                this.GetType(),
+                "scrollAbout",
+                "document.getElementById('" + pnlAbout.ClientID + "').scrollIntoView({behavior:'smooth', block:'center'});",
+                true
+            );
+        }
+
+        protected void lblContact_Click(object sender, EventArgs e)
+        {
+            pnlAbout.Visible = false;
+            pnlContact.Visible = true;
+            pnlHelp.Visible = false;
+
+            ScriptManager.RegisterStartupScript(
+                this,
+                this.GetType(),
+                "scrollContact",
+                "document.getElementById('" + pnlContact.ClientID + "').scrollIntoView({behavior:'smooth', block:'center'});",
+                true
+            );
+        }
+
+        protected void lblHelp_Click(object sender, EventArgs e)
+        {
+            pnlAbout.Visible = false;
+            pnlContact.Visible = false;
+            pnlHelp.Visible = true;
+
+            ScriptManager.RegisterStartupScript(
+                this,
+                this.GetType(),
+                "scrollHelp",
+                "document.getElementById('" + pnlHelp.ClientID + "').scrollIntoView({behavior:'smooth', block:'center'});",
+                true
+            );
+        }
     }
 }

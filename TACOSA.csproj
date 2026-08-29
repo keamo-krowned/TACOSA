@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
     <Content Include="LandingPage.aspx" />
     <Content Include="Web.config" />
