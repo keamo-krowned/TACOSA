@@ -50,7 +50,7 @@ namespace TACOSA
 
             int touristId = Convert.ToInt32(Session["TouristID"]);
 
-            string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+            string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand("dbo.sp_DeleteTourist", conn))

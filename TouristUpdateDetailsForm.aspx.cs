@@ -23,7 +23,7 @@ namespace TACOSA
             if (!IsPostBack)
             {
                 int touristId = Convert.ToInt32(Session["TouristID"]);
-                string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+                string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
                 string query = @"SELECT t.FirstName, t.LastName, t.DateOfBirth, t.IdentificationDoc, t.TouristEmail, c.CountryName
                                   FROM dbo.Tourist t
@@ -89,7 +89,7 @@ namespace TACOSA
             }
 
             int touristId = Convert.ToInt32(Session["TouristID"]);
-            string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+            string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             string origQuery = @"SELECT t.FirstName, t.LastName, t.DateOfBirth, t.IdentificationDoc, t.TouristEmail, c.CountryName
                                   FROM dbo.Tourist t
