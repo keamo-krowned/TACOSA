@@ -42,13 +42,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTitle0;
 
         /// <summary>
-        /// Image2 control.
+        /// imgTableM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image imgTableM;
 
         /// <summary>
         /// lblName1 control.
@@ -123,13 +123,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// Image5 control.
+        /// imgVilla control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image5;
+        protected global::System.Web.UI.WebControls.Image imgVilla;
 
         /// <summary>
         /// lblName2 control.
