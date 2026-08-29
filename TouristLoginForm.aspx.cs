@@ -20,7 +20,7 @@ namespace TACOSA
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+            string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             string emailInput = txtEmail.Text.Trim();
 
