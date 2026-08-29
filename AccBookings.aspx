@@ -57,16 +57,12 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style5" colspan="3">
-                    <div class ="picContainer">
+                    
                         <asp:Image ID="img1" runat="server" Height="316px" Width="426px" />
-                        <div class ="2Pics">
+                        
                             <asp:Image ID="img2" runat="server" Height="311px" Width="428px" />
                             <asp:Image ID="img3" runat="server" Height="309px" Width="388px" />
-                        </div>
-                        
-                    </div>
-                    
-                    <br />
+                        <br />
                     <strong>
                     <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style2" ForeColor="#663300"></asp:Label>
                     </strong>

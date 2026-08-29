@@ -22,7 +22,7 @@
         }
         .scrollable{
             overflow-x: auto;
-            gap: 10px;
+            gap: 15px;
         }
         .auto-style19 {
             height: 31px;
@@ -177,6 +177,8 @@
                         <asp:Label ID="lblHotelLo1" runat="server" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblHotelPrice1" runat="server" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID ="lblHotelRating1" runat ="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -195,12 +197,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style18">
+                    <td class="auto-style21">
                         <asp:Label ID="lblHotelName2" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                         <br />
                         <asp:Label ID="lblHotelLo2" runat="server" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblHotelPrice2" runat="server" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID ="lblHotelRating2" runat ="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -220,12 +224,14 @@
              </td>
          </tr>
          <tr>
-             <td class="auto-style18">
+             <td class="auto-style21">
                  <asp:Label ID="lblHotelName3" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                  <br />
                  <asp:Label ID="lblHotelLo3" runat="server" Text="Label"></asp:Label>
                  <br />
                  <asp:Label ID="lblHotelPrice3" runat="server" Text="Label"></asp:Label>
+                 <br />
+                 <asp:Label ID ="lblHotelRating3" runat ="server" Text="Label"></asp:Label>
              </td>
          </tr>
          <tr>
@@ -244,12 +250,14 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style18">
+            <td class="auto-style21">
                 <asp:Label ID="lblHotelName4" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                 <br />
                 <asp:Label ID="lblHotelLo4" runat="server" Text="Label"></asp:Label>
                 <br />
                 <asp:Label ID="lblHotelPrice4" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID ="lblHotelRating4" runat ="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -267,12 +275,14 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style18">
+            <td class="auto-style21">
                 <asp:Label ID="lblHotelName5" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                 <br />
                 <asp:Label ID="lblHotelLo5" runat="server" Text="Label"></asp:Label>
                 <br />
                 <asp:Label ID="lblHotelPrice5" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID ="lblHotelRating5" runat ="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -302,12 +312,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style18">
+                    <td class="auto-style21">
                         <asp:Label ID="lblGHName1" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                         <br />
                         <asp:Label ID="lblGHLo1" runat="server" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblGHPrice1" runat="server" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID ="lblGHRating1" runat ="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -326,12 +338,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style18">
+                    <td class="auto-style21">
                         <asp:Label ID="lblGHName2" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                         <br />
                         <asp:Label ID="lblGHLo2" runat="server" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblGHPrice2" runat="server" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID ="lblGHRating2" runat ="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -351,12 +365,14 @@
              </td>
          </tr>
          <tr>
-             <td class="auto-style18">
+             <td class="auto-style21">
                  <asp:Label ID="lblGHName3" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                  <br />
                  <asp:Label ID="lblGHLo3" runat="server" Text="Label"></asp:Label>
                  <br />
                  <asp:Label ID="lblGHPrice3" runat="server" Text="Label"></asp:Label>
+                 <br />
+                <asp:Label ID ="lblGHRating3" runat ="server" Text="Label"></asp:Label>
              </td>
          </tr>
          <tr>
@@ -375,12 +391,14 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style18">
+            <td class="auto-style21">
                 <asp:Label ID="lblGHName4" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                 <br />
                 <asp:Label ID="lblGHLo4" runat="server" Text="lblGH"></asp:Label>
                 <br />
                 <asp:Label ID="lblGHPrice4" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID ="lblGHRating4" runat ="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -398,12 +416,14 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style18">
+            <td class="auto-style21">
                 <asp:Label ID="lblGHName5" runat="server" Text="Label" Font-Bold="True"></asp:Label>
                 <br />
                 <asp:Label ID="lblGHLo5" runat="server" Text="Label"></asp:Label>
                 <br />
                 <asp:Label ID="lblGHPrice5" runat="server" Text="Label"></asp:Label>
+                <br />
+                <asp:Label ID ="lblGHRating5" runat ="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
