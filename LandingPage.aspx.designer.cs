@@ -78,13 +78,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Panel pnlAbout;
 
         /// <summary>
-        /// lblNeedHelp1 control.
+        /// lblAboutTacosa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNeedHelp1;
+        protected global::System.Web.UI.WebControls.Label lblAboutTacosa;
 
         /// <summary>
         /// Label4 control.
@@ -105,31 +105,31 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Panel pnlContact;
 
         /// <summary>
-        /// lblNeedHelp0 control.
+        /// lblContactUs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNeedHelp0;
+        protected global::System.Web.UI.WebControls.Label lblContactUs;
 
         /// <summary>
-        /// Label2 control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
-        /// Label3 control.
+        /// lblSouthAfrica control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblSouthAfrica;
 
         /// <summary>
         /// pnlHelp control.
@@ -150,12 +150,12 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblNeedHelp;
 
         /// <summary>
-        /// Label1 control.
+        /// lblNeedPara control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblNeedPara;
     }
 }

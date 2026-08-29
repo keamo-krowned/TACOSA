@@ -254,22 +254,18 @@
 <form id="form1" runat="server">
 
 
-    <!-- ================= HEADER ================= -->
 
     <div class="header">
 
-        <!-- TACOSA LOGO / NAME -->
 
         <div class="logo">
             TACOSA
         </div>
 
 
-        <!-- NAVIGATION -->
 
         <div class="navigation">
 
-            <!-- ABOUT -->
 
             <asp:LinkButton
                 ID="lblAbout"
@@ -280,7 +276,6 @@
             </asp:LinkButton>
 
 
-            <!-- CONTACT -->
 
             <asp:LinkButton
                 ID="lblContact"
@@ -291,7 +286,6 @@
             </asp:LinkButton>
 
 
-            <!-- HELP -->
 
             <asp:LinkButton
                 ID="lblHelp"
@@ -302,7 +296,6 @@
             </asp:LinkButton>
 
 
-            <!-- LOGIN -->
 
             <asp:Button
                 ID="btnLogin"
@@ -317,7 +310,6 @@
 
 
 
-    <!-- ================= CAPE TOWN IMAGE ================= -->
 
     <div class="hero">
 
@@ -329,7 +321,6 @@
         </asp:Image>
 
 
-        <!-- TEXT OVER IMAGE -->
 
         <div class="hero-text">
 
@@ -349,7 +340,6 @@
 
 
 
-    <!-- ================= ABOUT MESSAGE ================= -->
 
     <asp:Panel
         ID="pnlAbout"
@@ -366,10 +356,9 @@
 
                     <td>
                         <asp:Label
-                            ID="lblNeedHelp1"
+                            ID="lblAboutTacosa"
                             runat="server"
-                            Text="ABOUT TACOSA">
-                        </asp:Label>
+                            Text="ABOUT TACOSA"></asp:Label>
                     </td>
 
                     <td>&nbsp;</td>
@@ -379,7 +368,7 @@
                 <tr>
                     <td>&nbsp;</td>
 
-                    <td>
+                    <td id="lblAboutPara">
                         <asp:Label
                             ID="Label4"
                             runat="server"
@@ -407,7 +396,6 @@
 
 
 
-    <!-- ================= CONTACT MESSAGE ================= -->
 
     <asp:Panel
         ID="pnlContact"
@@ -424,10 +412,9 @@
 
                     <td>
                         <asp:Label
-                            ID="lblNeedHelp0"
+                            ID="lblContactUs"
                             runat="server"
-                            Text="CONTACT US">
-                        </asp:Label>
+                            Text="CONTACT US"></asp:Label>
                     </td>
 
                     <td>&nbsp;</td>
@@ -439,12 +426,11 @@
 
                     <td>
                         <asp:Label
-                            ID="Label2"
+                            ID="lblEmail"
                             runat="server"
                             CssClass="auto-style1"
                             Font-Bold="False"
-                            Text="Email: tacosa@gmail.com">
-                        </asp:Label>
+                            Text="Email: tacosa@gmail.com"></asp:Label>
                     </td>
 
                     <td>&nbsp;</td>
@@ -456,12 +442,11 @@
 
                     <td>
                         <asp:Label
-                            ID="Label3"
+                            ID="lblSouthAfrica"
                             runat="server"
                             CssClass="auto-style1"
                             Font-Bold="False"
-                            Text="Cape Town, South Africa">
-                        </asp:Label>
+                            Text="Cape Town, South Africa"></asp:Label>
                     </td>
 
                     <td>&nbsp;</td>
@@ -475,7 +460,6 @@
 
 
 
-    <!-- ================= HELP MESSAGE ================= -->
 
     <asp:Panel
         ID="pnlHelp"
@@ -507,12 +491,11 @@
 
                     <td>
                         <asp:Label
-                            ID="Label1"
+                            ID="lblNeedPara"
                             runat="server"
                             CssClass="auto-style1"
                             Font-Bold="False"
-                            Text="If you need assistance using TACOSA, click the LOGIN button to access the system. For further assistance, please contact us using the contact details provided.">
-                        </asp:Label>
+                            Text="If you need assistance using TACOSA, click the LOGIN button to access the system. For further assistance, please contact us using the contact details provided."></asp:Label>
                     </td>
 
                     <td>&nbsp;</td>
@@ -533,12 +516,12 @@
 
 
 
-    <!-- ================= FOOTER ================= -->
 
     <div class="footer">
 
         <div class="footer-title">
             TACOSA
+                TACOSA
         </div>
 
         <div class="footer-text">
