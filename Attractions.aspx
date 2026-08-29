@@ -143,7 +143,7 @@
                         <br />
                         <br />
                         <asp:Button ID="btnViewDetails" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cmpg-TacosaProjectConnectionString %>" SelectCommand="SELECT [AttractionID], [AttractionName], [AttractionDescription], [AttractionLocation], [AttractionAvailableYN], [PricePerDay], [AttractionCellNumber], [AttractionEmail], [Rating] FROM [Attractions]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connStr %>" SelectCommand="SELECT [AttractionID], [AttractionName], [AttractionDescription], [AttractionLocation], [AttractionAvailableYN], [PricePerDay], [AttractionCellNumber], [AttractionEmail], [Rating] FROM [Attractions]"></asp:SqlDataSource>
                     </td>
                     <td class="auto-style12">
                         <br />
