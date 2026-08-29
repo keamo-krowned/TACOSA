@@ -59,152 +59,82 @@
                     <style>
                         .auto-style8 {
                             text-align: center;
+                            background-color: #FFFFFF;
+                            border: thin solid #663300;
                             border-radius: 20px;
-                            overflow: hidden;  
+                            overflow: hidden;
                         }
+
                         .auto-style9 {
                             height: 26px;
                             text-align: center;
                         }
-                        .auto-style1 {
-                            background-color: #C0C0C0;
-                        }
+
                         .auto-style1 {
                             background-color: #FFFFFF;
-                        }
-                        .auto-style1 {
-                            border-style: 1;
-                            background-position: center;
-                            border-width: 1px;
-                            padding: 15px;
-                            vertical-align: top;
-                            border-radius: 20px;
-                            overflow: hidden;
-                        }
-                        .auto-style1 {
-                            border-style: solid;
-                            border-color: #C0C0C0;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
+
                         .auto-style11 {
-                            height: 26px;
-                            vertical-align: top;
-                            text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
                             background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            height: 26px;
-                            vertical-align: top;
-                            width: 553px;
                             text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
-                            background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            background-color: #FFFFCC;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
-    overflow: hidden;    
-                        }
-                        .newStyle3 {
-                            border-style: 1;
-                            border-width: 1px;
-                            border-color: #663300;
-                            padding: 50px;
-                        }
-                        .auto-style11 {
                             padding: 15px;
-                            margin: 15px;
-                            border-radius: 20px;
-                            overflow: hidden;  
                         }
+
                         .auto-style12 {
                             background-color: #FFFFFF;
+                            text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
-                        .newStyle4 {
-                            background-color: #FFFFCC;
-                        }
-                        .auto-style11 {
-                            background-color: #FFFFCC;
-                        }
+
                         .auto-style13 {
                             background-color: #FFFFFF;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
-                            overflow: hidden;  
+                            overflow: hidden;
+                            padding: 15px;
                         }
-                        .auto-style11 {
-                            background-color: #FFFFFF;
-                        }
+
                         .auto-style14 {
                             width: 1501px;
                             height: 266px;
                             float: left;
                         }
-                        .auto-style13 {
-                            border-color: #800080;
-                        }
-                        .auto-style13 {
-                            border-color: #663300;
-                        }
+
                         .auto-style15 {
                             text-align: center;
                             border-radius: 20px;
                             overflow: hidden;
                             height: 26px;
-                            border-color: #663300;
-                            background-color: #FFFFFF;
-                        }
-                        .auto-style15 {
+                            border: thin solid #663300;
                             background-color: #FFFFCC;
                         }
-                        .auto-style8 {
-                            background-color: #FFFFFF;
-                        }
-                        .auto-style8 {
-                            border-style: 1;
-                            border-color: #663300;
-                            border-width: 1px;
-                        }
-                        .auto-style8 {
-                            border-spacing: 4px;
-                            border: thin solid #663300;
-                        }
-                        .newStyle5 {
-                            border-style: inherit;
-                            border-width: thin;
-                            border-color: #663300;
-                        }
+
                         .auto-style16 {
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
-                            border-spacing: 4px;
                             height: 667px;
-                            border: thin solid #663300;
                             background-color: #FFFFFF;
-                        }
-                        .auto-style11 {
-                            border: thin solid #663300;
-                        }
-                        .auto-style12 {
-                            border: thin solid #663300;
-                        }
-                        .auto-style1 {
-                            border: thin solid #663300;
-                        }
-                        .auto-style13 {
-                            border: thin solid #663300;
-                        }
+                            padding: 15px;
+                        }   
                     </style>
                     
                     <td class="auto-style11" >
@@ -371,16 +301,16 @@
                         <asp:Button ID="btnViewDetails4" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" style="border-radius: 20px;" CommandArgument="9" OnClick="btnViewDetails_Click"/>
                         <br />
                         <br />
-                        <asp:Label ID="lblPrice4" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R1499 Adventure Pack | R2499 Premium Safari Pack"></asp:Label>
+                        
                         <br />
                         <br />
                         <br />
-                        <asp:Button ID="btnView4" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        
                     </td>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style15" colspan="3" >
+                    <td class="auto-style90" colspan="3" >
                         &nbsp;</td>
                 </tr>
                 <tr>
@@ -691,7 +621,7 @@
 
     </form>
 </body>
-</html>
+
         <script type="text/javascript">
             function toggleMoreAttractions() {
 
@@ -713,3 +643,5 @@
                 return false;
             }
         </script>
+
+</html>
