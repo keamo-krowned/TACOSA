@@ -51,7 +51,7 @@
         }
                 
 
-    /* ATTRACTION CARDS */
+   
 
     .attraction-card {
         background-color: #6B4226;
@@ -93,6 +93,14 @@
             font-size: 17px;
         }
 
+        .auto-style31 {
+            font-size: 20px;
+        }
+
+        .auto-style32 {
+            font-size: 14px;
+        }
+
     </style>
 
 
@@ -106,7 +114,7 @@
 </head>
 <body style="background-color: #FFF3A3" id="lblBookNow">
     <form id="form1" runat="server">
-       <!-- ================= HEADER / NAVIGATION ================= -->
+    
 
 <table style="
     width:100%;
@@ -118,7 +126,7 @@
 
     <tr>
 
-        <!-- LOGO -->
+       
         <td style="
             width:45%;
             padding-left:4%;
@@ -147,7 +155,7 @@
         </td>
 
 
-        <!-- ACCOMMODATIONS -->
+       
         <td style="
             width:20%;
             text-align:center;
@@ -171,7 +179,7 @@
         </td>
 
 
-        <!-- ATTRACTIONS -->
+      
         <td style="
             width:17%;
             text-align:center;
@@ -195,7 +203,6 @@
         </td>
 
 
-        <!-- BOOKINGS -->
         <td style="
             width:18%;
             text-align:center;
@@ -237,7 +244,7 @@
     <tr>
         <td colspan="3" style="padding:0; margin:0;">
 
-            <!-- HERO IMAGE WITH SLOGAN -->
+           
 <div style="position:relative; width:100%;">
 
     <asp:Image 
@@ -252,7 +259,7 @@
             display:block;
         " />
 
-    <!-- SLOGAN -->
+    
     <div style="
         position:absolute;
         top:40%;
@@ -332,7 +339,7 @@
                 </defs>
 
 
-                <!-- MAIN IRREGULAR PAINT AREA -->
+                
 
                 <path
                     filter="url(#brushTexture)"
@@ -364,7 +371,7 @@
                 />
 
 
-                <!-- TOP DRY BRUSH -->
+               
 
                 <path
                     filter="url(#brushTexture)"
@@ -384,7 +391,7 @@
                 />
 
 
-                <!-- LOWER DRY BRUSH -->
+               
 
                 <path
                     filter="url(#brushTexture)"
@@ -404,7 +411,7 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 1 -->
+              
 
                 <path
                     filter="url(#brushTexture)"
@@ -416,7 +423,7 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 2 -->
+                
 
                 <path
                     filter="url(#brushTexture)"
@@ -428,7 +435,6 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 3 -->
 
                 <path
                     filter="url(#brushTexture)"
@@ -440,7 +446,7 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 4 -->
+               
 
                 <path
                     filter="url(#brushTexture)"
@@ -452,7 +458,7 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 5 -->
+                
 
                 <path
                     filter="url(#brushTexture)"
@@ -464,7 +470,7 @@
                 />
 
 
-                <!-- BROKEN BRUSH MARK 6 -->
+               
 
                 <path
                     filter="url(#brushTexture)"
@@ -599,7 +605,7 @@
 
 <table style="width:100%; border-spacing:40px 50px;">
 
-    <!-- ROW 1 -->
+  
     <tr>
 
         <td style="text-align:center; vertical-align:top;" colspan="3">
@@ -614,7 +620,7 @@
 
     <tr>
 
-        <!-- TABLE MOUNTAIN -->
+       
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -635,7 +641,7 @@
         </td>
 
 
-        <!-- BOULDERS BEACH -->
+        
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -656,7 +662,7 @@
         </td>
 
 
-        <!-- FRANSCHHOEK WINE TASTING -->
+       
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -677,12 +683,9 @@
         </td>
 
     </tr>
-
-
-    <!-- ROW 2 -->
     <tr>
 
-        <!-- V&A WATERFRONT -->
+     
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -703,7 +706,7 @@
         </td>
 
 
-        <!-- BO-KAAP -->
+       
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -724,7 +727,7 @@
         </td>
 
 
-        <!-- ROBBEN ISLAND -->
+       
         <td style="width:33%; text-align:center; vertical-align:top;">
             <div class="attraction-card">
 
@@ -750,6 +753,10 @@
 
 
 
+                <br />
+
+
+
                 <hr style="
     width:70%;
     border:0;
@@ -757,7 +764,7 @@
     margin:60px auto;
 " />
 
-        <!-- ================= WHY TRAVEL WITH TACOSA ================= -->
+       
 
 <table style="
     width:100%;
@@ -767,9 +774,9 @@
     margin-bottom:70px;
 ">
 
-    <!-- TITLE -->
+   
     <tr>
-        <td colspan="3" style="
+        <td style="
             text-align:center;
             padding-bottom:40px;
         ">
@@ -787,116 +794,110 @@
                 ">
             </asp:Label>
 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <table style="width:100%;">
+                <tr>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels2"
+                runat="server"
+                Text="DISCOVER "
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style31"></asp:Label>
+
+                    </td>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels0"
+                runat="server"
+                Text="STAY"
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style31"></asp:Label>
+
+                    </td>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels3"
+                runat="server"
+                Text="EXPERIENCE "
+                style="
+                    font-family:Georgia, serif;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style31"></asp:Label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels5"
+                runat="server"
+                Text="Discover Cape Town's most beautiful attractions, landmarks and hidden gems. "
+                style="
+                    font-family:Georgia, serif;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style32"></asp:Label>
+
+                    </td>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels1"
+                runat="server"
+                Text="Find accommodation that suits your trip, 
+                from beach houses to hotels and guest houses. "
+                style="
+                    font-family:Georgia, serif;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style32"></asp:Label>
+
+                    </td>
+                    <td>
+
+            <asp:Label
+                ID="lblHotels4"
+                runat="server"
+                Text="Experience unforgettable moments and make the most of your South African adventure. "
+                style="
+                    font-family:Georgia, serif;
+                    color:#6B4226;
+                    letter-spacing:1px;
+                " CssClass="auto-style32"></asp:Label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
         </td>
     </tr>
 
-
-    <!-- THREE FEATURES -->
-    <tr>
-
-        <!-- DISCOVER -->
-        <td style="
-            width:33.33%;
-            text-align:center;
-            vertical-align:top;
-            padding:0 35px;
-        ">
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:19px;
-                font-weight:bold;
-                color:#6B4226;
-                letter-spacing:2px;
-                margin-bottom:12px;
-            ">
-                DISCOVER
-            </div>
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:14px;
-                line-height:1.7;
-                color:#6B4226;
-            ">
-                Discover Cape Town's most
-                beautiful attractions, landmarks
-                and hidden gems.
-            </div>
-
-        </td>
-
-
-        <!-- STAY -->
-        <td style="
-            width:33.33%;
-            text-align:center;
-            vertical-align:top;
-            padding:0 35px;
-        ">
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:19px;
-                font-weight:bold;
-                color:#6B4226;
-                letter-spacing:2px;
-                margin-bottom:12px;
-            ">
-                STAY
-            </div>
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:14px;
-                line-height:1.7;
-                color:#6B4226;
-            ">
-                Find accommodation that suits
-                your trip, from beach houses
-                to hotels and guest houses.
-            </div>
-
-        </td>
-
-
-        <!-- EXPERIENCE -->
-        <td style="
-            width:33.33%;
-            text-align:center;
-            vertical-align:top;
-            padding:0 35px;
-        ">
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:19px;
-                font-weight:bold;
-                color:#6B4226;
-                letter-spacing:2px;
-                margin-bottom:12px;
-            ">
-                EXPERIENCE
-            </div>
-
-            <div style="
-                font-family:Georgia, serif;
-                font-size:14px;
-                line-height:1.7;
-                color:#6B4226;
-            ">
-                Experience unforgettable moments
-                and make the most of your
-                South African adventure.
-                <br />
-                <br />
-            </div>
-
-        </td>
-
-    </tr>
-
-</table>
+    </table>
       
         <hr style="
     width:70%;
@@ -909,9 +910,7 @@
 
 
      
-        <!-- ================= FOOTER ================= -->
-
-<!-- ================= FOOTER ================= -->
+        
 
 <div style="
     background-color:#6B4226;
@@ -924,7 +923,7 @@
     box-sizing:border-box;
 ">
 
-    <!-- TACOSA -->
+   
 
     <div style="
         font-size:28px;
@@ -936,7 +935,7 @@
     </div>
 
 
-    <!-- SLOGAN -->
+   
 
     <div style="
         font-size:13px;
@@ -947,7 +946,7 @@
     </div>
 
 
-    <!-- CONTACT -->
+  
 
     <div style="
         font-size:18px;
@@ -964,14 +963,14 @@
         line-height:2;
         letter-spacing:1px;
     ">
-        Email: info@tacosa.co.za
+        Email: tacosa@gmail.com
         <br />
 
         Cape Town, South Africa
     </div>
 
 
-    <!-- ABOUT -->
+   
 
     <div style="
         margin-top:30px;
@@ -986,7 +985,7 @@
     </div>
 
 
-    <!-- LINE -->
+ 
 
     <div style="
         width:70%;
@@ -998,7 +997,7 @@
     </div>
 
 
-    <!-- COPYRIGHT -->
+   
 
     <div style="
         font-size:12px;
