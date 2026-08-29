@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace TACOSA
 {
@@ -119,6 +120,7 @@ namespace TACOSA
                         prices[i].Text = "R" + Convert.ToDecimal(data[i]["PricePerDay"]).ToString("0.00") + " /day";
                         if (Convert.ToBoolean(data[i]["AttractionAvailableYN"]))
                         {
+                            
                             availabilities[i].Text = "Available";
                         }
                         else
