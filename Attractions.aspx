@@ -209,7 +209,7 @@
                     
                     <td class="auto-style11" >
                         <br />
-                        <asp:Image ID="Image2" runat="server" Height="386px" ImageUrl="~/Images/TableMountain.PNG" style="text-align: center" Width="483px" />
+                        <asp:Image ID="imgTableM" runat="server" Height="386px" ImageUrl="~/Images/TableMountain.PNG" style="text-align: center" Width="483px" />
                         <br />
                         <asp:Label ID="lblName1" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
@@ -233,7 +233,7 @@
                     </td>
                     <td class="auto-style12">
                         <br />
-                        <asp:Image ID="Image5" runat="server" Height="381px" ImageUrl="~/Images/Villas.PNG" style="text-align: center" Width="466px" />
+                        <asp:Image ID="imgVilla" runat="server" Height="381px" ImageUrl="~/Images/Villas.PNG" style="text-align: center" Width="466px" />
                         <br />
                         <asp:Label ID="lblName2" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
@@ -371,9 +371,11 @@
                         <asp:Button ID="btnViewDetails4" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" style="border-radius: 20px;" CommandArgument="9" OnClick="btnViewDetails_Click"/>
                         <br />
                         <br />
+                        <asp:Label ID="lblPrice4" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R1499 Adventure Pack | R2499 Premium Safari Pack"></asp:Label>
                         <br />
                         <br />
                         <br />
+                        <asp:Button ID="btnView4" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
                     </td>
                 </tr>
                 <tr>
