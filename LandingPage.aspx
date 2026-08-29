@@ -25,7 +25,6 @@
             color: #6B4226;
         }
 
-        /* ================= HEADER ================= */
 
         .header {
             width: 100%;
@@ -52,7 +51,6 @@
             gap: 30px;
         }
 
-        /* ABOUT CONTACT HELP */
 
         .nav-button {
             color: #6B4226;
@@ -75,7 +73,6 @@
         }
 
 
-        /* LOGIN */
 
         .login-button {
             background-color: #6B4226;
@@ -103,7 +100,6 @@
         }
 
 
-        /* ================= IMAGE ================= */
 
         .hero {
             position: relative;
@@ -125,7 +121,6 @@
         }
 
 
-        /* ================= TEXT ON IMAGE ================= */
 
         .hero-text {
             position: absolute;
@@ -167,7 +162,6 @@
         }
 
 
-        /* ================= INFORMATION ================= */
 
         .information {
             width: 100%;
@@ -204,7 +198,6 @@
         }
 
 
-        /* ================= FOOTER ================= */
 
         .footer {
             background-color: #6B4226;
