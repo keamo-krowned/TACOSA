@@ -12,7 +12,6 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
             if (!IsPostBack)
             {
                 DataSourceSelectArguments args = new DataSourceSelectArguments();
@@ -34,13 +33,7 @@ namespace TACOSA
                         lblName9,
                         lblName10,
                         lblName11,
-                        lblName12,
-                        lblName13,
-                        lblName14,
-                        lblName15,
-                        lblName16,
-                        lblName17,
-                        lblName18
+                        lblName12
                     };
 
                     Label[] descriptions =                     {
@@ -55,14 +48,7 @@ namespace TACOSA
                         lblDescr9,
                         lblDescr10,
                         lblDescr11,
-                        lblDescr12,
-                        lblDescr13,
-                        lblDescr14,
-                        lblDescr15,
-                        lblDescr16,
-                        lblDescr17,
-                        lblDescr18
-
+                        lblDescr12
                     };
 
                     Label[] locations =                     {
@@ -77,13 +63,7 @@ namespace TACOSA
                         lblLocation9,
                         lblLocation10,
                         lblLocation11,
-                        lblLocation12,
-                        lblLocation13,
-                        lblLocation14,
-                        lblLocation15,
-                        lblLocation16,
-                        lblLocation17,
-                        lblLocation18
+                        lblLocation12
                     };
 
                     Label[] ratings =                     {
@@ -98,13 +78,7 @@ namespace TACOSA
                         lblRating9,
                         lblRating10,
                         lblRating11,
-                        lblRating12,
-                        lblRating13,
-                        lblRating14,
-                        lblRating15,
-                        lblRating16,
-                        lblRating17,
-                        lblRating18
+                        lblRating12
                     };
 
                     Label[] prices =                     {
@@ -119,13 +93,7 @@ namespace TACOSA
                         lblPrice9,
                         lblPrice10,
                         lblPrice11,
-                        lblPrice12,
-                        lblPrice13,
-                        lblPrice14,
-                        lblPrice15,
-                        lblPrice16,
-                        lblPrice17,
-                        lblPrice18
+                        lblPrice12
                     };
                     Label[] availabilities =                     {
                         lblAvailable1,
@@ -139,13 +107,7 @@ namespace TACOSA
                         lblAvailable9,
                         lblAvailable10,
                         lblAvailable11,
-                        lblAvailable12,
-                        lblAvailable13,
-                        lblAvailable14,
-                        lblAvailable15,
-                        lblAvailable16,
-                        lblAvailable17,
-                        lblAvailable18
+                        lblAvailable12
                     };
 
                     for(int i = 0; i < data.Count && i < names.Length; i++)
@@ -176,23 +138,15 @@ namespace TACOSA
 
          
 
-        protected void LnkReadMore_Click1(object sender, EventArgs e)
+        protected void btnView_Click(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnViewDetails_Click(object sender, EventArgs e)
+        protected void LnkReadMore_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            string attractionID = btn.CommandArgument;
-            Session["AttractionID"] = attractionID;
-            Response.Cookies["AttrcationID"].Value = attractionID;
-            Response.Redirect("AttractionBooking.aspx");
-        }
-
-        protected void btnViewDetails7_Click(object sender, EventArgs e)
-        {
-
+            ViewState["VisibleCount"] = (int)ViewState["VisibleCount"] + 6;
+            //LoadAttractions();
         }
     }
 }
