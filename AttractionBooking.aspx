@@ -86,7 +86,7 @@
 
             <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
             <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the required input before proceeding" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the required input before proceeding" ForeColor="Red" ControlToValidate="txtDate"></asp:RequiredFieldValidator>
         </p>
         <div>
 

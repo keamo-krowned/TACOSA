@@ -202,6 +202,7 @@ namespace TACOSA
 
             Response.Cookies["AttractionID"].Value = attractionID;
 
+            
             Response.Redirect("AttractionBooking.aspx");
         }
     }
