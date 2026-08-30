@@ -26,7 +26,7 @@ namespace TACOSA
             {
                 return;
             }
-            string connectionString = ConfigurationManager.ConnectionString["TACOSAConnectionString"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
 
             string query = @"
                 SELECT *
@@ -50,7 +50,7 @@ namespace TACOSA
                         lbldescription.Text = reader["Description"].ToString();
                         lblLocation.Text = reader["Location"].ToString();
                         lblAvailable.Text = reader["Available"].ToString();
-                        Image1.ImageUrl = raeder["ImageURL"].ToString();
+                        Image1.ImageUrl = reader["ImageURL"].ToString();
                     }
                 }
             }
