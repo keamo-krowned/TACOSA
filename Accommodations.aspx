@@ -23,6 +23,11 @@
         .scrollable{
             overflow-x: auto;
             gap: 15px;
+             scrollbar-width: none;    
+             -ms-overflow-style: none;
+        }
+        .scrollable::-webkit-scrollbar{
+            display:none;
         }
         .auto-style19 {
             height: 31px;
@@ -41,6 +46,7 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding: 8px 16px 8px 16px;
             border-radius:15px;
+            text-decoration:none;
         }
         .auto-style20 {
             width: 461px;
@@ -60,11 +66,18 @@
              font-weight:bold;
              color:#6B4226;
              letter-spacing:1px;
+             text-decoration: none;
+        }
+        .headerLinks:hover{
+             cursor:pointer;
         }
         .auto-style21 {
             width: 461px;
             text-align: center;
             height: 84px;
+        }
+        img{
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -119,7 +132,8 @@
     font-weight:bold;
     color:#6B4226;
     letter-spacing:1px;
-"> ACCOMMODATIONS</asp:HyperLink>
+    "
+    CssClass ="headerLinks" NavigateUrl="Accommodations.aspx"> ACCOMMODATIONS</asp:HyperLink>
 
         </td>
 
@@ -130,7 +144,7 @@
         ">
 
             <asp:HyperLink ID="hlkAttractions" runat="server"
-               CssClass ="headerLinks"
+               CssClass ="headerLinks" NavigateUrl="Attractions.aspx"
                 >ATTRACTIONS</asp:HyperLink>
 
         </td>
@@ -142,7 +156,7 @@
         ">
 
             <asp:HyperLink ID="hlkBookings" runat="server"
-                CssClass ="headerLinks">BOOKINGS</asp:HyperLink>
+                CssClass ="headerLinks" NavigateUrl="Bookings.aspx">BOOKINGS</asp:HyperLink>
 
         </td>
 

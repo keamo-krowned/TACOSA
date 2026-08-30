@@ -9,9 +9,6 @@
         .auto-style1 {
             text-align: center;
         }
-        .auto-style2 {
-            font-size: xx-large;
-        }
         .auto-style5 {
             height: 305px;
         }
@@ -37,13 +34,33 @@
         }
         .picContainer{
             display:grid;
-            width: 100%;
-            grid-template-columns: 1fr 1fr;
-            height: 500px;
+            border-radius:4px;
+            background-color:white;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 560px;
+            gap: 10px;
+            padding: 10px;
+            width: 90%;
+            margin: 0 auto;
+           
+           
+            
         }
-        .2Pics{
-            display:block;
-
+        .Image1{
+            grid-row: 1 / 3;
+        }
+        .Image1 img,
+        .twoPics img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 4px;
+        }
+        #tableContainer{
+            width:90%;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -51,21 +68,31 @@
     <form id="form1" runat="server">
         <div class="auto-style1">
             <h1>
-                <asp:Label ID="Label1" runat="server" CssClass="auto-style15" ForeColor="#603000" Text="Accomodation Bookings"></asp:Label>
+                <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style15" ForeColor="#603000"></asp:Label>
             </h1>
         </div>
+        <div class ="picContainer">
+            <div class ="Image1">
+                <asp:Image ID="img1" runat="server" />
+
+            </div>
+            <div class ="twoPics">
+                <asp:Image ID="img2" runat="server"  />
+            </div>
+            <div class ="twoPics">
+                <asp:Image ID="img3" runat="server" />
+            </div>
+                
+            
+        </div>
+
+        <section id ="tableContainer">
+
         <table style="width:100%;">
             <tr>
                 <td class="auto-style5" colspan="3">
-                    
-                        <asp:Image ID="img1" runat="server" Height="316px" Width="426px" />
-                        
-                            <asp:Image ID="img2" runat="server" Height="311px" Width="428px" />
-                            <asp:Image ID="img3" runat="server" Height="309px" Width="388px" />
+                            
                         <br />
-                    <strong>
-                    <asp:Label ID="lblAccommodationName" runat="server" CssClass="auto-style2" ForeColor="#663300"></asp:Label>
-                    </strong>
                     <br />
                     <asp:Image ID="Image4" runat="server" Height="24px" ImageAlign="Baseline" ImageUrl="~/Images/pngtree-flat-red-location-sign-png-image_8927579.png" Width="25px" />
                     <asp:Label ID="lblAccommodationLocation" runat="server" CssClass="auto-style12"></asp:Label>
@@ -145,6 +172,8 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+             </section>
+
     </form>
 </body>
 </html>
