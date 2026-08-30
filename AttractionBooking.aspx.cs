@@ -18,19 +18,22 @@ namespace TACOSA
                 LoadAttraction();
             }
         }
-        priavte void LoadAttraction()
+        private void LoadAttraction()
         {
             string attractionID = Request.QueryString["id"];
 
-            if(string.IsNullOrEmpty(attractionID)
+            if(string.IsNullOrEmpty(attractionID))
             {
                 return;
             }
-            string connectionString = ConfigurationManager.ConnectionString["TACOSAConnection"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionString["TACOSAConnectionString"].ConnectionString;
 
-            string query = @"SELECT * FROM Attractions WHERE AttractionID = @AttractionID";
+            string query = @"
+                SELECT *
+                FROM Attractions
+                WHERE AttractionID = @AttractionID";
 
-            using(SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -61,7 +64,8 @@ namespace TACOSA
 
         protected System.Void Button1_Click(System.Object sender, System.EventArgs e)
         {
-
+            Response.Redirect("transactionPage.aspx");
         }
+    }
     }
 }
