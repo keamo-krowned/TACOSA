@@ -59,7 +59,13 @@ namespace TACOSA
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("transactionPage.aspx");
+            string attractionID = Request.QueryString["id"];
+            string date = txtDate.Text;
+            string visitors = txtVisitors.Text;
+
+            Response.Redirect("transactionPage.aspx?id=" + attractionID
+                + "&date=" + date
+                + "&visitors=" + visitors);
         }
 
         
