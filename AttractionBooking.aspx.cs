@@ -59,13 +59,10 @@ namespace TACOSA
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected System.Void Button1_Click(System.Object sender, System.EventArgs e)
-        {
             Response.Redirect("transactionPage.aspx");
         }
+
+        
     }
-    }
+    
 }
