@@ -159,7 +159,7 @@
                 <td class="auto-style35">
                     &nbsp;</td>
                 <td class="auto-style51">
-                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#3366FF" OnClick="btnSubmitChanges_Click" Text="Submit Changes" Width="129px" />
+                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Submit Changes" Width="129px" ForeColor="White" />
                 </td>
             </tr>
         </table>

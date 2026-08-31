@@ -74,7 +74,7 @@ namespace TACOSA
                     if (result == "Success")
                     {
                         Session.Clear();
-                        Response.Redirect("homepage.aspx");
+                        Response.Redirect("LandingPage.aspx");
                     }
                     else
                     {
