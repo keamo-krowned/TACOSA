@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 203px;
+            width: 372px;
         }
         .auto-style2 {
             font-size: x-large;
@@ -17,7 +17,7 @@
             width: 688px;
         }
         .auto-style5 {
-            width: 203px;
+            width: 372px;
             height: 71px;
         }
         .auto-style6 {
@@ -28,7 +28,7 @@
             height: 71px;
         }
         .auto-style8 {
-            width: 203px;
+            width: 372px;
             height: 26px;
         }
         .auto-style9 {
@@ -44,7 +44,7 @@
             height: 146px;
         }
         .auto-style13 {
-            width: 203px;
+            width: 372px;
             height: 146px;
         }
         .auto-style14 {
@@ -87,14 +87,14 @@
             <tr>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Label ID="lblEmail" runat="server" Text="Please enter Email*"></asp:Label>
+                    <asp:Label ID="lblEmail" runat="server" Text="Please enter Email to Login*"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtEmail" runat="server" Width="331px"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" Width="331px" OnTextChanged="txtEmail_TextChanged"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -120,7 +120,7 @@
             <tr>
                 <td class="auto-style8"></td>
                 <td class="auto-style16">
-                    <asp:Label ID="lblRedirectToReg" runat="server" Text="Dont Have an Account? "></asp:Label>
+                    <asp:Label ID="lblRedirectToReg" runat="server" Text="Don't Have an Account? "></asp:Label>
                     <asp:HyperLink ID="hplRegister" runat="server" NavigateUrl="~/TouristRegister.aspx">Click Here</asp:HyperLink>
                 </td>
                 <td class="auto-style10"></td>
