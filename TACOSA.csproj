@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accommodations.aspx" />
+    <Content Include="AdminMaintainTourist.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaintainTourist.aspx.cs">
+      <DependentUpon>AdminMaintainTourist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaintainTourist.aspx.designer.cs">
+      <DependentUpon>AdminMaintainTourist.aspx</DependentUpon>
     </Compile>
     <Compile Include="AttractionBooking.aspx.cs">
       <DependentUpon>AttractionBooking.aspx</DependentUpon>
