@@ -258,7 +258,7 @@
         ">
 
             <asp:Label
-                ID="Label5"
+                ID="btnBookings"
                 runat="server"
                 Text="BOOKINGS"
                 style="
@@ -274,8 +274,7 @@
                     white-space:nowrap;
                     cursor:pointer;
                 "
-                onclick="window.location.href='Bookings.aspx';">
-            </asp:Label>
+                onclick="window.location.href='Bookings.aspx';"></asp:Label>
 
         </td>
 
