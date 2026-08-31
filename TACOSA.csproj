@@ -72,6 +72,7 @@
     <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
     <Content Include="AdminMaintainTourist.aspx" />
+    <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
@@ -162,6 +163,13 @@
     </Compile>
     <Compile Include="AdminMaintainTourist.aspx.designer.cs">
       <DependentUpon>AdminMaintainTourist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateTDetails.aspx.cs">
+      <DependentUpon>AdminUpdateTDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateTDetails.aspx.designer.cs">
+      <DependentUpon>AdminUpdateTDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="AttractionBooking.aspx.cs">
       <DependentUpon>AttractionBooking.aspx</DependentUpon>

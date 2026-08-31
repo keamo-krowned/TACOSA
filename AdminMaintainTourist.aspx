@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td class="auto-style10">
-                    <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Tourists" />
+                    <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Tourists" OnClick="btnViewAll_Click" />
                 </td>
                 <td class="auto-style15">
                     <asp:Label ID="lblDelete" runat="server" Text="Delete Tourist By ID"></asp:Label>
@@ -81,7 +81,7 @@
             <tr>
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="233px"></asp:TextBox>
+                    <asp:TextBox ID="txtDelete" runat="server" Width="233px"></asp:TextBox>
                 </td>
                 <td class="auto-style1">
                     <asp:TextBox ID="txtMaintain" runat="server" Width="233px"></asp:TextBox>
@@ -90,10 +90,10 @@
             <tr>
                 <td class="auto-style11"></td>
                 <td class="auto-style9">
-                    <asp:Button ID="btnDelete" runat="server" BackColor="#FFCCCC" ForeColor="Red" Text="Delete Tourst By ID" />
+                    <asp:Button ID="btnDelete" runat="server" BackColor="#FFCCCC" ForeColor="Red" Text="Delete Tourst By ID" OnClick="btnDelete_Click" />
                 </td>
                 <td class="auto-style7">
-                    <asp:Button ID="btnMainatin" runat="server" BackColor="#663300" ForeColor="White" Text="Maintain Detail" Width="227px" />
+                    <asp:Button ID="btnMainatin" runat="server" BackColor="#663300" ForeColor="White" Text="Maintain Detail" Width="227px" OnClick="btnMainatin_Click" />
                 </td>
             </tr>
             <tr>
