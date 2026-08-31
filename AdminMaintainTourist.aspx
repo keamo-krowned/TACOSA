@@ -55,7 +55,7 @@
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
         <div class="auto-style1">
-            <asp:Label ID="lblTitle" runat="server" CssClass="auto-style2" ForeColor="#663300" Text="Mainatin Tourist"></asp:Label>
+            <asp:Label ID="lblTitle" runat="server" CssClass="auto-style2" ForeColor="#663300" Text="Mainatin Tourists"></asp:Label>
         <div>
         </div>
         </div>
