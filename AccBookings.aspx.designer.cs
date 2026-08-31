@@ -11,7 +11,7 @@ namespace TACOSA
 {
 
 
-    public partial class homepage
+    public partial class AccBookings
     {
 
         /// <summary>
@@ -24,300 +24,282 @@ namespace TACOSA
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblTacosa control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTacosa;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// lnkAccommodation control.
+        /// img1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkAccommodation;
+        protected global::System.Web.UI.WebControls.Image img1;
 
         /// <summary>
-        /// lnkAttractions control.
+        /// img2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkAttractions;
+        protected global::System.Web.UI.WebControls.Image img2;
 
         /// <summary>
-        /// lnkMyProfile control.
+        /// img3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkMyProfile;
+        protected global::System.Web.UI.WebControls.Image img3;
 
         /// <summary>
-        /// Label5 control.
+        /// lblAccommodationName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label lblAccommodationName;
 
         /// <summary>
-        /// Image1 control.
+        /// Image4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image Image4;
 
         /// <summary>
-        /// lblFindAcc control.
+        /// lblAccommodationLocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFindAcc;
+        protected global::System.Web.UI.WebControls.Label lblAccommodationLocation;
 
         /// <summary>
-        /// ImgBeach control.
+        /// lblAccRating control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgBeach;
+        protected global::System.Web.UI.WebControls.Label lblAccRating;
 
         /// <summary>
-        /// ImgHotels control.
+        /// lblLabel5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgHotels;
+        protected global::System.Web.UI.WebControls.Label lblLabel5;
 
         /// <summary>
-        /// ImgGuestH control.
+        /// label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgGuestH;
+        protected global::System.Web.UI.WebControls.Label label2;
 
         /// <summary>
-        /// lblBeach control.
+        /// lblAccDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBeach;
+        protected global::System.Web.UI.WebControls.Label lblAccDescription;
 
         /// <summary>
-        /// lblHotels control.
+        /// label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels;
+        protected global::System.Web.UI.WebControls.Label label3;
 
         /// <summary>
-        /// lblGuestH control.
+        /// lblLabel0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGuestH;
+        protected global::System.Web.UI.WebControls.Label lblLabel0;
 
         /// <summary>
-        /// lblExploreAttractions control.
+        /// lblAccCapacity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblExploreAttractions;
+        protected global::System.Web.UI.WebControls.Label lblAccCapacity;
 
         /// <summary>
-        /// imgTableMountain control.
+        /// lblLabel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgTableMountain;
+        protected global::System.Web.UI.WebControls.Label lblLabel2;
 
         /// <summary>
-        /// lblTableMountain control.
+        /// lblAccPricePerNight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTableMountain;
+        protected global::System.Web.UI.WebControls.Label lblAccPricePerNight;
 
         /// <summary>
-        /// imgBouldersBeach control.
+        /// lblLabel8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBouldersBeach;
+        protected global::System.Web.UI.WebControls.Label lblLabel8;
 
         /// <summary>
-        /// lblBouldersBeach control.
+        /// lblRoomTypes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBouldersBeach;
+        protected global::System.Web.UI.WebControls.Label lblRoomTypes;
 
         /// <summary>
-        /// imgWine control.
+        /// label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgWine;
+        protected global::System.Web.UI.WebControls.Label label4;
 
         /// <summary>
-        /// lblWine control.
+        /// lblLabel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWine;
+        protected global::System.Web.UI.WebControls.Label lblLabel3;
 
         /// <summary>
-        /// imgWaterfront control.
+        /// lblAccCellNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgWaterfront;
+        protected global::System.Web.UI.WebControls.Label lblAccCellNumber;
 
         /// <summary>
-        /// lblWaterfront control.
+        /// lblLabel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWaterfront;
+        protected global::System.Web.UI.WebControls.Label lblLabel4;
 
         /// <summary>
-        /// imgBoKaap control.
+        /// lblAccEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBoKaap;
+        protected global::System.Web.UI.WebControls.Label lblAccEmail;
 
         /// <summary>
-        /// lblBoKaap control.
+        /// label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBoKaap;
+        protected global::System.Web.UI.WebControls.Label label;
 
         /// <summary>
-        /// imgRobbenIsland control.
+        /// lblLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRobbenIsland;
+        protected global::System.Web.UI.WebControls.Label lblLabel;
 
         /// <summary>
-        /// lblRobbenIsland control.
+        /// lblRoomsAvailable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRobbenIsland;
+        protected global::System.Web.UI.WebControls.Label lblRoomsAvailable;
 
         /// <summary>
-        /// lblWhyTacosa control.
+        /// lblLabel7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWhyTacosa;
+        protected global::System.Web.UI.WebControls.Label lblLabel7;
 
         /// <summary>
-        /// lblHotels2 control.
+        /// Calendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels2;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
-        /// lblHotels0 control.
+        /// lblLabel9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels0;
+        protected global::System.Web.UI.WebControls.Label lblLabel9;
 
         /// <summary>
-        /// lblHotels3 control.
+        /// Calendar2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels3;
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
 
         /// <summary>
-        /// lblHotels5 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels5;
-
-        /// <summary>
-        /// lblHotels1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels1;
-
-        /// <summary>
-        /// lblHotels4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHotels4;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

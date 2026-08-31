@@ -32,6 +32,8 @@
             <tr>
                 <td class="auto-style4" colspan="3">
                     <asp:Image ID="Image1" runat="server" Height="216px" ImageUrl="~/Images/Landing.png" Width="650px" />
+                    <asp:ListBox ID="ListBox1" runat="server" Height="163px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" Width="234px"></asp:ListBox>
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
             <tr>

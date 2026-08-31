@@ -18,6 +18,25 @@
         .newStyle2 {
             border-style: dotted;
         }
+        table 
+        {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        td 
+        {
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        td img 
+        {
+            max-width: 100%;
+            height: auto;
+        }
         </style>
     <link href="Images/Landing.png" rel="stylesheet" type="text/css" />
 </head>
@@ -27,7 +46,7 @@
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style8" colspan="3">
-                        <img class="auto-style14" src="Images/images%20(9).jfif" /></td>
+                        <img class="auto-style14" src="Images/Profile.PNG" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style8" colspan="3">
@@ -43,174 +62,160 @@
                     <style>
                         .auto-style8 {
                             text-align: center;
+                            background-color: #FFFFFF;
+                            border: thin solid #663300;
+                            border-radius: 20px;
+                            overflow: hidden;
                         }
+
                         .auto-style9 {
                             height: 26px;
                             text-align: center;
                         }
-                        .auto-style1 {
-                            background-color: #C0C0C0;
-                        }
+
                         .auto-style1 {
                             background-color: #FFFFFF;
-                        }
-                        .auto-style1 {
-                            border-style: 1;
-                            background-position: center;
-                            border-width: 1px;
-                            padding: 15px;
-                            vertical-align: top;
-                            border-radius: 20px;
-                            overflow: hidden;
-                        }
-                        .auto-style1 {
-                            border-style: solid;
-                            border-color: #C0C0C0;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
+
                         .auto-style11 {
-                            height: 26px;
-                            vertical-align: top;
-                            text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
                             background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            height: 26px;
-                            vertical-align: top;
-                            width: 553px;
                             text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
-                            background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            background-color: #FFFFCC;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
-    overflow: hidden;    
-                        }
-                        .newStyle3 {
-                            border-style: 1;
-                            border-width: 1px;
-                            border-color: #663300;
-                            padding: 50px;
-                        }
-                        .auto-style11 {
                             padding: 15px;
-                            margin: 15px;
-                            border-radius: 20px;
-                            overflow: hidden;  
                         }
+
                         .auto-style12 {
                             background-color: #FFFFFF;
+                            text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
-                        .newStyle4 {
-                            background-color: #FFFFCC;
-                        }
-                        .auto-style11 {
-                            background-color: #FFFFCC;
-                        }
+
                         .auto-style13 {
                             background-color: #FFFFFF;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
-                            overflow: hidden;  
+                            overflow: hidden;
+                            padding: 15px;
                         }
-                        .auto-style11 {
-                            background-color: #FFFFFF;
-                        }
+
                         .auto-style14 {
                             width: 1501px;
                             height: 266px;
                             float: left;
                         }
-                        .auto-style13 {
-                            border-color: #800080;
-                        }
-                        .auto-style13 {
-                            border-color: #663300;
-                        }
+
                         .auto-style15 {
                             text-align: center;
                             border-radius: 20px;
                             overflow: hidden;
                             height: 26px;
-                            border-color: #663300;
-                            background-color: #FFFFFF;
-                        }
-                        .auto-style15 {
+                            border: thin solid #663300;
                             background-color: #FFFFCC;
                         }
+
+                        .auto-style16 {
+                            text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            height: 667px;
+                            background-color: #FFFFFF;
+                            padding: 15px;
+                        }   
                     </style>
                     
                     <td class="auto-style11" >
                         <br />
-                        <asp:Image ID="Image2" runat="server" Height="370px" ImageUrl="~/Images/download (2).jfif" style="text-align: center" Width="489px" />
+                        <asp:Image ID="Image2" runat="server" Height="386px" ImageUrl="~/Images/TableMountain.PNG" style="text-align: center" Width="483px" />
                         <br />
-                        <asp:Label ID="lblName" runat="server" BackColor="White" ForeColor="#663300" Text="Table Mountain Summit"></asp:Label>
+                        <asp:Label ID="lblName1" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
-                        <br />
-                        <asp:Label ID="lbllocation" runat="server" BackColor="White" ForeColor="#663300" Text=" Cape Peninsula, flanked by Devil's Peak to the east and Lion's Head to the west."></asp:Label>
-                        <br />
-                        <asp:Label ID="lblDescr" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="Experience the beauty of Table Mountain and the Atlantic coastline. Perfect for tourists short on time!"></asp:Label>
+                        <asp:Label ID="lblLocation1" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblPrice" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R480 per adult | R280 per child
-Includes: Cableway + photo stops. Duration: 4 hours"></asp:Label>
+                        <asp:Label ID="lblDescr1" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
-                        <asp:Label ID="lblAvailable" runat="server" Text="Available" ForeColor="#663300"></asp:Label>
                         <br />
-                        <asp:Button ID="btnView" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblAvailable1" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
+                        <br />
+                        <asp:Label ID="lblPrice1" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating1" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="4" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connStr %>" SelectCommand="SELECT [AttractionID], [AttractionName], [AttractionDescription], [AttractionLocation], [AttractionAvailableYN], [PricePerDay], [AttractionCellNumber], [AttractionEmail], [Rating] FROM [Attractions]"></asp:SqlDataSource>
                     </td>
                     <td class="auto-style12">
                         <br />
-                        <asp:Image ID="Image5" runat="server" Height="366px" ImageUrl="~/Images/Muizenberg Beach🏖️.jfif" style="text-align: center" Width="455px" />
+                        <asp:Image ID="Image5" runat="server" Height="381px" ImageUrl="~/Images/Villas.PNG" style="text-align: center" Width="466px" />
                         <br />
-                        <asp:Label ID="lblName0" runat="server" Text="Ubuntu Beach Villas" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblName2" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
-                        <br />
-                        <asp:Label ID="lblLocation0" runat="server" Text="Muizenberg Beach, False Bay, Cape Town," ForeColor="#663300"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescrp" runat="server" Text="Rooted in the spirit of Ubuntu. Colorful beachfront stays that bring people together — for sun, sea, and shared stories." BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblLocation2" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblprice0" runat="server" Text="R1050 per night" BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblAvailable0" runat="server" Text="Available" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblDescr2" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnView0" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblAvailable2" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice2" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating2" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails0" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="5" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        <br />
                         <br />
                     </td>
                     <td class="auto-style1">
                         <br />
-                        <asp:Image ID="Image6" runat="server" Height="359px" ImageUrl="~/Images/V&amp;A Waterfront.jfif" style="text-align: center; margin-bottom: 0px;" Width="433px" />
-                        <br />
-                        <asp:Label ID="lblName1" runat="server" Text="Victoria Impilo Welfare" ForeColor="#663300"></asp:Label>
+                        <asp:Image ID="Image6" runat="server" Height="359px" ImageUrl="~/Images/Welfare.PNG" style="text-align: center; margin-bottom: 0px;" Width="433px" />
                         <br />
                         <br />
-                        <asp:Label ID="lblLocation1" runat="server" Text="12 Victoria Road, Woodstock, Cape Town, Western Cape, 7925" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblName3" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation3" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescrp1" runat="server" Text="Restoring dignity and life through food parcels, counseling, and community upliftment in Cape Town." BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblDescr3" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblprice1" runat="server" Text="Price: R120 per adult | R60 per child | R300 Family Ticket" BackColor="#FFFFCC" ForeColor="#663300"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblAvailable1" runat="server" Text="Available" ForeColor="#663300"></asp:Label>
+                        <asp:Label ID="lblAvailable3" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnView1" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblPrice3" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating3" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails1" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="6" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        <br />
+                        <br />
                         <br />
                     </td>
                 </tr>
@@ -222,83 +227,425 @@ Includes: Cableway + photo stops. Duration: 4 hours"></asp:Label>
                 <tr>
                     
                     <td class="auto-style13" style="border-color: #663300; border-spacing: 500px" >
-                        <asp:Image ID="Image7" runat="server" Height="380px" ImageUrl="~/Images/download (3).jfif" style="text-align: center" Width="488px" />
+                        <asp:Image ID="Image7" runat="server" Height="380px" ImageUrl="~/Images/BoatCuise.PNG" style="text-align: center" Width="488px" />
                         <br />
-                        <asp:Label ID="lblName2" runat="server" ForeColor="#663300" Text="Indlu YamaGwebu Ocean Tours"></asp:Label>
+                        <asp:Label ID="lblName4" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
-                        <br />
-                        <asp:Label ID="lblLocation2" runat="server" ForeColor="#663300" Text="Hout Bay Harbor, Victoria Road, Hout Bay"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblDescr2" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="Take a 45-minute boat ride from Hout Bay Harbor to Seal Island. See 1000+ Cape fur seals, dolphins, and seabirds up close. Breathtaking Atlantic Ocean views with the mountains behind you."></asp:Label>
-                        <br />
-                        <asp:Label ID="lblPrice2" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R250 per adult | R150 per child (3-12) | R700 Family of 4
-Includes: Life jacket + guided commentary. Duration: 45 mins. Weather dependent"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblAvailable2" runat="server" ForeColor="#663300" Text="Available"></asp:Label>
+                        <asp:Label ID="lblLocation4" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnView2" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblDescr4" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable4" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice4" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating4" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails2" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="7" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                     </td>
                     <td class="auto-style12">
                         <asp:Image ID="Image8" runat="server" Height="366px" ImageUrl="~/Images/Aqua.jpg" style="text-align: center" Width="477px" />
                         <br />
-                        <asp:Label ID="lblName3" runat="server" ForeColor="#663300" Text="Izinga Lobwandle Aquarium"></asp:Label>
+                        <asp:Label ID="lblName5" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation5" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblLocation3" runat="server" ForeColor="#663300" Text="Hout Bay Harbor, Victoria Road, Hout Bay"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblDescr3" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="Rooted in African ocean heritage. Journey through 2 oceans and meet Cape Town’s incredible sea creatures. Learn, explore, and protect our marine world."></asp:Label>
-                        <br />
-                        <asp:Label ID="lblPrice3" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R300 per adult | R180 per child | R200 Student/Senior
-Includes: Aquarium + IMAX 3D shows. Free entry for kids under 3"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblAvailable3" runat="server" ForeColor="#663300" Text="Available"></asp:Label>
+                        <asp:Label ID="lblDescr5" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnView3" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblAvailable5" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice5" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating5" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails3" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="8" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                     </td>
                     <td class="auto-style1">
-                        <asp:Image ID="Image9" runat="server" Height="355px" ImageUrl="~/Images/download.jfif" style="text-align: center" Width="435px" />
+                        <asp:Image ID="Image9" runat="server" Height="369px" ImageUrl="~/Images/Zoo.PNG" style="text-align: center" Width="439px" />
                         <br />
-                        <asp:Label ID="lblName4" runat="server" ForeColor="#663300" Text="Uhambo Cape Union Mart"></asp:Label>
+                        <asp:Label ID="lblName6" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
-                        <br />
-                        <asp:Label ID="lblLocation4" runat="server" ForeColor="#663300" Text="Canal Walk Shopping Centre, Century City"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblDescr4" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="Gear up for your African journey. From Table Mountain hikes to Kruger safaris, we have quality outdoor equipment trusted by South Africans for 90 years."></asp:Label>
-                        <br />
-                        <asp:Label ID="lblPrice4" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R1499 Adventure Pack | R2499 Premium Safari Pack"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblAvailable4" runat="server" ForeColor="#663300" Text="Available"></asp:Label>
+                        <asp:Label ID="lblLocation6" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnView4" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        <asp:Label ID="lblDescr6" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable6" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice6" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating6" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails4" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="9" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        <br />
+                        
+                        <br />
+                        <br />
+                        <br />
+                        
                     </td>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style15" colspan="3" >
-                        <asp:LinkButton ID="LnkReadMore" runat="server" OnClick="LnkReadMore_Click">Show More&gt;</asp:LinkButton>
-                        </td>
+                    <td class="auto-style90" colspan="3" >
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     
                     <td class="auto-style8" >
-                        <asp:Image ID="Image10" runat="server" Height="366px" ImageUrl="~/Images/WhatsApp Image 2026-08-25 at 18.52.45.jpeg" style="text-align: center" Width="455px" />
+                        <asp:Image ID="Image10" runat="server" Height="366px" ImageUrl="~/Images/Hikng.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName7" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation7" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr7" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable7" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice7" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating7" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails5" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="10" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
                         </td>
                     
                     <td class="auto-style8" >
-                        <asp:Image ID="Image11" runat="server" Height="378px" ImageUrl="~/Images/South Africa.jfif" style="text-align: center" Width="465px" />
+                        <asp:Image ID="Image11" runat="server" Height="380px" ImageUrl="~/Images/Volleball.PNG" style="text-align: center; margin-bottom: 0px;" Width="437px" />
+                        <br />
+                        <asp:Label ID="lblName8" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation8" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr8" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable8" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice8" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating8" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails6" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="11" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
                         </td>
                     
                     <td class="auto-style8" >
-                        <asp:Image ID="Image12" runat="server" Height="366px" ImageUrl="~/Images/WhatsApp Image 2026-08-25 at 18.52.44.jpeg" style="text-align: center" Width="455px" />
+                        <asp:Image ID="Image12" runat="server" Height="366px" ImageUrl="~/Images/Cycling.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName9" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation9" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr9" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable9" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice9" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating9" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails7" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="12" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
                         </td>
                 </tr>
+                <tr>
+                    
+                    <td class="auto-style9" colspan="3" >
+                        <asp:LinkButton ID="LnkReadMore" runat="server" OnClientClick="return toggleMoreAttractions();" Font-Underline="False" ForeColor="#663300">Show More</asp:LinkButton>
+                        </td>
+
+                    
+                </tr>
+                                <tr id="trMoreAttractions1" runat="server" style="display:none;">
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image13" runat="server" Height="366px" ImageUrl="~/Images/Meuseum.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName10" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation10" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr10" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable10" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice10" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating10" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails8" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="13" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image14" runat="server" Height="366px" ImageUrl="~/Images/RobbenIslad.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName11" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation11" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr11" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable11" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice11" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating11" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails9" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="14" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image15" runat="server" Height="366px" ImageUrl="~/Images/wineFarm.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName12" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation12" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr12" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable12" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice12" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating12" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails10" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="15" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        </td>
+                </tr>
+                
+                                <tr id="trMoreAttractions2" runat="server" style="display:none;">
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image16" runat="server" Height="366px" ImageUrl="~/Images/Bikes.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName13" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation13" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr13" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails11" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="16" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image17" runat="server" Height="366px" ImageUrl="~/Images/penguins.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName14" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation14" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr14" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails12" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="17" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image18" runat="server" Height="366px" ImageUrl="~/Images/SunsetSail.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName15" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation15" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr15" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails13" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="18" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                </tr>
+                
+                                <tr id="trMoreAttractions3" runat="server" style="display:none;">
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image19" runat="server" Height="366px" ImageUrl="~/Images/Airbaloon.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName16" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation16" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr16" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails14" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="19" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image20" runat="server" Height="366px" ImageUrl="~/Images/CoatalCatamaranCruise.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName17" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation17" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr17" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails15" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="20" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image21" runat="server" Height="366px" ImageUrl="~/Images/Concerts.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName18" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation18" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr18" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails16" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="21" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                </tr>
+                
                 </table>
         </div>
         <p>
             &nbsp;</p>
+
     </form>
 </body>
+
+        <script type="text/javascript">
+            function toggleMoreAttractions() {
+
+                var row1 = document.getElementById('<%= trMoreAttractions1.ClientID %>');
+        var row2 = document.getElementById('<%= trMoreAttractions2.ClientID %>');
+        var row3 = document.getElementById('<%= trMoreAttractions3.ClientID %>');
+
+                if (row1.style.display === 'none') {
+                    row1.style.display = '';
+                    row2.style.display = '';
+                    row3.style.display = '';
+                }
+                else {
+                    row1.style.display = 'none';
+                    row2.style.display = 'none';
+                    row3.style.display = 'none';
+                }
+
+                return false;
+            }
+        </script>
+
 </html>
