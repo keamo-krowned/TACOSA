@@ -295,7 +295,7 @@
                 runat="server"
                 Text="LOGIN"
                 CssClass="login-button"
-                PostBackUrl="~/Login.aspx" />
+                PostBackUrl="~/TouristLoginForm.aspx" />
 
         </div>
 
