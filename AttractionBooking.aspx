@@ -9,6 +9,22 @@
 <body style="background-color:lightgoldenrodyellow;">
     <link href="StyleSheet1.css" rel="stylesheet" />
     <form id="form1" runat="server">
+        <asp:SqlDataSource 
+    ID="SqlDataSource1" 
+    runat="server"
+    ConnectionString="<%$ ConnectionStrings:connStr %>"
+    SelectCommand="SELECT AttractionID, AttractionName, AttractionDescription, AttractionLocation, AttractionAvailableYN, PricePerDay, AttractionCellNumber, AttractionEmail, Rating FROM Attractions WHERE AttractionID = @AttractionID">
+
+    <SelectParameters>
+
+        <asp:QueryStringParameter 
+            Name="AttractionID"
+            QueryStringField="id"
+            Type="Int32" />
+
+    </SelectParameters>
+
+</asp:SqlDataSource>
 
         <div>
              <br />

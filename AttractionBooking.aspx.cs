@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Configuration;
+using System.Globalization;
 
 namespace TACOSA
 {
@@ -13,62 +15,40 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
-                LoadAttraction();
-            }
-        }
-        private void LoadAttraction()
-        {
-            string attractionID = Request.QueryString["id"];
+                DataSourceSelectArguments args = new DataSourceSelectArguments();
 
-            if(string.IsNullOrEmpty(attractionID))
-            {
-                return;
-            }
-            string connectionString = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+                DataView data =
+                    SqlDataSource1.Select(args) as DataView;
 
-            string query = @"
-                SELECT *
-                FROM Attractions
-                WHERE AttractionID = @AttractionID";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                if (data != null && data.Count > 0)
                 {
-                    cmd.Parameters.AddWithValue("@AttractionID", attractionID);
+                    lblName.Text = data[0]["AttractionName"].ToString();
 
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    
-                    if(reader.Read())
-                    {
-                        lblName.Text = reader["Name"].ToString();
-                        lblCategory.Text = reader["Category"].ToString();
-                        Rating.Text = reader["Rating"].ToString();
-                        lbldescription.Text = reader["Description"].ToString();
-                        lblLocation.Text = reader["Location"].ToString();
-                        lblAvailable.Text = reader["Available"].ToString();
-                        Image1.ImageUrl = reader["ImageURL"].ToString();
-                    }
+                    lbldescription.Text =
+                        data[0]["AttractionDescription"].ToString();
+
+                    lblLocation.Text =
+                        data[0]["AttractionLocation"].ToString();
+
+                    lblAvailable.Text = Convert.ToBoolean(data[0]["AttractionAvailableYN"]) ? "Yes" : "No";
+
+                    Rating.Text =
+                        data[0]["Rating"].ToString();
+                    lblCategory.Text = 
+                        "R" +
+                        Convert.ToDecimal(data[0]["PricePerDay"])
+                        .ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
+
                 }
             }
         }
 
-
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string attractionID = Request.QueryString["id"];
-            string date = txtDate.Text;
-            string visitors = txtVisitors.Text;
 
-            Response.Redirect("transactionPage.aspx?id=" + attractionID
-                + "&date=" + date
-                + "&visitors=" + visitors);
+            Response.Redirect("transactionPage.aspx");
         }
-
-        
     }
-    
-}   
+}
