@@ -230,7 +230,7 @@
             <asp:HyperLink 
                 ID="lnkMyProfile" 
                 runat="server" 
-                NavigateUrl="~/MyProfile.aspx"
+                NavigateUrl="~/TouristMaintainForm.aspx"
                 Text="MY PROFILE"
                 style="
                     font-family:Georgia, serif; 
