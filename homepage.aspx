@@ -227,22 +227,23 @@
             white-space:nowrap;
         ">
 
-            <asp:HyperLink 
-                ID="lnkMyProfile" 
-                runat="server" 
-                NavigateUrl="~/TouristMaintainForm.aspx"
-                Text="MY PROFILE"
-                style="
-                    font-family:Georgia, serif; 
-                    font-size:17px; 
-                    font-weight:bold; 
-                    color:#6B4226; 
-                    letter-spacing:1px; 
-                    white-space:nowrap;
-                    text-decoration:none;
-                    cursor:pointer;
-                ">
-            </asp:HyperLink>
+
+            <asp:HyperLink  
+    ID="lnkMyProfile"  
+    runat="server"  
+    NavigateUrl="~/TouristMaintainForm.aspx"
+    Text="MY PROFILE" 
+    style="
+        font-family:Georgia, serif;  
+        font-size:17px;  
+        font-weight:bold;  
+        color:#6B4226;  
+        letter-spacing:1px;  
+        white-space:nowrap; 
+        text-decoration:none; 
+        cursor:pointer; 
+    ">
+</asp:HyperLink>
 
         </td>
 
