@@ -22,7 +22,7 @@ namespace TACOSA
                 DataView data =
                     SqlDataSource1.Select(args) as DataView;
 
-                if (data != null && data.Count > 0 )
+                if (data != null && data.Count > 0)
                 {
                     lblName.Text = data[0]["AttractionName"].ToString();
 
