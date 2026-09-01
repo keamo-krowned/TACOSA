@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Globalization;
+using System.Data.SqlClient;
 
 namespace TACOSA
 {
@@ -41,14 +38,11 @@ namespace TACOSA
                         Convert.ToDecimal(data[0]["PricePerDay"])
                         .ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
 
-                }
-            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            Response.Redirect("transactionPage.aspx");
         }
     }
 }

@@ -119,7 +119,26 @@
                             float: left;
                         }
 
-                        </style>
+                        .auto-style15 {
+                            text-align: center;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            height: 26px;
+                            border: thin solid #663300;
+                            background-color: #FFFFCC;
+                        }
+
+                        .auto-style16 {
+                            text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            height: 667px;
+                            background-color: #FFFFFF;
+                            padding: 15px;
+                        }   
+                    </style>
                     
                     <td class="auto-style11" >
                         <br />
@@ -143,6 +162,7 @@
                         <br />
                         <br />
                         <asp:Button ID="btnViewDetails" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="4" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connStr %>" SelectCommand="SELECT [AttractionID], [AttractionName], [AttractionDescription], [AttractionLocation], [AttractionAvailableYN], [PricePerDay], [AttractionCellNumber], [AttractionEmail], [Rating] FROM [Attractions]"></asp:SqlDataSource>
                     </td>
                     <td class="auto-style12">
                         <br />
