@@ -203,12 +203,16 @@ namespace TACOSA
 
         protected void btnViewDetails_Click(object sender, EventArgs e)
         {
-           
+
             Button btn = (Button)sender;
 
             string attractionID = btn.CommandArgument;
 
-            Response.Redirect("AttractionBooking.aspx?id=" + attractionID);
+            Session["AttractionID"] = attractionID;
+
+            Response.Cookies["AttractionID"].Value = attractionID;
+
+            Response.Redirect("AttractionBooking.aspx");
         }
     }
 }
