@@ -28,7 +28,7 @@
 
         <div>
              <br />
-             <asp:Label ID="lblLabel" runat="server" Font-Names="Algerian" Text="TACOSA"></asp:Label>
+             <asp:Label ID="lblLabel" runat="server" Font-Names="Algerian" Text="TACOSA "></asp:Label>
              <br />
              <asp:Image ID="Image1" runat="server" Width="189px" />
         </div>
