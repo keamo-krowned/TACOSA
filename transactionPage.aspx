@@ -68,7 +68,7 @@
                         <asp:Label ID="Label7" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <asp:Label ID="Label9" runat="server" Text="Expiry date:" style="font-size: large; color: #FFFFFF;"></asp:Label>
                         <br />
-                        <asp:Calendar ID="CalExpirydate" runat="server" BackColor="White" BorderColor="Black" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="225px" NextPrevFormat="ShortMonth" Width="547px" BorderStyle="Solid" CellSpacing="1">
+                        <asp:Calendar ID="CalExpirydate" runat="server" BackColor="White" BorderColor="Black" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="225px" NextPrevFormat="ShortMonth" Width="547px" BorderStyle="Solid" CellSpacing="1" ToolTip="ENTER CARD EXPIRY DATE">
                             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
                             <DayStyle BackColor="#CCCCCC" />
                             <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
@@ -77,12 +77,15 @@
                             <TitleStyle BackColor="#333399" Font-Bold="True" Font-Size="12pt" ForeColor="White" BorderStyle="Solid" Height="12pt" />
                             <TodayDayStyle BackColor="#999999" ForeColor="White" />
                         </asp:Calendar>
-                        <br /><br />
+                        <br />
 
                         <asp:Label ID="Label10" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <asp:Label ID="Label11" runat="server" Text="CVV:" style="color: #FFFFFF"></asp:Label>
-                        <br /><br />
+                        <br />
                         <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="23px"></asp:TextBox>
+                        <br />
+
+                        <br /><br />
                         <br />
                         <br /><br />
 
