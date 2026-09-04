@@ -9,12 +9,17 @@
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
         <table style="
-    width:100%;
-    border-collapse:collapse;
-    background-color:#FFF3A3;
-    padding:0;
-    margin:0;
-">
+            width:100%;
+            border-collapse:collapse;
+            background-color:#FFF3A3;
+            padding:0;
+            margin:0;
+
+            .MainContainer{
+                margin: 30px 30px 0px 30px;
+            }
+
+        ">
 
     <tr>
 
@@ -126,8 +131,12 @@
 </table>
 
         <section id ="MainContainer">
+            <asp:Label ID="lblZeroBookings" runat="server" Text="You currently have no bookings."></asp:Label>
+            <div id ="bookingContainer" runat="server">
 
+            </div>
         </section>
+       
     </form>
 </body>
 </html>
