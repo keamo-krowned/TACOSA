@@ -14,7 +14,9 @@
         <table style="width: 100%; height: 334px;">
             <tr>
                 <td colspan="3" style="text-align: center">
-            <asp:Label ID="Label2" runat="server" style="font-size: xx-large" Text="Top 5 accommodations per month:"></asp:Label>
+            <asp:Label ID="lblAccPerMonth" runat="server" style="font-size: xx-large"></asp:Label>
+                    <br />
+                    <asp:Label ID="lblWelcome" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>
