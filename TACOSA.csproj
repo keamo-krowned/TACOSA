@@ -73,11 +73,11 @@
     <Content Include="Accommodations.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
-   
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Acquarium.jpg" />
     <Content Include="Images\Aqua.jpg" />
+    <Content Include="Images\Blue_Star_PNG_Clipart %281%29.png" />
     <Content Include="Images\BoatCuise.PNG" />
     <Content Include="Images\Cycling.PNG" />
     <Content Include="Images\Hikng.PNG" />
@@ -152,7 +152,6 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
-    
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
