@@ -69,8 +69,8 @@
             font-size: x-large;
         }
         .auto-style17 {
-            width: 228px;
-            text-align: right;
+            width: 401px;
+            text-align: center;
             height: 46px;
         }
         .auto-style28 {
@@ -84,12 +84,12 @@
         .auto-style34 {
             font-size: large;
             height: 46px;
-            width: 167px;
+            width: 276px;
         }
         .auto-style35 {
             text-align: center;
             height: 46px;
-            width: 230px;
+            width: 379px;
         }
     </style>
 </head>
@@ -234,7 +234,6 @@
             <tr>
                 <td class="auto-style5" colspan="3">
                             
-                    <br />
                     <asp:Image ID="Image4" runat="server" Height="24px" ImageAlign="Baseline" ImageUrl="~/Images/pngtree-flat-red-location-sign-png-image_8927579.png" Width="25px" />
                     <asp:Label ID="lblAccommodationLocation" runat="server" CssClass="auto-style12"></asp:Label>
                     <br />
@@ -300,16 +299,23 @@
 &nbsp;
                     <asp:DropDownList ID="DropDownList1" runat="server">
                     </asp:DropDownList>
+&nbsp;
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="DropDownList1" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
                     <br />
-                    <asp:Label ID="lblLabel12" runat="server">Adult:</asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblLabel12" runat="server">Adults:</asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList2" runat="server">
                     </asp:DropDownList>
+&nbsp;
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="DropDownList2" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
                     <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList3" runat="server">
                     </asp:DropDownList>
+&nbsp;
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="DropDownList3" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
+                    <br />
                     <br />
                     <br />
                     <asp:Label ID="lblLabel7" runat="server" CssClass="auto-style16">Check In Date:</asp:Label>
