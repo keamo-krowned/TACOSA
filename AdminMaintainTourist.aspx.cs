@@ -151,5 +151,10 @@ namespace TACOSA
                 lblMessage.Text = "Delete did not complete as expected.";
             }
         }
+
+        protected void bntAddNewT_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminAddNewT.aspx");
+        }
     }
 }

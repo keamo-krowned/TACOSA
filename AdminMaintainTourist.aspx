@@ -32,15 +32,15 @@
             text-align: center;
         }
         .auto-style12 {
-            height: 76px;
+            height: 73px;
             width: 157px;
         }
         .auto-style13 {
-            height: 76px;
+            height: 73px;
             width: 202px;
         }
         .auto-style14 {
-            height: 76px;
+            height: 73px;
         }
         .auto-style15 {
             width: 202px;
@@ -48,6 +48,22 @@
         }
         .auto-style16 {
             width: 157px;
+            text-align: center;
+        }
+        .auto-style17 {
+            height: 73px;
+            width: 285px;
+        }
+        .auto-style18 {
+            width: 285px;
+        }
+        .auto-style19 {
+            width: 285px;
+            text-align: center;
+        }
+        .auto-style20 {
+            height: 33px;
+            width: 285px;
             text-align: center;
         }
     </style>
@@ -62,6 +78,7 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style12"></td>
+                <td class="auto-style17"></td>
                 <td class="auto-style13">
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>
                 </td>
@@ -70,6 +87,9 @@
             <tr>
                 <td class="auto-style10">
                     <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Tourists" OnClick="btnViewAll_Click" />
+                </td>
+                <td class="auto-style19">
+                    <asp:Label ID="lblAdd" runat="server" Text="Add New Tourist"></asp:Label>
                 </td>
                 <td class="auto-style15">
                     <asp:Label ID="lblDelete" runat="server" Text="Delete Tourist By ID"></asp:Label>
@@ -80,6 +100,9 @@
             </tr>
             <tr>
                 <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style19">
+                    <asp:Button ID="bntAddNewT" runat="server" BackColor="#663300" ForeColor="White" OnClick="bntAddNewT_Click" Text="Add New Tourist" Width="153px" />
+                </td>
                 <td class="auto-style15">
                     <asp:TextBox ID="txtDelete" runat="server" Width="233px"></asp:TextBox>
                 </td>
@@ -89,6 +112,7 @@
             </tr>
             <tr>
                 <td class="auto-style11"></td>
+                <td class="auto-style20">&nbsp;</td>
                 <td class="auto-style9">
                     <asp:Button ID="btnDelete" runat="server" BackColor="#FFCCCC" ForeColor="Red" Text="Delete Tourst By ID" OnClick="btnDelete_Click" />
                 </td>
@@ -98,11 +122,12 @@
             </tr>
             <tr>
                 <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     <asp:GridView ID="GridView1" runat="server" Height="187px" Width="1068px">
                     </asp:GridView>
                 </td>
