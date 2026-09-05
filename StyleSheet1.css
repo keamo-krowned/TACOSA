@@ -1,0 +1,185 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+form {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+
+    form > div:first-of-type {
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+
+#lblLabel {
+    font-size: 42px;
+    color: #990000;
+}
+
+#Image1 {
+    display: block;
+    margin: 15px auto 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+#lblName {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+#lblCategory {
+    font-size: 16px;
+    color: #555;
+    background-color: #eee;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#Rating {
+    font-size: 16px;
+    color: #7a5b00;
+    font-weight: bold;
+}
+
+
+
+
+
+#Label1,
+#Label2,
+#Label5 {
+    font-size: 24px;
+    color: brown;
+}
+
+#lbldescription {
+    font-size: 16px;
+    line-height: 1.6;
+    display: block;
+    max-width: 800px;
+}
+
+form > div:nth-of-type(2) {
+    background-color: #f7f7f7;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+form > div:nth-of-type(3) {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+#Label3,
+#Label4 {
+    font-weight: bold;
+}
+
+#lblLocation,
+#lblAvailable {
+    margin-left: 6px;
+}
+
+
+
+#Label5 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+form > div:nth-of-type(5) {
+    
+    margin-bottom: 10px;
+}
+
+p, form > div:nth-of-type(6), form > div:nth-of-type(7) {
+    font-size: 16px;
+}
+
+#Label6,
+#Label7 {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+#txtDate,
+#txtVisitors {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 200px;
+}
+
+    #txtDate:focus,
+    #txtVisitors:focus {
+        outline: none;
+        border-color: #990000;
+        box-shadow: 0 0 0 2px rgba(153, 0, 0, 0.15);
+    }
+
+
+
+
+#btnBook {
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+    #btnBook:hover {
+        opacity: 0.85;
+    }
+
+
+
+
+@media (max-width: 600px) {
+
+    #Image1 {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #Label6,
+    #Label7 {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    #txtDate,
+    #txtVisitors {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #btnBook {
+        width: 100% !important;
+    }
+}
+
+.attraction-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px;
+}

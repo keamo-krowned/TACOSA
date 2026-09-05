@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class defualt : System.Web.UI.Page
+    public partial class homepage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,11 +15,6 @@ namespace TACOSA
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
