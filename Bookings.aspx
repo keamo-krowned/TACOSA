@@ -5,6 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style>
+
+        #MainContainer{
+            margin: 30px 120px 0px 120px;
+        }
+
+
+    </style>
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
@@ -15,9 +23,7 @@
             padding:0;
             margin:0;
 
-            .MainContainer{
-                margin: 30px 30px 0px 30px;
-            }
+            
 
         ">
 
