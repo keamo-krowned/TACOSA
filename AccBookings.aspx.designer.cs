@@ -33,15 +33,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTacosa;
 
         /// <summary>
-        /// lblRegister control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRegister;
-
-        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -321,13 +312,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLabel11;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlPeople control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPeople;
 
         /// <summary>
         /// RegularExpressionValidator3 control.
@@ -339,33 +330,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
 
         /// <summary>
-        /// lblLabel12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLabel12;
-
-        /// <summary>
-        /// DropDownList2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
-
-        /// <summary>
-        /// RegularExpressionValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
-
-        /// <summary>
         /// lblLabel13 control.
         /// </summary>
         /// <remarks>
@@ -375,13 +339,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLabel13;
 
         /// <summary>
-        /// DropDownList3 control.
+        /// ddlRooms control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRooms;
 
         /// <summary>
         /// RegularExpressionValidator1 control.
@@ -402,13 +366,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLabel7;
 
         /// <summary>
-        /// Calendar1 control.
+        /// CalendarCheckIN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Calendar CalendarCheckIN;
 
         /// <summary>
         /// lblLabel9 control.
@@ -420,13 +384,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLabel9;
 
         /// <summary>
-        /// Calendar2 control.
+        /// CalendarCheckOUT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        protected global::System.Web.UI.WebControls.Calendar CalendarCheckOUT;
 
         /// <summary>
         /// lblCalculatedPrice control.
@@ -438,12 +402,21 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblCalculatedPrice;
 
         /// <summary>
-        /// Button1 control.
+        /// btnBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnBook;
+
+        /// <summary>
+        /// btnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

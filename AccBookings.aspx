@@ -91,6 +91,12 @@
             height: 46px;
             width: 379px;
         }
+        .auto-style36 {
+            width: 202px;
+        }
+        .auto-style37 {
+            width: 477px;
+        }
     </style>
 </head>
 <body>
@@ -128,19 +134,7 @@
             white-space:nowrap;
         " class="auto-style34">
 
-            <asp:Label
-                ID="lblRegister"
-                runat="server"
-                Text="REGISTER"
-                style="
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                " CssClass="auto-style12">
-            </asp:Label>
-
-        </td>
+            &nbsp;</td>
 
         <td style="
             padding:0 25px;
@@ -295,23 +289,16 @@
                     <strong>&nbsp;<br />
                     <asp:Label ID="lblLabel10" runat="server" CssClass="auto-style16">Select Occupancy:</asp:Label>
                     &nbsp;<br />
-                    <asp:Label ID="lblLabel11" runat="server">Children:</asp:Label>
+                    <asp:Label ID="lblLabel11" runat="server">People:</asp:Label>
 &nbsp;
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="ddlPeople" runat="server">
                     </asp:DropDownList>
 &nbsp;
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="DropDownList1" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
                     <br />
-                    <asp:Label ID="lblLabel12" runat="server">Adults:</asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="DropDownList2" runat="server">
-                    </asp:DropDownList>
-&nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="DropDownList2" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
-                    <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="DropDownList3" runat="server">
+&nbsp;
+                    <asp:DropDownList ID="ddlRooms" runat="server">
                     </asp:DropDownList>
 &nbsp;
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="DropDownList3" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
@@ -320,7 +307,7 @@
                     <br />
                     <asp:Label ID="lblLabel7" runat="server" CssClass="auto-style16">Check In Date:</asp:Label>
                     <br />
-                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <asp:Calendar ID="CalendarCheckIN" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#999999" />
@@ -332,7 +319,7 @@
                     <br />
                     <asp:Label ID="lblLabel9" runat="server" CssClass="auto-style16">Check Out Date:</asp:Label>
                     <br />
-                    <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <asp:Calendar ID="CalendarCheckOUT" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#999999" />
@@ -347,11 +334,14 @@
                     </strong></td>
             </tr>
             <tr>
-                <td>
-                    <asp:Button ID="Button1" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" />
+                <td class="auto-style36">
+                    &nbsp;</td>
+                <td class="auto-style37">
+                    <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" />
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" />
+                </td>
             </tr>
         </table>
              </section>
