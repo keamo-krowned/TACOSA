@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TouristRegister.aspx.cs" Inherits="TACOSA.Register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminAddNewT.aspx.cs" Inherits="TACOSA.AdminAddNewT" %>
 
 <!DOCTYPE html>
 
@@ -6,39 +6,13 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style4 {
-            font-size: x-large;
-        }
-        .auto-style7 {
-            width: 209px;
-            height: 26px;
-        }
-        .auto-style9 {
-            height: 26px;
-            width: 373px;
-        }
-        .auto-style12 {
-            width: 209px;
-            text-align: right;
-        }
-        .auto-style13 {
-            width: 209px;
-            height: 47px;
-            text-align: right;
-        }
+
         .auto-style17 {
             height: 35px;
             text-align: center;
         }
-        .auto-style19 {
-            width: 202px;
-        }
-        .auto-style20 {
-            width: 202px;
-            height: 26px;
-        }
-        .auto-style22 {
-            width: 373px;
+        .auto-style4 {
+            font-size: x-large;
         }
         .auto-style23 {
             text-align: center;
@@ -47,8 +21,17 @@
             height: 26px;
             width: 390px;
         }
-        .auto-style25 {
-            width: 390px;
+        .auto-style7 {
+            width: 209px;
+            height: 26px;
+        }
+        .auto-style20 {
+            width: 202px;
+            height: 26px;
+        }
+        .auto-style9 {
+            height: 26px;
+            width: 373px;
         }
         .auto-style34 {
             width: 390px;
@@ -67,26 +50,14 @@
             width: 373px;
             height: 48px;
         }
-        .auto-style38 {
-            width: 390px;
-            height: 49px;
-        }
-        .auto-style39 {
-            width: 209px;
-            text-align: right;
-            height: 49px;
-        }
-        .auto-style40 {
-            width: 202px;
-            height: 49px;
-        }
-        .auto-style41 {
-            width: 373px;
-            height: 49px;
-        }
         .auto-style42 {
             height: 47px;
             width: 390px;
+        }
+        .auto-style13 {
+            width: 209px;
+            height: 47px;
+            text-align: right;
         }
         .auto-style43 {
             width: 202px;
@@ -113,23 +84,6 @@
             width: 373px;
             height: 218px;
         }
-        .auto-style49 {
-            width: 390px;
-            height: 60px;
-        }
-        .auto-style50 {
-            width: 209px;
-            text-align: right;
-            height: 60px;
-        }
-        .auto-style51 {
-            width: 202px;
-            height: 60px;
-        }
-        .auto-style52 {
-            width: 373px;
-            height: 60px;
-        }
         .auto-style53 {
             width: 390px;
             height: 51px;
@@ -147,7 +101,54 @@
             width: 373px;
             height: 51px;
         }
-    </style>
+        .auto-style38 {
+            width: 390px;
+            height: 49px;
+        }
+        .auto-style39 {
+            width: 209px;
+            text-align: right;
+            height: 49px;
+        }
+        .auto-style40 {
+            width: 202px;
+            height: 49px;
+        }
+        .auto-style41 {
+            width: 373px;
+            height: 49px;
+        }
+        .auto-style49 {
+            width: 390px;
+            height: 60px;
+        }
+        .auto-style50 {
+            width: 209px;
+            text-align: right;
+            height: 60px;
+        }
+        .auto-style51 {
+            width: 202px;
+            height: 60px;
+        }
+        .auto-style52 {
+            width: 373px;
+            height: 60px;
+        }
+        .auto-style25 {
+            width: 390px;
+        }
+        .auto-style12 {
+            width: 209px;
+            text-align: right;
+        }
+        .auto-style19 {
+            width: 202px;
+        }
+        .auto-style22 {
+            width: 373px;
+        }
+        </style>
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
@@ -267,7 +268,7 @@
                 </td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="BtnContinue" runat="server" BackColor="#663300" Text="Continue" Width="142px" OnClick="BtnContinue_Click" ForeColor="White" />
+                    <asp:Button ID="btnAdd" runat="server" BackColor="#663300" ForeColor="White" OnClick="btnAdd_Click" Text="Add New Toruist" Width="124px" />
                 </td>
             </tr>
         </table>

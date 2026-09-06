@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TouristUpdateDetailsForm.aspx.cs" Inherits="TACOSA.TouristUpdateDetailsForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminUpdateTDetails.aspx.cs" Inherits="TACOSA.AdminUpdateTDetails" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,10 @@
     <title></title>
     <style type="text/css">
 
+        .auto-style48 {
+            width: 100%;
+        }
+        
         .auto-style17 {
             height: 35px;
             text-align: center;
@@ -59,9 +63,6 @@
             width: 202px;
             height: 49px;
         }
-        .auto-style48 {
-            width: 100%;
-        }
         .auto-style49 {
             width: 211px;
             text-align: right;
@@ -78,14 +79,14 @@
         }
     </style>
 </head>
-<body style="background-color: #FFF3A3" >
+<body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
         <div>
         </div>
         <table class="auto-style48">
             <tr>
                 <td class="auto-style17" colspan="2"><strong>
-                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="What Information Do You Want To Change?"></asp:Label>
+                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="What Information Do You Want To Change?" ForeColor="#663300"></asp:Label>
                     </strong></td>
             </tr>
             <tr>
@@ -159,7 +160,7 @@
                 <td class="auto-style35">
                     &nbsp;</td>
                 <td class="auto-style51">
-                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Submit Changes" Width="129px" ForeColor="White" />
+                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Submit changes" Width="166px" />
                 </td>
             </tr>
         </table>

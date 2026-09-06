@@ -69,22 +69,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
+    <Content Include="AdminAddNewT.aspx" />
+    <Content Include="AdminMaintainTourist.aspx" />
+    <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="Images\cape-land.jpg" />
+    <Content Include="Images\Landing.png" />
+    <Content Include="LandingPage.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Acquarium.jpg" />
+    <Content Include="Images\Airbaloon.PNG" />
     <Content Include="Images\Aqua.jpg" />
     <Content Include="Images\Blue_Star_PNG_Clipart %281%29.png" />
+    <Content Include="Images\Bikes.PNG" />
     <Content Include="Images\BoatCuise.PNG" />
+    <Content Include="Images\CoatalCatamaranCruise.PNG" />
+    <Content Include="Images\Concerts.PNG" />
     <Content Include="Images\Cycling.PNG" />
     <Content Include="Images\Hikng.PNG" />
     <Content Include="Images\Landing.png" />
     <Content Include="Images\Meuseum.PNG" />
+    <Content Include="Images\penguins.PNG" />
     <Content Include="Images\Profile.PNG" />
     <Content Include="Images\RobbenIslad.PNG" />
+    <Content Include="Images\SunsetSail.PNG" />
     <Content Include="Images\TableMountain.PNG" />
     <Content Include="Images\Villas.PNG" />
     <Content Include="Images\Volleball.PNG" />
@@ -100,6 +113,11 @@
     <Content Include="Images\Aesrhetics 2.jpg" />
     <Content Include="Images\Aesrhetics 3.jpg" />
     <Content Include="Images\ai-generated-ai-generative-city-town-urban-cityscape-from-mountain-high-view-background-adventure-vacation-landscape-vbie-graphic-art-photo.jpg" />
+    <Content Include="Images\Attraction 1.jpg" />
+    <Content Include="Images\attraction 2.jpg" />
+    <Content Include="Images\attraction 3.jpg" />
+    <Content Include="Images\boklaap.jpg" />
+    <Content Include="Images\boulders beach.jpg" />
     <Content Include="Images\Aqua.jpg" />
     <Content Include="Images\Belmond.jpg" />
     <Content Include="Images\CapeGrace.jpg" />
@@ -108,6 +126,10 @@
     <Content Include="Images\gUEST HOUSE.jpg" />
     <Content Include="Images\HOTEL.jpg" />
     <Content Include="Images\Landing.png" />
+    <Content Include="Images\roebn .png" />
+    <Content Include="Images\table mount.jpg" />
+    <Content Include="Images\WATERFRONT.jpg" />
+    <Content Include="Images\wine.jpg" />
     <Content Include="Images\Login.png" />
     <Content Include="Images\SiloHotel.jpg" />
     <Content Include="Images\Twelveon1stHotel.jpg" />
@@ -124,6 +146,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
     <Compile Include="AccBookings.aspx.cs">
       <DependentUpon>AccBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,6 +165,27 @@
     </Compile>
     <Compile Include="Accommodations.aspx.designer.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAddNewT.aspx.cs">
+      <DependentUpon>AdminAddNewT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAddNewT.aspx.designer.cs">
+      <DependentUpon>AdminAddNewT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaintainTourist.aspx.cs">
+      <DependentUpon>AdminMaintainTourist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaintainTourist.aspx.designer.cs">
+      <DependentUpon>AdminMaintainTourist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateTDetails.aspx.cs">
+      <DependentUpon>AdminUpdateTDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateTDetails.aspx.designer.cs">
+      <DependentUpon>AdminUpdateTDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="AttractionBooking.aspx.cs">
       <DependentUpon>AttractionBooking.aspx</DependentUpon>
@@ -162,6 +211,13 @@
     </Compile>
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPage.aspx.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LandingPage.aspx.designer.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TouristLoginForm.aspx.cs">

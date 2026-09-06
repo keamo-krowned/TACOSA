@@ -18,6 +18,25 @@
         .newStyle2 {
             border-style: dotted;
         }
+        table 
+        {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        td 
+        {
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        td img 
+        {
+            max-width: 100%;
+            height: auto;
+        }
         </style>
     <link href="Images/Landing.png" rel="stylesheet" type="text/css" />
 </head>
@@ -43,135 +62,64 @@
                     <style>
                         .auto-style8 {
                             text-align: center;
+                            background-color: #FFFFFF;
+                            border: thin solid #663300;
                             border-radius: 20px;
-                            overflow: hidden;  
+                            overflow: hidden;
                         }
+
                         .auto-style9 {
                             height: 26px;
                             text-align: center;
                         }
-                        .auto-style1 {
-                            background-color: #C0C0C0;
-                        }
+
                         .auto-style1 {
                             background-color: #FFFFFF;
-                        }
-                        .auto-style1 {
-                            border-style: 1;
-                            background-position: center;
-                            border-width: 1px;
-                            padding: 15px;
-                            vertical-align: top;
-                            border-radius: 20px;
-                            overflow: hidden;
-                        }
-                        .auto-style1 {
-                            border-style: solid;
-                            border-color: #C0C0C0;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
+
                         .auto-style11 {
-                            height: 26px;
-                            vertical-align: top;
-                            text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
                             background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            height: 26px;
-                            vertical-align: top;
-                            width: 553px;
                             text-align: center;
-                            border: 1px solid #C0C0C0;
-                            padding: 15px;
-                            background-color: #FFFFFF;
-                            background-position: center;
-                        }
-                        .auto-style12 {
-                            background-color: #FFFFCC;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
-    overflow: hidden;    
-                        }
-                        .newStyle3 {
-                            border-style: 1;
-                            border-width: 1px;
-                            border-color: #663300;
-                            padding: 50px;
-                        }
-                        .auto-style11 {
                             padding: 15px;
-                            margin: 15px;
-                            border-radius: 20px;
-                            overflow: hidden;  
                         }
+
                         .auto-style12 {
                             background-color: #FFFFFF;
+                            text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
                             overflow: hidden;
+                            padding: 15px;
                         }
-                        .newStyle4 {
-                            background-color: #FFFFCC;
-                        }
-                        .auto-style11 {
-                            background-color: #FFFFCC;
-                        }
+
                         .auto-style13 {
                             background-color: #FFFFFF;
                             text-align: center;
+                            vertical-align: top;
+                            border: thin solid #663300;
                             border-radius: 20px;
-                            overflow: hidden;  
+                            overflow: hidden;
+                            padding: 15px;
                         }
-                        .auto-style11 {
-                            background-color: #FFFFFF;
-                        }
+
                         .auto-style14 {
                             width: 1501px;
                             height: 266px;
                             float: left;
                         }
-                        .auto-style13 {
-                            border-color: #800080;
-                        }
-                        .auto-style13 {
-                            border-color: #663300;
-                        }
-                        .auto-style15 {
-                            text-align: center;
-                            border-radius: 20px;
-                            overflow: hidden;
-                            height: 26px;
-                            border-color: #663300;
-                            background-color: #FFFFFF;
-                        }
-                        .auto-style15 {
-                            background-color: #FFFFCC;
-                        }
-                        .auto-style8 {
-                            background-color: #FFFFFF;
-                        }
-                        .auto-style8 {
-                            border-color: #663300;
-                            border-width: 1px;
-                            border-top-style: 1;
-                            border-right-style: 1;
-                            border-bottom-style: 1;
-                            border-left-style: 1;
-                        }
-                        .auto-style8 {
-                            border-spacing: 4px;
-                            border: thin solid #663300;
-                        }
-                        .newStyle5 {
-                            border-style: inherit;
-                            border-width: thin;
-                            border-color: #663300;
-                        }
-                    </style>
+
+                        </style>
                     
                     <td class="auto-style11" >
                         <br />
@@ -194,8 +142,7 @@
                         <asp:Label ID="lblRating1" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cmpg-TacosaProjectConnectionString %>" SelectCommand="SELECT [AttractionID], [AttractionName], [AttractionDescription], [AttractionLocation], [AttractionAvailableYN], [PricePerDay], [AttractionCellNumber], [AttractionEmail], [Rating] FROM [Attractions]"></asp:SqlDataSource>
+                        <asp:Button ID="btnViewDetails" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="4" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                     </td>
                     <td class="auto-style12">
                         <br />
@@ -218,7 +165,7 @@
                         <asp:Label ID="lblRating2" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails0" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails0" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="5" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         <br />
                         <br />
@@ -245,7 +192,7 @@
                         <asp:Label ID="lblRating3" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails1" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails1" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="6" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         <br />
                         <br />
@@ -279,7 +226,7 @@
                         <asp:Label ID="lblRating4" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails2" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails2" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="7" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         <br />
                         <br />
@@ -307,7 +254,7 @@
                         <asp:Label ID="lblRating5" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails3" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails3" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="8" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         <br />
                         <br />
@@ -334,19 +281,19 @@
                         <asp:Label ID="lblRating6" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails4" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails4" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="9" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         <br />
-                        <asp:Label ID="lblPrice4" runat="server" BackColor="#FFFFCC" ForeColor="#663300" Text="R1499 Adventure Pack | R2499 Premium Safari Pack"></asp:Label>
+                        
                         <br />
                         <br />
                         <br />
-                        <asp:Button ID="btnView4" runat="server" BackColor="#663300" BorderColor="#FFFFCC" Font-Overline="False" Font-Size="Medium" ForeColor="White" Text="View Details" />
+                        
                     </td>
                 </tr>
                 <tr>
                     
-                    <td class="auto-style15" colspan="3" >
+                    <td class="auto-style90" colspan="3" >
                         &nbsp;</td>
                 </tr>
                 <tr>
@@ -371,7 +318,7 @@
                         <asp:Label ID="lblRating7" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails5" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails5" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="10" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         </td>
                     
@@ -395,7 +342,7 @@
                         <asp:Label ID="lblRating8" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails6" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails6" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="11" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         </td>
                     
@@ -419,19 +366,19 @@
                         <asp:Label ID="lblRating9" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails7" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails7" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="12" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         </td>
                 </tr>
                 <tr>
                     
                     <td class="auto-style9" colspan="3" >
-                        <asp:LinkButton ID="LnkReadMore" runat="server" OnClientClick="return toggleMoreAttractions();">Show More</asp:LinkButton>
+                        <asp:LinkButton ID="LnkReadMore" runat="server" OnClientClick="return toggleMoreAttractions();" Font-Underline="False" ForeColor="#663300">Show More</asp:LinkButton>
                         </td>
 
                     
                 </tr>
-                                <tr id="trMoreAttractions" runat="server" style="display:none;">
+                                <tr id="trMoreAttractions1" runat="server" style="display:none;">
                     
                     <td class="auto-style8" >
                         <asp:Image ID="Image13" runat="server" Height="366px" ImageUrl="~/Images/Meuseum.PNG" style="text-align: center" Width="455px" />
@@ -453,7 +400,7 @@
                         <asp:Label ID="lblRating10" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails8" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails8" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="13" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         </td>
                     
@@ -477,7 +424,7 @@
                         <asp:Label ID="lblRating11" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails9" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails9" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="14" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
                         </td>
                     
@@ -501,8 +448,153 @@
                         <asp:Label ID="lblRating12" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="btnViewDetails10" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" />
+                        <asp:Button ID="btnViewDetails10" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="15" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         <br />
+                        </td>
+                </tr>
+                
+                                <tr id="trMoreAttractions2" runat="server" style="display:none;">
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image16" runat="server" Height="366px" ImageUrl="~/Images/Bikes.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName13" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation13" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr13" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating13" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails11" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="16" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image17" runat="server" Height="366px" ImageUrl="~/Images/penguins.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName14" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation14" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr14" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating14" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails12" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="17" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image18" runat="server" Height="366px" ImageUrl="~/Images/SunsetSail.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName15" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation15" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr15" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating15" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails13" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="18" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                </tr>
+                
+                                <tr id="trMoreAttractions3" runat="server" style="display:none;">
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image19" runat="server" Height="366px" ImageUrl="~/Images/Airbaloon.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName16" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation16" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr16" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating16" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails14" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="19" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        <br />
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image20" runat="server" Height="366px" ImageUrl="~/Images/CoatalCatamaranCruise.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName17" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation17" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr17" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating17" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails15" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="20" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
+                        </td>
+                    
+                    <td class="auto-style8" >
+                        <asp:Image ID="Image21" runat="server" Height="366px" ImageUrl="~/Images/Concerts.PNG" style="text-align: center" Width="455px" />
+                        <br />
+                        <asp:Label ID="lblName18" runat="server" ForeColor="#663300" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <asp:Label ID="lblLocation18" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblDescr18" runat="server" ForeColor="#663300" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblAvailable18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblPrice18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblRating18" runat="server" ForeColor="#663300" style="font-weight: 700" Text="Label"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="btnViewDetails16" runat="server" BackColor="#663300" ForeColor="White" Height="31px" Text="View Details" Width="129px" CommandArgument="21" OnClick="btnViewDetails_Click" style="border-radius:20px;"/>
                         </td>
                 </tr>
                 
@@ -513,15 +605,27 @@
 
     </form>
 </body>
-</html>
+
         <script type="text/javascript">
             function toggleMoreAttractions() {
-                var row = document.getElementById('<%= trMoreAttractions.ClientID %>');
-                if (row.style.display === 'none') {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
+
+                var row1 = document.getElementById('<%= trMoreAttractions1.ClientID %>');
+        var row2 = document.getElementById('<%= trMoreAttractions2.ClientID %>');
+        var row3 = document.getElementById('<%= trMoreAttractions3.ClientID %>');
+
+                if (row1.style.display === 'none') {
+                    row1.style.display = '';
+                    row2.style.display = '';
+                    row3.style.display = '';
                 }
+                else {
+                    row1.style.display = 'none';
+                    row2.style.display = 'none';
+                    row3.style.display = 'none';
+                }
+
                 return false;
             }
         </script>
+
+</html>

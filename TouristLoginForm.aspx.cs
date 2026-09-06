@@ -15,12 +15,12 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtEmail.Attributes["placeholder"] = "johndoe223@email.com ";
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string connStr = ConfigurationManager.ConnectionStrings["TACOSAConnectionString"].ConnectionString;
+            string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             string emailInput = txtEmail.Text.Trim();
 
@@ -71,6 +71,11 @@ namespace TACOSA
                     }
                 }
             }
+        }
+
+        protected void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

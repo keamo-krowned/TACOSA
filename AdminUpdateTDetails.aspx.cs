@@ -10,19 +10,13 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class TouristUpdateDetailsForm : System.Web.UI.Page
+    public partial class AdminUpdateTDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["TouristID"] == null)
-            {
-                Response.Redirect("TouristLoginForm.aspx");
-                return;
-            }
-
             if (!IsPostBack)
             {
-                int touristId = Convert.ToInt32(Session["TouristID"]);
+                int touristId = Convert.ToInt32(Session["AdminEditTouristID"]);
                 string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
                 string query = @"SELECT t.FirstName, t.LastName, t.DateOfBirth, t.IdentificationDoc, t.TouristEmail, c.CountryName
@@ -55,7 +49,8 @@ namespace TACOSA
                             }
                             else
                             {
-                                lblError.Text = "Could not find your details.";
+                                lblError.Text = "Could not find tourist details.";
+                                btnSubmitChanges.Enabled = false;
                             }
                         }
                     }
@@ -69,11 +64,13 @@ namespace TACOSA
 
         protected void btnSubmitChanges_Click(object sender, EventArgs e)
         {
-            if (Session["TouristID"] == null)
+            if (Session["AdminEditTouristID"] == null)
             {
-                Response.Redirect("TouristLoginForm.aspx");
+                lblError.Text = "No tourist selected.";
                 return;
             }
+
+            int touristId = Convert.ToInt32(Session["AdminEditTouristID"]);
 
             string firstName = txtFName.Text.Trim();
             string lastName = txtLName.Text.Trim();
@@ -88,7 +85,6 @@ namespace TACOSA
                 return;
             }
 
-            int touristId = Convert.ToInt32(Session["TouristID"]);
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             string origQuery = @"SELECT t.FirstName, t.LastName, t.DateOfBirth, t.IdentificationDoc, t.TouristEmail, c.CountryName
@@ -109,35 +105,12 @@ namespace TACOSA
                     {
                         if (reader.Read())
                         {
-                            if (firstName == "")
-                            {
-                                firstName = reader["FirstName"].ToString();
-                            }
-
-                            if (lastName == "")
-                            {
-                                lastName = reader["LastName"].ToString();
-                            }
-
-                            if (country == "")
-                            {
-                                country = reader["CountryName"].ToString();
-                            }
-
-                            if (idDoc == "")
-                            {
-                                idDoc = reader["IdentificationDoc"].ToString();
-                            }
-
-                            if (email == "")
-                            {
-                                email = reader["TouristEmail"].ToString();
-                            }
-
-                            if (dob == DateTime.MinValue)
-                            {
-                                dob = Convert.ToDateTime(reader["DateOfBirth"]);
-                            }
+                            if (firstName == "") firstName = reader["FirstName"].ToString();
+                            if (lastName == "") lastName = reader["LastName"].ToString();
+                            if (country == "") country = reader["CountryName"].ToString();
+                            if (idDoc == "") idDoc = reader["IdentificationDoc"].ToString();
+                            if (email == "") email = reader["TouristEmail"].ToString();
+                            if (dob == DateTime.MinValue) dob = Convert.ToDateTime(reader["DateOfBirth"]);
                         }
                     }
                 }
@@ -165,9 +138,9 @@ namespace TACOSA
                     conn.Open();
                     cmd.ExecuteNonQuery();
 
-                    Session["UpdateMessage"] = "Changes Successful.";
-                    Response.Redirect("TouristMaintainForm.aspx");
-
+                    Session["AdminEditTouristID"] = null;
+                    Session["UpdateMessage"] = "Tourist details updated successfully.";
+                    Response.Redirect("AdminMaintainTourist.aspx");
                 }
                 catch (SqlException ex)
                 {

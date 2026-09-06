@@ -9,6 +9,22 @@
 <body style="background-color:lightgoldenrodyellow;">
     <link href="StyleSheet1.css" rel="stylesheet" />
     <form id="form1" runat="server">
+        <asp:SqlDataSource 
+    ID="SqlDataSource1" 
+    runat="server"
+    ConnectionString="<%$ ConnectionStrings:connStr %>"
+    SelectCommand="SELECT AttractionID, AttractionName, AttractionDescription, AttractionLocation, AttractionAvailableYN, PricePerDay, AttractionCellNumber, AttractionEmail, Rating FROM Attractions WHERE AttractionID = @AttractionID">
+
+    <SelectParameters>
+
+        <asp:QueryStringParameter 
+            Name="AttractionID"
+            QueryStringField="id"
+            Type="Int32" />
+
+    </SelectParameters>
+
+</asp:SqlDataSource>
 
         <div>
              <br />
@@ -86,11 +102,13 @@
 
             <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
             <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the required input before proceeding" ForeColor="Red" ControlToValidate="txtDate"></asp:RequiredFieldValidator>
         </p>
         <div>
 
             <asp:Label ID="Label7" runat="server" Text="Number of visitors:"></asp:Label>
             <asp:TextBox ID="txtVisitors" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtVisitors" ErrorMessage="Please enter the required input before proceeding." ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
 

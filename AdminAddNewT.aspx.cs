@@ -1,49 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace TACOSA
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class AdminAddNewT : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // we want to have placeholder values for ease of use
-            txtFName.Attributes["placeholder"] = "John / Jane ";
-            txtLName.Attributes["placeholder"] = "Doe";
-            txtCOO.Attributes["placeholder"] = "South Africa";
-            txtId.Attributes["placeholder"] = "1234567890123";
-            txtEmail.Attributes["placeholder"] = "JohnDoe@gmail.com";
-        }
-
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void CustomValidatorCalender_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            if (Calendar1.SelectedDate == DateTime.MinValue)
+            if (!IsPostBack)
             {
-                args.IsValid = false;
-            }
-            else if (Calendar1.SelectedDate > DateTime.Today)
-            {
-                args.IsValid = false;
-            }
-            else
-            {
-                args.IsValid = true;
+                txtFName.Attributes["placeholder"] = "John / Jane ";
+                txtLName.Attributes["placeholder"] = "Doe";
+                txtCOO.Attributes["placeholder"] = "South Africa";
+                txtId.Attributes["placeholder"] = "1234567890123";
+                txtEmail.Attributes["placeholder"] = "JohnDoe@gmail.com";
             }
         }
 
-        protected void BtnContinue_Click(object sender, EventArgs e)
+        protected void btnAdd_Click(object sender, EventArgs e)
         {
             if (!Page.IsValid)
             {
@@ -68,26 +49,48 @@ namespace TACOSA
                 {
                     conn.Open();
 
+                    int newTouristId = 0;
+
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            Session["TouristID"] = Convert.ToInt32(reader["NewTouristID"]);
+                            newTouristId = Convert.ToInt32(reader["NewTouristID"]);
                         }
                     }
 
                     string fullName = txtFName.Text.Trim() + " " + txtLName.Text.Trim();
-                    HttpCookie userCookie = new HttpCookie("TouristCookie");
-                    userCookie["Name"] = fullName;
-                    Response.Cookies.Add(userCookie);
 
-                    Response.Redirect("homepage.aspx");
+                    Session["UpdateMessage"] = "Tourist \"" + fullName + "\" (ID: " + newTouristId + ") was added successfully.";
+
+                    Response.Redirect("AdminMaintainTourist.aspx");
                 }
                 catch (SqlException ex)
                 {
                     lblError.Text = ex.Message;
                 }
             }
+        }
+
+        protected void CustomValidatorCalender_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if (Calendar1.SelectedDate == DateTime.MinValue)
+            {
+                args.IsValid = false;
+            }
+            else if (Calendar1.SelectedDate > DateTime.Today)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
