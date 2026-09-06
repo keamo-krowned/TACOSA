@@ -14,6 +14,10 @@
         }
         .auto-style8 {
             height: 29px;
+            margin: 10px 30px;
+            justify-content:center;
+            justify-self:center;
+            width: fit-content;
         }
         .auto-style12 {
             font-size: small;
@@ -294,14 +298,14 @@
                     <asp:DropDownList ID="ddlPeople" runat="server">
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="DropDownList1" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
                     <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlRooms" runat="server">
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="DropDownList3" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
                     <br />
                     <br />
                     <br />
