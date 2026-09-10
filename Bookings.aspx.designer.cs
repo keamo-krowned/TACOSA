@@ -33,31 +33,31 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTacosa;
 
         /// <summary>
-        /// lblAccommadation control.
+        /// hlkAcc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAccommadation;
+        protected global::System.Web.UI.WebControls.HyperLink hlkAcc;
 
         /// <summary>
-        /// lblAttractions control.
+        /// hlkAttractions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAttractions;
+        protected global::System.Web.UI.WebControls.HyperLink hlkAttractions;
 
         /// <summary>
-        /// Label5 control.
+        /// hlkBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.HyperLink hlkBookings;
 
         /// <summary>
         /// MainContainer control.

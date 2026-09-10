@@ -39,32 +39,37 @@
 
 
 
+        .auto-style16 {
+            width: 188px;
+        }
+        .auto-style17 {
+            width: 226px;
+        }
+        .headerLinks{
+            
+             text-decoration:none;
+             font-family:Georgia, serif;
+             font-size:18px;
+             font-weight:bold;
+             color:#6B4226;
+             letter-spacing:1px;
+        }
+        
+
+
     </style>
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
-        <table style="
-            width:100%;
-            border-collapse:collapse;
-            background-color:#FFF3A3;
-            padding:0;
-            margin:0;
 
-            
-
-        ">
+               <table style="width:100%; border-collapse:collapse; background-color:#FFF3A3; margin-bottom:20px;">
 
     <tr>
+        <td colspan="4" style="height:20px;"></td>
+    </tr>
 
-       
-        <td style="
-            width:45%;
-            padding-left:4%;
-            padding-top:25px;
-            padding-bottom:25px;
-            text-align:left;
-            vertical-align:middle;
-        ">
+    <tr>
+        <td colspan="4" style="padding-left:6%; padding-bottom:18px;">
 
             <asp:Label
                 ID="lblTacosa"
@@ -72,90 +77,62 @@
                 Text="TACOSA"
                 style="
                     font-family:Georgia, serif;
-                    font-size:26px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:2px;
-                ">
-            </asp:Label>
-
-            <br />
-            <br />
-
-        </td>
-
-
-       
-        <td style="
-            width:20%;
-            text-align:center;
-            vertical-align:middle;
-        ">
-
-            <asp:Label
-                ID="lblAccommadation"
-                runat="server"
-                Text="ACCOMMODATIONS"
-                style="
-                    font-family:Georgia, serif;
-                    font-size:17px;
+                    font-size:35px;
                     font-weight:bold;
                     color:#6B4226;
                     letter-spacing:1px;
-                    white-space:nowrap;
-                "></asp:Label>
+                "> </asp:Label>
+
+        </td>
+    </tr>
+
+    <tr>
+
+        <td style="
+            text-align:center;
+            padding:0 25px;
+            white-space:nowrap;
+        " class="auto-style16">
+
+            &nbsp;</td>
+
+        <td style="
+            text-align:center;
+            padding:0 25px;
+            white-space:nowrap;
+        " class="auto-style17">
+
+            <asp:HyperLink ID="hlkAcc" runat="server"
+                style="
+    font-family:Georgia, serif;
+    font-size:18px;
+    font-weight:bold;
+    color:#6B4226;
+    letter-spacing:1px;
+" NavigateUrl="Accommodations.aspx"> ACCOMMODATIONS</asp:HyperLink>
 
         </td>
 
-
-      
         <td style="
-            width:17%;
             text-align:center;
-            vertical-align:middle;
+            padding:0 25px;
+            white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="lblAttractions"
-                runat="server"
-                Text="ATTRACTIONS"
-                style="
-                    font-family:Georgia, serif;
-                    font-size:17px;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                    white-space:nowrap;
-                ">
-            </asp:Label>
+            <asp:HyperLink ID="hlkAttractions" runat="server"
+               CssClass ="headerLinks" NavigateUrl="Attractions.aspx"
+                >ATTRACTIONS</asp:HyperLink>
 
         </td>
 
-
         <td style="
-            width:18%;
             text-align:center;
-            vertical-align:middle;
-            padding-right:3%;
+            padding:0 25px;
+            white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="Label5"
-                runat="server"
-                Text="BOOKINGS"
-                style="
-                    display:inline-block;
-                    padding:12px 30px;
-                    border:2px solid #6B4226;
-                    border-radius:30px;
-                    color:white;
-                    background-color:#6B4226;
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    letter-spacing:2px;
-                    white-space:nowrap;
-                " CssClass="auto-style30">
-            </asp:Label>
+            <asp:HyperLink ID="hlkBookings" runat="server"
+                CssClass ="headerLinks">BOOKINGS</asp:HyperLink>
 
         </td>
 
@@ -163,11 +140,23 @@
 
 </table>
 
+
+    </form>
+
+
+        <table style="width:100%; margin-top:50px">
+            <tr>
+            <td>&nbsp;</td>
+            </tr>
+        </table>
+
         <section id ="MainContainer" runat="server">
             <asp:Label ID="lblZeroBookings" runat="server" Text="You currently have no bookings."></asp:Label>
             
         </section>
        
-    </form>
-</body>
+
+      
+
+        </body>
 </html>
