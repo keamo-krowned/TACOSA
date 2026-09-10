@@ -10,7 +10,7 @@
             width: 100%;
         }
         .card-box {
-            background-color: #663300;
+            background-color: #6B4226;
             border-radius: 12px;
             padding: 25px;
             box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
