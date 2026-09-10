@@ -11,6 +11,33 @@
             margin: 30px 120px 0px 120px;
         }
 
+        .cardCss {
+            display: flex;
+            width: 100%;
+            min-height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #c9c5bc;
+        }
+
+        .imgCss {
+            width: 25%;
+           
+        }
+
+        .imgCss img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .bookingTextCss {
+            width: 75%;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+
 
     </style>
 </head>
@@ -138,9 +165,7 @@
 
         <section id ="MainContainer">
             <asp:Label ID="lblZeroBookings" runat="server" Text="You currently have no bookings."></asp:Label>
-            <div id ="bookingContainer" runat="server">
-
-            </div>
+            
         </section>
        
     </form>
