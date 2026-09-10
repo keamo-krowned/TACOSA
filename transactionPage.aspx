@@ -45,10 +45,10 @@
 <body>
     <form id="form1" runat="server">
         <div style="font-size: xx-large; text-align: center; color: #3366FF">
-            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300" Text="SECURE PAYMENT PORTAL" Font-Names="Georgia"></asp:Label>
+            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #6B4226" Text="SECURE PAYMENT PORTAL" Font-Names="Georgia"></asp:Label>
         </div>
         <div style="font-weight: 700; color: #663300; font-size: xx-large; text-align:center;">
-            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#663300" Font-Names="Georgia"></asp:Label>
+            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#6B4226" Font-Names="Georgia"></asp:Label>
         </div>
 
         <table class="auto-style14">
@@ -100,7 +100,7 @@
 
     <OtherMonthDayStyle ForeColor="#999999" />
 
-    <SelectedDayStyle BackColor="#663300" ForeColor="White" />
+    <SelectedDayStyle BackColor="#FFFFFF" ForeColor="White" />
 
     <TitleStyle
         BackColor="#663300"
@@ -184,7 +184,7 @@
 
                         <strong>
 
-                        <asp:Button ID="btnPayment" runat="server" BackColor="#663300" BorderColor="#663300" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" OnClick="btnPayment_Click" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
+                        <asp:Button ID="btnPayment" runat="server" BackColor="#6B4226" BorderColor="#6B4226" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" OnClick="btnPayment_Click" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
                         </strong>
                         </td>
             </tr>
@@ -196,7 +196,7 @@
             <tr>
                 <td style="text-align: center">
                         <strong>
-                        <asp:Button ID="btnCancel" runat="server" BackColor="#663300" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" Width="429px" BorderColor="#663300" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
+                        <asp:Button ID="btnCancel" runat="server" BackColor="#6B4226" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" Width="429px" BorderColor="#6B4226" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
                         </strong>
                     </td>
             </tr>
