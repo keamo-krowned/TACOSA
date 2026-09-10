@@ -30,21 +30,14 @@ namespace TACOSA
                     lblWelcome.Text = "Welcome, Guest!";
                 }
             }
-        } // here we want to load our display method so as soon as the page loads it will display the report
-        Load DisplayAccommodationReport();
+            // call the report display method on initial load
+            DisplayAccommodationReport();
+        }
 
 
         protected void DisplayAccommodationReport()
         {
-            // we want to display our report using sql data and display our information in a chart and table format.
-            try
-            {
-                SqlConnection conn = new SqlConnection("Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;User ID=systemAdmin;Password=***********");
-                conn.Open(); // we then open our sql connection 
-
-                conn.Close(); // close our connection
-            }
-
+           
         }
     }
 }
