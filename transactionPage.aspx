@@ -42,10 +42,10 @@
 <body>
     <form id="form1" runat="server">
         <div style="font-size: xx-large; text-align: center; color: #3366FF">
-            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300" Text="SECURE PAYMENT PORTAL"></asp:Label>
+            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300" Text="SECURE PAYMENT PORTAL" Font-Names="Georgia"></asp:Label>
         </div>
         <div style="font-weight: 700; color: #663300; font-size: xx-large; text-align:center;">
-            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#996633"></asp:Label>
+            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#996633" Font-Names="Georgia"></asp:Label>
         </div>
 
         <table class="auto-style14">
