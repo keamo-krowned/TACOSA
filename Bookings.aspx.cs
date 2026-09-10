@@ -29,7 +29,7 @@ namespace TACOSA
 
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
-            using (SqlConnecetion conn = new SqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand("displayBookings", conn))
@@ -37,7 +37,7 @@ namespace TACOSA
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@TouristID", touristID);
 
-                    using(SqlDataReader read = cmd.ExecuteReader)
+                    using(SqlDataReader read = cmd.ExecuteReader())
                     {
                         if(!read.HasRows)
                         {
@@ -53,18 +53,19 @@ namespace TACOSA
                             int guests = Convert.ToInt16(read["NumOfPeople"].ToString());
                             string inDate = read["CheckInDate"].ToString();
                             string outDate = read["CheckOutDate"].ToString();
-                            decimal price = Convert.ToDecimal(read["TotalPriceCharged"]).ToString();
+                            decimal price = Convert.ToDecimal(read["TotalPriceCharged"]);
                             string imgPath = read["ImagePath2"].ToString();
                             
 
                             //create the booking card dynamically
                             HtmlGenericControl bookingCard = new HtmlGenericControl("div");
-                            Card.Attributes["class"] = "CardCss";
+                            bookingCard.Attributes["class"] = "CardCss";
 
                             //make an image section in the div
                             HtmlGenericControl bookingImg = new HtmlGenericControl("div");
-                            imgSec.Attributes["class"] = "imgCss";
-                            imgSec.Controls.Add(Image);
+                            Image smallPic = new Image();
+                            bookingImg.Attributes["class"] = "imgCss";
+                            bookingImg.Controls.Add(smallPic);
                             bookingImg.Attributes["src"] = imgPath;
 
                             //then add the details 

@@ -163,7 +163,7 @@
 
 </table>
 
-        <section id ="MainContainer">
+        <section id ="MainContainer" runat="server">
             <asp:Label ID="lblZeroBookings" runat="server" Text="You currently have no bookings."></asp:Label>
             
         </section>
