@@ -45,6 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,6 +75,7 @@
     <Content Include="Accommodations.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="attractionsReports.aspx" />
     <Content Include="default.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="Images\Acquarium.jpg" />
@@ -165,6 +167,13 @@
     </Compile>
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="attractionsReports.aspx.cs">
+      <DependentUpon>attractionsReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attractionsReports.aspx.designer.cs">
+      <DependentUpon>attractionsReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

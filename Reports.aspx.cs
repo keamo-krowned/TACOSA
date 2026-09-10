@@ -30,7 +30,7 @@ namespace TACOSA
             }
             else if (RadioButton2.Checked)
             {
-                Response.Redirect("attractionReports.aspx");
+                Response.Redirect("attractionsReports.aspx");
             }
         }
 
