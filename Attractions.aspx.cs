@@ -13,20 +13,25 @@ namespace TACOSA
     public partial class Attractions : System.Web.UI.Page
     {
         SqlConnection con;
+        SqlCommand cmd;
         SqlDataAdapter adap;
-        SqlDataReader rd;
         DataSet ds;
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                string conStr = @"Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;User ID=systemAdmin;Password=LetsgoTacosa77;Encrypt=True;TrustServerCertificate=True";
+                string conStr = @"Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;Persist Security Info=True;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True";
+
                 con = new SqlConnection(conStr);
 
                 string query = "SELECT * FROM Attractions";
 
                 adap = new SqlDataAdapter(query, con);
+
                 DataTable dt = new DataTable();
+
                 adap.Fill(dt);
 
 
@@ -52,7 +57,8 @@ namespace TACOSA
                     lblName18
                 };
 
-                Label[] descriptions =                     {
+                Label[] descriptions =                     
+                {
                     lblDescr1,
                     lblDescr2,
                     lblDescr3,
@@ -70,10 +76,11 @@ namespace TACOSA
                     lblDescr15,
                     lblDescr16,
                     lblDescr17,
-                    lblDescr18  
+                    lblDescr18
                 };
 
-                Label[] locations =                     {
+                Label[] locations =                     
+                {
                     lblLocation1,
                     lblLocation2,
                     lblLocation3,
@@ -94,7 +101,8 @@ namespace TACOSA
                     lblLocation18
                 };
 
-                Label[] ratings =                     {
+                Label[] ratings =                     
+                {
                     lblRating1,
                     lblRating2,
                     lblRating3,
@@ -115,7 +123,8 @@ namespace TACOSA
                     lblRating18
                 };
 
-                Label[] prices =                     {
+                Label[] prices =                     
+                {
                     lblPrice1,
                     lblPrice2,
                     lblPrice3,
@@ -130,12 +139,13 @@ namespace TACOSA
                     lblPrice12,
                     lblPrice13,
                     lblPrice14,
-                    lblRating15,
-                    lblRating16,
+                    lblPrice15,
+                    lblPrice16,
                     lblPrice17,
                     lblPrice18
                 };
-                Label[] availabilities =                     {
+                Label[] availabilities =
+                {
                     lblAvailable1,
                     lblAvailable2,
                     lblAvailable3,
@@ -156,7 +166,7 @@ namespace TACOSA
                     lblAvailable18
                 };
 
-                for(int i = 0; i < dt.Rows.Count && i < names.Length; i++)
+                for (int i = 0; i < dt.Rows.Count && i < names.Length; i++)
                 {
                     names[i].Text = dt.Rows[i]["AttractionName"].ToString();
                     descriptions[i].Text = dt.Rows[i]["AttractionDescription"].ToString();
@@ -165,7 +175,7 @@ namespace TACOSA
                     prices[i].Text = "R" + Convert.ToDecimal(dt.Rows[i]["PricePerDay"]).ToString("0.00") + " /day";
                     if (Convert.ToBoolean(dt.Rows[i]["AttractionAvailableYN"]))
                     {
-                            
+
                         availabilities[i].Text = "Available";
                     }
                     else
@@ -174,7 +184,6 @@ namespace TACOSA
                     }
                 }
 
-                }
             }
         
         
@@ -184,7 +193,7 @@ namespace TACOSA
         }
 
          
-
+        
         protected void btnView_Click(object sender, EventArgs e)
         {
 

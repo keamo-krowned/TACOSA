@@ -1,45 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Globalization;
 
 namespace TACOSA
 {
     public partial class AttractionBooking : System.Web.UI.Page
     {
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataAdapter adap;
+        DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                DataSourceSelectArguments args = new DataSourceSelectArguments();
+                string conStr = @"Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;Persist Security Info=True;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True";
 
-                DataView data =
-                    SqlDataSource1.Select(args) as DataView;
+                con = new SqlConnection(conStr);
 
-                if (data != null && data.Count > 0)
+                string query = "SELECT * FROM Attractions";
+
+                adap = new SqlDataAdapter(query, con);
+
+                DataTable dt = new DataTable();
+
+                adap.Fill(dt);
+
+                if (dt.Rows != null && dt.Rows.Count > 0)
                 {
-                    lblName.Text = data[0]["AttractionName"].ToString();
+                    lblName.Text = dt.Rows[0]["AttractionName"].ToString();
 
                     lbldescription.Text =
-                        data[0]["AttractionDescription"].ToString();
+                        dt.Rows[0]["AttractionDescription"].ToString();
 
                     lblLocation.Text =
-                        data[0]["AttractionLocation"].ToString();
+                        dt.Rows[0]["AttractionLocation"].ToString();
 
-                    lblAvailable.Text = Convert.ToBoolean(data[0]["AttractionAvailableYN"]) ? "Yes" : "No";
+                    lblAvailable.Text = Convert.ToBoolean(dt.Rows[0]["AttractionAvailableYN"]) ? "Yes" : "No";
 
                     Rating.Text =
-                        data[0]["Rating"].ToString();
-                    lblCategory.Text = 
-                        "R" +
-                        Convert.ToDecimal(data[0]["PricePerDay"])
-                        .ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
+                        dt.Rows[0]["Rating"].ToString();
+                    //lblCategory.Text =
+                        //"R" +
+                        //Convert.ToDecimal(dt.Rows[0]["PricePerDay"])
+                        //.ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
+                }
+            }
 
                 }
             }
