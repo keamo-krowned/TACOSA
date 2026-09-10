@@ -11,7 +11,7 @@ namespace TACOSA
 {
 
 
-    public partial class AttractionBooking
+    public partial class confirmationPage
     {
 
         /// <summary>
@@ -24,60 +24,6 @@ namespace TACOSA
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// SqlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
-        /// lblLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLabel;
-
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-
-        /// <summary>
-        /// lblName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
-
-        /// <summary>
-        /// lblCategory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCategory;
-
-        /// <summary>
-        /// Rating control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Rating;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -85,15 +31,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// lbldescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbldescription;
 
         /// <summary>
         /// Label2 control.
@@ -105,6 +42,24 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
+        /// lblConfirmMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConfirmMessage;
+
+        /// <summary>
+        /// ImageButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+
+        /// <summary>
         /// Label3 control.
         /// </summary>
         /// <remarks>
@@ -114,13 +69,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// lblLocation control.
+        /// lblACCname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocation;
+        protected global::System.Web.UI.WebControls.Label lblACCname;
 
         /// <summary>
         /// Label4 control.
@@ -132,13 +87,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// lblAvailable control.
+        /// lblAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAvailable;
+        protected global::System.Web.UI.WebControls.Label lblAddress;
 
         /// <summary>
         /// Label5 control.
@@ -150,6 +105,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
+        /// lblContactInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblContactInfo;
+
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -159,57 +123,30 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// txtDate control.
+        /// lblBookingID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDate;
+        protected global::System.Web.UI.WebControls.Label lblBookingID;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// btnNextBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.Button btnNextBooking;
 
         /// <summary>
-        /// Label7 control.
+        /// btnClose control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
-
-        /// <summary>
-        /// txtVisitors control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVisitors;
-
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-
-        /// <summary>
-        /// btnBook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBook;
+        protected global::System.Web.UI.WebControls.Button btnClose;
     }
 }

@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 
+
 namespace TACOSA
 {
     public partial class Attractions : System.Web.UI.Page
@@ -184,7 +185,7 @@ namespace TACOSA
                 }
 
             }
-        }
+        
         
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -211,6 +212,7 @@ namespace TACOSA
 
         protected void btnViewDetails_Click(object sender, EventArgs e)
         {
+
             Button btn = (Button)sender;
 
             string attractionID = btn.CommandArgument;

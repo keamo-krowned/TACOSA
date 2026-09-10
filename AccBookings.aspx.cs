@@ -32,6 +32,7 @@ namespace TACOSA
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
+             
                 using (SqlCommand cmd = new SqlCommand("GetAccForAccBooking", conn))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -41,6 +42,7 @@ namespace TACOSA
                     {
                         if(reader.Read())
                         {
+
                             //top section
                             img1.ImageUrl = reader["ImagePath"].ToString();
                             img2.ImageUrl = reader["ImagePath2"].ToString();

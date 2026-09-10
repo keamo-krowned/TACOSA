@@ -69,15 +69,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtCardNO;
 
         /// <summary>
-        /// Label14 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
-
-        /// <summary>
         /// Label5 control.
         /// </summary>
         /// <remarks>
@@ -159,13 +150,85 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtCVVNumber;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// Label14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.Label Label14;
+
+        /// <summary>
+        /// lblMerchantName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMerchantName;
+
+        /// <summary>
+        /// lblBooking control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBooking;
+
+        /// <summary>
+        /// lblCheckin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCheckin;
+
+        /// <summary>
+        /// lblCheckout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCheckout;
+
+        /// <summary>
+        /// lblBookID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBookID;
+
+        /// <summary>
+        /// lblPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrice;
+
+        /// <summary>
+        /// lblServicefee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblServicefee;
+
+        /// <summary>
+        /// lblGrandTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGrandTotal;
 
         /// <summary>
         /// btnPayment control.
@@ -186,12 +249,12 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label12;
 
         /// <summary>
-        /// Button1 control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }
