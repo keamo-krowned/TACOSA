@@ -135,7 +135,7 @@
                     <asp:Button ID="btnrequest" runat="server" BackColor="#339933" OnClick="Button1_Click" Text="Request Reports" ToolTip="click to generate report:" />
                     <br />
                     <br />
-                    <asp:Button ID="btnCancel" runat="server" BackColor="Red" OnClick="btnCancel_Click" Text="cancel request" ToolTip="click to cancel request" Width="140px" />
+                    <asp:Button ID="btnCancel" runat="server" BackColor="Red" OnClick="btnCancel_Click" Text="cancel request" ToolTip="click to cancel request" Width="183px" />
                     <br />
                     <br />
                 </td>
