@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FF6600">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FFF3A3">
 <head runat="server">
     <title></title>
 </head>

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FF9933">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FFF3A3">
 <head runat="server">
     <title></title>
     <style type="text/css">
@@ -63,7 +63,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
         <div style="text-align: center">
             <asp:Label ID="Label1" runat="server" style="font-size: xx-large; font-weight: 700" Text="TACOSA- WHERE BEAUTY MEETS ADVENTURE....."></asp:Label>
