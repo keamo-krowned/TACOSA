@@ -90,7 +90,6 @@ namespace TACOSA
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                         cmd.Parameters.AddWithValue("@TouristID", touristID);
-                        cmd.Parameters.AddWithValue("@BookingType", "Accommodation");
                         cmd.Parameters.AddWithValue("@AccommodationID", accommodationID);
                         cmd.Parameters.AddWithValue("@TotalPriceCharged", totalPriceCharged);
                         cmd.Parameters.AddWithValue("@NumOfPeople", numOfPeople);
