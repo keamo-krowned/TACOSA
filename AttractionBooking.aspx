@@ -30,6 +30,9 @@
 </style>
 </head>
 <body style="background-color:#FFF3A3;">
+            <p>
+                <br />
+            </p>
             <table style="
     width:100%;
     border-collapse:collapse;
@@ -63,8 +66,7 @@
                     cursor:pointer;
                     white-space:nowrap;
                 "
-                onclick="window.location.href='homepage.aspx';">
-            </asp:Label>
+                onclick="window.location.href='homepage.aspx';"> </asp:Label>
 
         </td>
 
@@ -91,8 +93,7 @@
                     white-space:nowrap;
                     text-decoration:none;
                     cursor:pointer;
-                ">
-            </asp:HyperLink>
+                "> </asp:HyperLink>
 
         </td>
 
@@ -119,8 +120,7 @@
                     white-space:nowrap;
                     text-decoration:none;
                     cursor:pointer;
-                ">
-            </asp:HyperLink>
+                "> </asp:HyperLink>
 
         </td>
 
@@ -147,8 +147,7 @@
                     white-space:nowrap;
                     text-decoration:none;
                     cursor:pointer;
-                ">
-            </asp:HyperLink>
+                "> </asp:HyperLink>
 
         </td>
 
@@ -179,8 +178,7 @@
                     white-space:nowrap;
                     cursor:pointer;
                 "
-                onclick="window.location.href='Bookings.aspx';">
-            </asp:Label>
+                onclick="window.location.href='Bookings.aspx';"> </asp:Label>
 
         </td>
 
