@@ -68,14 +68,13 @@
         }
         .auto-style27 {
             text-align: left;
-        }
-        .auto-style32 {
-            font-size: x-large;
+            height: 54px;
         }
         .auto-style17 {
             width: 401px;
             text-align: center;
             height: 46px;
+            background-color: #663300;
         }
         .auto-style28 {
             text-align: center;
@@ -101,6 +100,20 @@
         .auto-style37 {
             width: 477px;
         }
+        .auto-style39 {
+            font-size: medium;
+            text-decoration: none;
+        }
+        .auto-style40 {
+            font-size: x-large;
+            text-decoration: none;
+        }
+        .auto-style41 {
+            font-size: medium;
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #663300;
+        }
     </style>
 </head>
 <body>
@@ -114,17 +127,9 @@
     <tr>
         <td colspan="5" style="padding-left:6%; padding-bottom:18px;" class="auto-style27">
 
-            <asp:Label
-                ID="lblTacosa"
-                runat="server"
-                Text="TACOSA"
-                style="
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                " CssClass="auto-style32">
-            </asp:Label>
+            <strong>
+            <asp:HyperLink ID="HyperLinkTACOSA" runat="server" CssClass="auto-style40" ForeColor="#663300" NavigateUrl="~/homepage.aspx">TACOSA</asp:HyperLink>
+            </strong>
 
         </td>
     </tr>
@@ -138,29 +143,16 @@
             white-space:nowrap;
         " class="auto-style34">
 
-            &nbsp;</td>
+            </td>
 
         <td style="
             padding:0 25px;
             white-space:nowrap;
         " class="auto-style17">
 
-            <asp:Label
-                ID="Label6"
-                runat="server"
-                Text="Accommodations"
-                style="
-                    display:inline-block;
-                    padding:12px 32px;
-                    border:2px solid #6B4226;
-                    border-radius:30px;
-                    color:white;
-                    background-color:#6B4226;
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    letter-spacing:2px;
-                    white-space:nowrap;
-                " CssClass="auto-style12"></asp:Label>
+            <strong>
+            <asp:HyperLink ID="HyperLinkAttractions0" runat="server" CssClass="auto-style41" ForeColor="White" NavigateUrl="~/Accommodations.aspx">ACCOMMODATIONS</asp:HyperLink>
+            </strong>
 
         </td>
 
@@ -169,17 +161,9 @@
             white-space:nowrap;
         " class="auto-style35">
 
-            <asp:Label
-                ID="lblAttractions"
-                runat="server"
-                Text="ATTRACTIONS"
-                style="
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                " CssClass="auto-style12">
-            </asp:Label>
+            <strong>
+            <asp:HyperLink ID="HyperLinkAttractions" runat="server" CssClass="auto-style39" ForeColor="#663300" NavigateUrl="~/Attractions.aspx">ATTRACTIONS</asp:HyperLink>
+            </strong>
 
         </td>
 
@@ -188,16 +172,9 @@
             white-space:nowrap;
         " class="auto-style28">
 
-            <asp:Label
-                ID="lblAttractions0"
-                runat="server"
-                Text="BOOKINGS"
-                style="
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    color:#6B4226;
-                    letter-spacing:1px;
-                " CssClass="auto-style12"></asp:Label>
+            <strong>
+            <asp:HyperLink ID="HyperLinkBookings" runat="server" CssClass="auto-style39" ForeColor="#663300" NavigateUrl="~/Bookings.aspx">BOOKINGS</asp:HyperLink>
+            </strong>
 
         </td>
 
@@ -296,37 +273,16 @@
                     <asp:Label ID="lblLabel11" runat="server">People:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlPeople" runat="server">
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
                     <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlRooms" runat="server">
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
-                        <asp:ListItem></asp:ListItem>
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
                     <br />
                     <br />
                     <br />
@@ -365,7 +321,7 @@
                     <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" OnClick="btnBook_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" />
+                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" OnClick="btnCancel_Click" />
                 </td>
             </tr>
         </table>

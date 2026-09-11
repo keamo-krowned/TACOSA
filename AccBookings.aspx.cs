@@ -62,6 +62,25 @@ namespace TACOSA
                             //Contact Details
                             lblAccCellNumber.Text = reader["AccommodationCellNumber"].ToString();
                             lblAccEmail.Text = reader["AccommodationEmail"].ToString();
+
+                            int maxPeople = int.Parse(reader["CapacityPerRoom"].ToString());
+                            int maxRooms = int.Parse(reader["RoomsAvailable"].ToString());
+
+                            //Clear static dropdown items
+                            ddlPeople.Items.Clear();
+                            ddlRooms.Items.Clear();
+
+                            //Populate People DDList
+                            for (int i = 1; i <= maxPeople; i++)
+                            {
+                                ddlPeople.Items.Add(new ListItem(i.ToString(), i.ToString()));
+                            }
+
+                            //Populate Rooms DDList
+                            for (int i = 1; i <= maxRooms; i++)
+                            {
+                                ddlRooms.Items.Add(new ListItem(i.ToString(), i.ToString()));
+                            }
                         }
                     }
                 }
@@ -72,14 +91,26 @@ namespace TACOSA
         {
             try
             {
-                // converting data using Parse
-                int touristID = int.Parse(Session["TouristID"]?.ToString() ?? "1");
+                // Parse conversion
+                int touristID = 1;
+                if (Session["TouristID"] != null)
+                {
+                    touristID = int.Parse(Session["TouristID"].ToString());
+                }
                 int accommodationID = int.Parse(Request.QueryString["id"]);
                 int numOfPeople = int.Parse(ddlPeople.SelectedValue);
                 int numOfRooms = int.Parse(ddlRooms.SelectedValue);
                 DateTime checkInDate = CalendarCheckIN.SelectedDate;
                 DateTime checkOutDate = CalendarCheckOUT.SelectedDate;
-                decimal totalPriceCharged = decimal.Parse(lblCalculatedPrice.Text.Replace("R", "").Trim());
+
+                // Calculate total days
+                int totalDays = (checkOutDate - checkInDate).Days;
+
+                // Get price per night from Session
+                decimal pricePerNight = Convert.ToDecimal(Session["PricePerNight"]);
+
+                // Calculate total price
+                decimal totalPriceCharged = totalDays * numOfRooms * pricePerNight;
 
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
@@ -88,8 +119,9 @@ namespace TACOSA
                     using (SqlCommand cmd = new SqlCommand("createAccBooking", conn))
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
+                        //insert data into the database using the stored procedure
                         cmd.Parameters.AddWithValue("@TouristID", touristID);
+                        cmd.Parameters.AddWithValue("@BookingType", "Accommodation");
                         cmd.Parameters.AddWithValue("@AccommodationID", accommodationID);
                         cmd.Parameters.AddWithValue("@TotalPriceCharged", totalPriceCharged);
                         cmd.Parameters.AddWithValue("@NumOfPeople", numOfPeople);
@@ -101,27 +133,29 @@ namespace TACOSA
 
                         if (result != null)
                         {
-                            string script = "alert('Booking completed successfully!');";
-                            ScriptManager.RegisterStartupScript(this, GetType(), "BookingSuccess", script, true);
+                            // Redirect to the transaction page with the booking ID to process payments
+                            Session["BookingID"] = int.Parse(result.ToString());
+
+                            Response.Redirect("TransactionPage.aspx");
                         }
                     }
                 }
             }
-            catch (SqlException ex) //try-catch exception handling for database errors
+            catch (SqlException) //SQL error and exception handling
             {
-                lblCalculatedPrice.Text = "Database Error: " + ex.Message;
-                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
+                lblCalculatedPrice.Text = "A database error occurred. Please try again.";
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
             }
-            catch (FormatException ex)
+            catch (Exception)
             {
-                lblCalculatedPrice.Text = "Format Error: Please ensure all selection fields are valid.";
-                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
+                lblCalculatedPrice.Text = "An error occurred while processing your booking. Please check your inputs.";
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon; //maroon colour for errors specifically
             }
-            catch (Exception ex)
-            {
-                lblCalculatedPrice.Text = "Error: " + ex.Message;
-                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
-            }
+        }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Accommodations.aspx"); //redirects back to the accommodations page when you click cancel
         }
     }
 }
