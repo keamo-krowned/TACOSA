@@ -11,7 +11,7 @@ namespace TACOSA
 {
 
 
-    public partial class defualt
+    public partial class Bookings
     {
 
         /// <summary>
@@ -24,66 +24,57 @@ namespace TACOSA
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblTitle control.
+        /// lblTacosa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Label lblTacosa;
 
         /// <summary>
-        /// Image1 control.
+        /// hlkAcc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.HyperLink hlkAcc;
 
         /// <summary>
-        /// ListBox1 control.
+        /// hlkAttractions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.HyperLink hlkAttractions;
 
         /// <summary>
-        /// Label1 control.
+        /// hlkBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.HyperLink hlkBookings;
 
         /// <summary>
-        /// Btn1 control.
+        /// MainContainer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MainContainer;
 
         /// <summary>
-        /// btn2 control.
+        /// lblZeroBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn2;
-
-        /// <summary>
-        /// bnt3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bnt3;
+        protected global::System.Web.UI.WebControls.Label lblZeroBookings;
     }
 }
