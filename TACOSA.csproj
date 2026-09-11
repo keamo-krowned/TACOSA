@@ -45,6 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -77,6 +78,8 @@
     <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="ChatBot.aspx" />
+    <Content Include="ChatbotButton.ascx" />
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Images\cape-land.jpg" />
@@ -153,7 +156,7 @@
     </Compile>
     <Compile Include="Bookings.aspx.designer.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
-	  </Compile>
+    </Compile>
     <Compile Include="AccBookings.aspx.cs">
       <DependentUpon>AccBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +206,20 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChatBot.aspx.cs">
+      <DependentUpon>ChatBot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatBot.aspx.designer.cs">
+      <DependentUpon>ChatBot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatbotButton.ascx.cs">
+      <DependentUpon>ChatbotButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatbotButton.ascx.designer.cs">
+      <DependentUpon>ChatbotButton.ascx</DependentUpon>
+    </Compile>
     <Compile Include="confirmationPage.aspx.cs">
       <DependentUpon>confirmationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +231,7 @@
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="GroqChatBot.cs" />
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

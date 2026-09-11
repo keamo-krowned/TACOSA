@@ -1,4 +1,4 @@
-﻿
+﻿<%@ Register Src="~/ChatbotButton.ascx" TagPrefix="TACOSA" TagName="ChatbotButton" %>
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="TACOSA.homepage" %>
 
 <!DOCTYPE html>
@@ -1054,7 +1054,7 @@
 
 
 
-
+        <TACOSA:ChatbotButton ID="ChatbotButton1" runat="server" />
     </form>
     </body>
 </html>
