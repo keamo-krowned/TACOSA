@@ -112,14 +112,17 @@
                 NavigateUrl="~/Attractions.aspx"
                 Text="ATTRACTIONS"
                 style="
-                    font-family:Georgia, serif; 
-                    font-size:17px; 
-                    font-weight:bold; 
-                    color:#6B4226; 
-                    letter-spacing:1px; 
-                    white-space:nowrap;
-                    text-decoration:none;
-                    cursor:pointer;
+                display:inline-block;
+                padding:12px 30px;
+                border:2px solid #6B4226;
+                border-radius:30px;
+                color:white;
+                background-color:#6B4226;
+                font-family:Georgia, serif;
+                font-weight:bold;
+                letter-spacing:2px;
+                white-space:nowrap;
+                cursor:pointer;
                 "> </asp:HyperLink>
 
         </td>
@@ -166,17 +169,14 @@
                 runat="server"
                 Text="BOOKINGS"
                 style="
-                    display:inline-block;
-                    padding:12px 30px;
-                    border:2px solid #6B4226;
-                    border-radius:30px;
-                    color:white;
-                    background-color:#6B4226;
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    letter-spacing:2px;
-                    white-space:nowrap;
-                    cursor:pointer;
+                font-family:Georgia, serif; 
+                font-size:17px; 
+                font-weight:bold; 
+                color:#6B4226; 
+                letter-spacing:1px; 
+                white-space:nowrap;
+                text-decoration:none;
+                cursor:pointer;
                 "
                 onclick="window.location.href='Bookings.aspx';"> </asp:Label>
 
