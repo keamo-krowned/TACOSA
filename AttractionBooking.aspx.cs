@@ -78,14 +78,21 @@ namespace TACOSA
         }
         protected void btnBook_Click(object sender, EventArgs e)
         {
-            // 1. Check if the page validations passed
+           
             if (Page.IsValid)
             {
-                // Getting the id again
-                string id = Session["AttractionID"] as string;
-                if (string.IsNullOrEmpty(id))
+                string attractionId = Session["AttractionID"] as string;
+                if (string.IsNullOrEmpty(attractionId))
                 {
                     Response.Redirect("Attractions.aspx");
+                    return;
+                }
+
+                // getting the cookies
+                string touristId = Session["TouristID"] as string;
+                if (string.IsNullOrEmpty(touristId))
+                {
+                    Response.Write("<script>alert('You must be logged in to book.');</script>");
                     return;
                 }
 
@@ -95,17 +102,16 @@ namespace TACOSA
                 {
                     con.Open();
 
-                    // Get the inputs from the textboxes
+                    // Get the inputs
                     DateTime bookingDate = Convert.ToDateTime(txtDate.Text);
                     int numOfPeople = Convert.ToInt32(txtVisitors.Text);
 
-                    // 2. Get the PricePerDay for this attraction
+                    // Get the PricePerDay
                     decimal pricePerPerson = 0;
                     string priceQuery = "SELECT PricePerDay FROM Attractions WHERE AttractionID = @AttractionID";
-
                     using (SqlCommand priceCmd = new SqlCommand(priceQuery, con))
                     {
-                        priceCmd.Parameters.AddWithValue("@AttractionID", id);
+                        priceCmd.Parameters.AddWithValue("@AttractionID", attractionId);
                         object result = priceCmd.ExecuteScalar();
                         if (result != null)
                         {
@@ -113,29 +119,36 @@ namespace TACOSA
                         }
                     }
 
-                    // Calculate the total cost
                     decimal totalPrice = pricePerPerson * numOfPeople;
 
-                    // 3. GENERATE A NEW UNIQUE BOOKING ID
-                    int newBookingID = 1;
-                    string maxIdQuery = "SELECT ISNULL(MAX(BookingID), 0) + 1 FROM AttractionBookings";
+                    // creating the booking id part 
+                    int newBookingID = 0;
 
-                    using (SqlCommand maxIdCmd = new SqlCommand(maxIdQuery, con))
+                    
+                    string insertMainBookingQuery = @"
+                        INSERT INTO Bookings (TouristID, BookingType, BookingStatus) 
+                        VALUES (@TouristID, 'Attraction', 'Confirmed');
+                        SELECT SCOPE_IDENTITY();";
+
+                    using (SqlCommand cmdBooking = new SqlCommand(insertMainBookingQuery, con))
                     {
-                        newBookingID = Convert.ToInt32(maxIdCmd.ExecuteScalar());
+                        cmdBooking.Parameters.AddWithValue("@TouristID", touristId);
+
+                        // ExecuteScalar runs the INSERT and returns the new BookingID
+                        newBookingID = Convert.ToInt32(cmdBooking.ExecuteScalar());
                     }
 
-                    // 4. Insert the booking (NOW INCLUDING BookingID)
-                    string insertQuery = @"INSERT INTO AttractionBookings 
-                                   (BookingID, AttractionID, BookingDate, NumOfPeople, TotalPriceCharged) 
-                                   VALUES 
-                                   (@BookingID, @AttractionID, @BookingDate, @NumOfPeople, @TotalPriceCharged)";
+                   //inserting into the attraction bookings table 
+                    string insertAttractionQuery = @"INSERT INTO AttractionBookings 
+                                           (BookingID, AttractionID, BookingDate, NumOfPeople, TotalPriceCharged) 
+                                           VALUES 
+                                           (@BookingID, @AttractionID, @BookingDate, @NumOfPeople, @TotalPriceCharged)";
 
-                    using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
+                    using (SqlCommand insertCmd = new SqlCommand(insertAttractionQuery, con))
                     {
-                        // Add the new BookingID parameter
+                        
                         insertCmd.Parameters.AddWithValue("@BookingID", newBookingID);
-                        insertCmd.Parameters.AddWithValue("@AttractionID", id);
+                        insertCmd.Parameters.AddWithValue("@AttractionID", attractionId);
                         insertCmd.Parameters.AddWithValue("@BookingDate", bookingDate);
                         insertCmd.Parameters.AddWithValue("@NumOfPeople", numOfPeople);
                         insertCmd.Parameters.AddWithValue("@TotalPriceCharged", totalPrice);
@@ -144,10 +157,8 @@ namespace TACOSA
 
                         if (rowsAffected > 0)
                         {
-                            // Store total for the transaction page
                             Session["TotalBookingPrice"] = totalPrice;
-                            Session["NewBookingID"] = newBookingID; // Save the generated ID for later use
-
+                            Session["NewBookingID"] = newBookingID;
                             Response.Redirect("transactionPage.aspx");
                         }
                         else
@@ -159,5 +170,6 @@ namespace TACOSA
             }
         }
     }
+    
     
 }
