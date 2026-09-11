@@ -296,6 +296,16 @@
                     <asp:Label ID="lblLabel11" runat="server">People:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlPeople" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
                     </asp:DropDownList>
 &nbsp;
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
@@ -303,6 +313,17 @@
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlRooms" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
                     </asp:DropDownList>
 &nbsp;
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Enter the Correct Value*" ForeColor="Maroon"></asp:RegularExpressionValidator>
@@ -341,7 +362,7 @@
                 <td class="auto-style36">
                     &nbsp;</td>
                 <td class="auto-style37">
-                    <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" />
+                    <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" OnClick="btnBook_Click" />
                 </td>
                 <td>
                     <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" />
