@@ -275,14 +275,14 @@
                     &nbsp;<br />
                     <asp:Label ID="lblLabel11" runat="server">People:</asp:Label>
 &nbsp;
-                    <asp:DropDownList ID="ddlPeople" runat="server">
+                    <asp:DropDownList ID="ddlPeople" runat="server" OnSelectedIndexChanged="ddlPeople_SelectedIndexChanged">
                     </asp:DropDownList>
 &nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Please select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
                     <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;
-                    <asp:DropDownList ID="ddlRooms" runat="server">
+                    <asp:DropDownList ID="ddlRooms" runat="server" OnSelectedIndexChanged="ddlRooms_SelectedIndexChanged" style="width: 111px">
                     </asp:DropDownList>
 &nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Please select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>

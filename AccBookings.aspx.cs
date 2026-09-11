@@ -104,7 +104,7 @@ namespace TACOSA
                 DateTime checkOutDate = CalendarCheckOUT.SelectedDate;
 
                 // Calculate total days
-                int totalDays = (checkOutDate - checkInDate).Days;
+                int totalNights = (checkOutDate - checkInDate).Days;
 
                 // Get price per night from Session
                 decimal pricePerNight = Convert.ToDecimal(Session["PricePerNight"]);
@@ -121,7 +121,7 @@ namespace TACOSA
                         //insert data into the database using the stored procedure
 
                         // Calculate total price
-                        decimal totalPriceCharged = totalDays * numOfRooms * pricePerNight;
+                        decimal totalPriceCharged = totalNights * numOfRooms * pricePerNight;
 
                         cmd.Parameters.AddWithValue("@TouristID", touristID);
                         cmd.Parameters.AddWithValue("@BookingType", "Accommodation");
@@ -170,6 +170,16 @@ namespace TACOSA
         }
 
         protected void CalendarCheckOUT_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddlPeople_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddlRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

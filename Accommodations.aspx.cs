@@ -60,11 +60,15 @@ namespace TACOSA
                     {
                         if(reader.Read()) //fill
                         {
+                            decimal pricepernight = Convert.ToDecimal(reader["PricePerNight"]);
                             image.ImageUrl = reader["ImagePath"].ToString();
                             name.Text = reader["AccommodationName"].ToString();
                             loc.Text = reader["AccommodationLocation"].ToString();
-                            price.Text = "R" + Convert.ToDecimal(reader["PricePerNight"]).ToString("F2") + "/Night";
+                            price.Text = pricepernight.ToString("F2");
                             rating.Text = Convert.ToDecimal(reader["Rating"]).ToString("F1");
+
+                            //CREATE SESSION FOR PRICE
+                            Session["PricePerNight"] = pricepernight;
                         }
                     }
 
