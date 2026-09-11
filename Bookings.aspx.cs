@@ -14,10 +14,6 @@ namespace TACOSA
 
         }
 
-        private LoaderOptimization loadBookings()
-        {
-
-            
-        }
+        
     }
 }
