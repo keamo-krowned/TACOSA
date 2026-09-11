@@ -68,5 +68,60 @@ namespace TACOSA
             }
         }
 
+        protected void btnBook_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // converting data using Parse
+                int touristID = int.Parse(Session["TouristID"]?.ToString() ?? "1");
+                int accommodationID = int.Parse(Request.QueryString["id"]);
+                int numOfPeople = int.Parse(ddlPeople.SelectedValue);
+                int numOfRooms = int.Parse(ddlRooms.SelectedValue);
+                DateTime checkInDate = CalendarCheckIN.SelectedDate;
+                DateTime checkOutDate = CalendarCheckOUT.SelectedDate;
+                decimal totalPriceCharged = decimal.Parse(lblCalculatedPrice.Text.Replace("R", "").Trim());
+
+                using (SqlConnection conn = new SqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("createAccBooking", conn))
+                    {
+                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                        cmd.Parameters.AddWithValue("@TouristID", touristID);
+                        cmd.Parameters.AddWithValue("@AccommodationID", accommodationID);
+                        cmd.Parameters.AddWithValue("@TotalPriceCharged", totalPriceCharged);
+                        cmd.Parameters.AddWithValue("@NumOfPeople", numOfPeople);
+                        cmd.Parameters.AddWithValue("@CheckInDate", checkInDate);
+                        cmd.Parameters.AddWithValue("@CheckOutDate", checkOutDate);
+                        cmd.Parameters.AddWithValue("@NumOfRooms", numOfRooms);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            string script = "alert('Booking completed successfully!');";
+                            ScriptManager.RegisterStartupScript(this, GetType(), "BookingSuccess", script, true);
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex) //try-catch exception handling for database errors
+            {
+                lblCalculatedPrice.Text = "Database Error: " + ex.Message;
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
+            }
+            catch (FormatException ex)
+            {
+                lblCalculatedPrice.Text = "Format Error: Please ensure all selection fields are valid.";
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
+            }
+            catch (Exception ex)
+            {
+                lblCalculatedPrice.Text = "Error: " + ex.Message;
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Red;
+            }
+        }
     }
 }
