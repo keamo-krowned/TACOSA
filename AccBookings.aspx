@@ -114,6 +114,9 @@
             color: #FFFFFF;
             background-color: #663300;
         }
+        body{
+            background-color:#FFF3A3;
+        }
     </style>
 </head>
 <body>
@@ -288,7 +291,7 @@
                     <br />
                     <asp:Label ID="lblLabel7" runat="server" CssClass="auto-style16">Check In Date:</asp:Label>
                     <br />
-                    <asp:Calendar ID="CalendarCheckIN" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <asp:Calendar ID="CalendarCheckIN" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px" OnSelectionChanged="CalendarCheckIN_SelectionChanged">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#999999" />
@@ -300,7 +303,7 @@
                     <br />
                     <asp:Label ID="lblLabel9" runat="server" CssClass="auto-style16">Check Out Date:</asp:Label>
                     <br />
-                    <asp:Calendar ID="CalendarCheckOUT" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <asp:Calendar ID="CalendarCheckOUT" runat="server" BackColor="White" BorderColor="White" ForeColor="Maroon" BorderWidth="1px" Font-Names="Segoe UI Emoji" Font-Size="9pt" Height="190px" NextPrevFormat="FullMonth" Width="350px" OnSelectionChanged="CalendarCheckOUT_SelectionChanged">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#999999" />

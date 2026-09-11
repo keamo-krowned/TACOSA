@@ -109,8 +109,7 @@ namespace TACOSA
                 // Get price per night from Session
                 decimal pricePerNight = Convert.ToDecimal(Session["PricePerNight"]);
 
-                // Calculate total price
-                decimal totalPriceCharged = totalDays * numOfRooms * pricePerNight;
+                
 
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
@@ -120,6 +119,10 @@ namespace TACOSA
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
                         //insert data into the database using the stored procedure
+
+                        // Calculate total price
+                        decimal totalPriceCharged = totalDays * numOfRooms * pricePerNight;
+
                         cmd.Parameters.AddWithValue("@TouristID", touristID);
                         cmd.Parameters.AddWithValue("@BookingType", "Accommodation");
                         cmd.Parameters.AddWithValue("@AccommodationID", accommodationID);
@@ -129,15 +132,17 @@ namespace TACOSA
                         cmd.Parameters.AddWithValue("@CheckOutDate", checkOutDate);
                         cmd.Parameters.AddWithValue("@NumOfRooms", numOfRooms);
 
-                        object result = cmd.ExecuteScalar();
+                        string bookingID = (cmd.ExecuteScalar()).ToString();
 
-                        if (result != null)
+                        if (bookingID!=null)
                         {
-                            // Redirect to the transaction page with the booking ID to process payments
-                            Session["BookingID"] = int.Parse(result.ToString());
+                            //REDIRECT TO PAYMENT
+                            Session["BookingID"] = bookingID;
 
                             Response.Redirect("TransactionPage.aspx");
                         }
+                        lblCalculatedPrice.Text = "R" + totalPriceCharged.ToString("F2");
+                        Session["GrandTotal"] = totalPriceCharged;
                     }
                 }
             }
@@ -157,6 +162,16 @@ namespace TACOSA
         {
             Session["BookingID"] = null;
             Response.Redirect("Accommodations.aspx"); //redirects back to the accommodations page when you click cancel
+        }
+
+        protected void CalendarCheckIN_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CalendarCheckOUT_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
