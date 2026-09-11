@@ -24,7 +24,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Chart ID="Chart1" runat="server" Height="532px" Width="1259px">
+                    <asp:Chart ID="Chart1" runat="server" Height="532px" Width="1259px" BackColor="SaddleBrown">
                         <series>
                             <asp:Series Name="Series1">
                             </asp:Series>
@@ -34,6 +34,7 @@
                             </asp:ChartArea>
                         </chartareas>
                     </asp:Chart>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>
