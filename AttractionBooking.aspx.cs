@@ -47,14 +47,12 @@ namespace TACOSA
                     Rating.Text =
                         dt.Rows[0]["Rating"].ToString();
                     //lblCategory.Text =
-                        //"R" +
-                        //Convert.ToDecimal(dt.Rows[0]["PricePerDay"])
-                        //.ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
+                    //"R" +
+                    //Convert.ToDecimal(dt.Rows[0]["PricePerDay"])
+                    //.ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
                 }
             }
 
-                }
-            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
