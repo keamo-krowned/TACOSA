@@ -77,6 +77,7 @@
     <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmationPage.aspx.cs">
+      <DependentUpon>confirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmationPage.aspx.designer.cs">
+      <DependentUpon>confirmationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

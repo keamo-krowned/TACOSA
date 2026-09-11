@@ -17,5 +17,17 @@ namespace TACOSA
            txtCVVNumber.Attributes["placeholder"] = "123";
            CalExpirydate.Attributes["placeholder"] = "Select Expiry Date";
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //we wanna ensure that when the user clicks this button , the user is redirected to the previous page to edit any information they want to change
+            Response.Redirect("");
+        }
+
+        protected void btnPayment_Click(object sender, EventArgs e)
+        {
+            // we want to ensure that when the user clicks this button, the user is redirected to the confirmation page
+            Response.Redirect("confirmationPage.aspx");
+        }
     }
 }
