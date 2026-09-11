@@ -275,14 +275,14 @@
                     <asp:DropDownList ID="ddlPeople" runat="server">
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlPeople" ErrorMessage="Please select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
                     <br />
                     <asp:Label ID="lblLabel13" runat="server">Rooms:</asp:Label>
 &nbsp;
                     <asp:DropDownList ID="ddlRooms" runat="server">
                     </asp:DropDownList>
 &nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlRooms" ErrorMessage="Please select a value*" ForeColor="Maroon"></asp:RequiredFieldValidator>
                     <br />
                     <br />
                     <br />
@@ -321,7 +321,7 @@
                     <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" OnClick="btnBook_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" OnClick="btnCancel_Click" />
+                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" OnClick="btnCancel_Click" CausesValidation="False" />
                 </td>
             </tr>
         </table>

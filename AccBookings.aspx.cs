@@ -155,6 +155,7 @@ namespace TACOSA
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {
+            Session["BookingID"] = null;
             Response.Redirect("Accommodations.aspx"); //redirects back to the accommodations page when you click cancel
         }
     }
