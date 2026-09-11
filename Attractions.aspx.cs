@@ -57,7 +57,7 @@ namespace TACOSA
                     lblName18
                 };
 
-                Label[] descriptions =                     
+                Label[] descriptions =
                 {
                     lblDescr1,
                     lblDescr2,
@@ -79,7 +79,7 @@ namespace TACOSA
                     lblDescr18
                 };
 
-                Label[] locations =                     
+                Label[] locations =
                 {
                     lblLocation1,
                     lblLocation2,
@@ -101,7 +101,7 @@ namespace TACOSA
                     lblLocation18
                 };
 
-                Label[] ratings =                     
+                Label[] ratings =
                 {
                     lblRating1,
                     lblRating2,
@@ -123,7 +123,7 @@ namespace TACOSA
                     lblRating18
                 };
 
-                Label[] prices =                     
+                Label[] prices =
                 {
                     lblPrice1,
                     lblPrice2,
@@ -185,6 +185,7 @@ namespace TACOSA
                 }
 
             }
+        }
         
         
         protected void Button1_Click(object sender, EventArgs e)
