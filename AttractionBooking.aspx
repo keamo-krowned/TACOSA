@@ -5,6 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style>
+    
+    .form-border {
+        border: 5px solid #6B4226; 
+        border-radius: 30px;       
+        max-width: 850px;          
+        margin: 40px auto;         
+        padding: 40px;             
+        background-color: #FFF3A3; 
+    }
+
+    /*Keeps form contents centered */
+    .form-border form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-border form > div {
+        width: 100%;
+    }
+</style>
 </head>
 <body style="background-color:#FFF3A3;">
             <table style="
@@ -165,29 +188,27 @@
 
 </table>
     <link href="StyleSheet1.css" rel="stylesheet" />
-    <form id="form1" runat="server">
 
-                
-       
-
-       
-
+     <div class="form-border">
         
+        <form id="form1" runat="server">
+
         <div>
-             <asp:Image ID="Image1" runat="server" Width="189px" />
+            
+             <asp:Label ID="lblName" runat="server"></asp:Label>
+             <asp:Image ID="Image1" runat="server" Width="300px" Height="300px" />
         </div>
        
         <p>
-             <asp:Label ID="lblName" runat="server"></asp:Label>
             <asp:Label ID="lblCategory" runat="server"></asp:Label>
             <asp:Label ID="Rating" runat="server"></asp:Label>
         </p>
         <p>
             &nbsp;</p>
-       
+      
     <div>
 
-        <asp:Label ID="Label1" runat="server" Font-Names="Ink Free" Text="About the Attraction" Font-Size="X-Large"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Font-Names="Georgia,serif" Text="About the Attraction:" Font-Size="X-Large" ForeColor="#6B4226" Font-Bold="True" ></asp:Label>
 
         <br />
         <br />
@@ -210,7 +231,8 @@
 
             <br />
             <br />
-            <asp:Label ID="Label2" runat="server" Font-Names="Ink Free" Text="Information"></asp:Label>
+            <asp:Label ID="Label2" runat="server"  Font-Names="Georgia,serif" ForeColor="#6B4226" Text="Information:" Font-Bold="True"></asp:Label>
+            <br />
             <br />
             <asp:Label ID="Label3" runat="server" Text="Location: "></asp:Label>
             <asp:Label ID="lblLocation" runat="server"></asp:Label>
@@ -236,7 +258,7 @@
        </div>
         <div>
 
-            <asp:Label ID="Label5" runat="server" Font-Names="Ink Free" Text="Book your Experience:"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Font-Names="Georgia,serif" ForeColor="#6B4226" Text="Book your Experience:" Font-Bold="True"></asp:Label>
 
         </div>
         <div class="attraction-section">
@@ -245,7 +267,7 @@
         <p>
 
             <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
-            <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtDate" runat="server" TextMode="Date"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the required input before proceeding" ForeColor="Red" ControlToValidate="txtDate"></asp:RequiredFieldValidator>
         </p>
         <div>
@@ -260,10 +282,11 @@
              </div>
         <div>
 
-            <asp:Button ID="btnBook" runat="server" OnClick="btnBookNow_Click" Text="Book Now" Width="228px" />
+            <asp:Button ID="btnBook" runat="server" OnClick="btnBook_Click" Text="Book Now" Width="228px" />
             <br />
 
         </div>
     </form>
+  </div>
     </body>
 </html>
