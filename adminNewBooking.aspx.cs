@@ -32,6 +32,8 @@ namespace TACOSA
 
                 string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
                
+                string query = "INSERT INTO Bookings(TouristID, BookingType, BookingStatus) VALUES (@touristID," +
+                    "@bookingType, @bookingStatus);";
                 string type = txtType.Text.Trim();
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
