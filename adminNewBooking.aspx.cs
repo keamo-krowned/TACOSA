@@ -61,41 +61,7 @@ namespace TACOSA
             
         }
 
-        public void CustomValidatorCal1_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            if (Calendar1.SelectedDate == DateTime.MinValue)
-            {
-                args.IsValid = false;
-            }
-            else if (Calendar1.SelectedDate < DateTime.Today)
-            {
-                args.IsValid = false;
-            }
-            else
-            {
-                args.IsValid = true;
-            }
-        }
-
-        public void CustomValidatorCal2_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            if (Calendar2.SelectedDate == DateTime.MinValue)
-            {
-                args.IsValid = false;
-            }
-            else if (Calendar2.SelectedDate < DateTime.Today)
-            {
-                args.IsValid = false;
-            }
-            else if(Calendar2.SelectedDate< Calendar1.SelectedDate)
-            {
-                args.IsValid = false;
-            }
-            else
-            {
-                args.IsValid = true;
-            }
-        }
+        
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
