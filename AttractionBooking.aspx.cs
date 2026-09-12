@@ -127,7 +127,7 @@ namespace TACOSA
                     
                     string insertMainBookingQuery = @"
                         INSERT INTO Bookings (TouristID, BookingType, BookingStatus) 
-                        VALUES (@TouristID, 'Attraction', 'Confirmed');
+                        VALUES (@TouristID, 'Attraction', 'Pending');
                         SELECT SCOPE_IDENTITY();";
 
                     using (SqlCommand cmdBooking = new SqlCommand(insertMainBookingQuery, con))
