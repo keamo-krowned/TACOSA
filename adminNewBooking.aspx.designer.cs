@@ -33,13 +33,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTitle;
 
         /// <summary>
-        /// lblTouristID0 control.
+        /// lblAccommodation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTouristID0;
+        protected global::System.Web.UI.WebControls.Label lblAccommodation;
 
         /// <summary>
         /// txtAcc control.

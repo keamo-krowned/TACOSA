@@ -96,7 +96,7 @@
             <tr>
                 <td class="auto-style17" colspan="2"><strong>
                     <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Create A New Accommodation Booking" ForeColor="#663300"></asp:Label>
-                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Create A New Booking" ForeColor="#663300"></asp:Label>
+                    
                     </strong></td>
             </tr>
             <tr>
@@ -105,7 +105,7 @@
             </tr>
             <tr>
                 <td class="auto-style35">
-                    <asp:Label ID="lblTouristID0" runat="server" Text=" Accommodation ID:"></asp:Label>
+                    <asp:Label ID="lblAccommodation" runat="server" Text=" Accommodation ID:"></asp:Label>
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtAcc" runat="server" Width="226px"></asp:TextBox>
