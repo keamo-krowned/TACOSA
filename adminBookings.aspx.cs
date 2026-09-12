@@ -10,17 +10,18 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class AdminMaintainTourist : System.Web.UI.Page
+    public partial class adminBookings : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if(!IsPostBack)
             {
-                if (Session["UpdateMessage"] != null)
+                if (Session["BookingsMessage"]!=null)
                 {
-                    lblMessage.Text = Session["UpdateMessage"].ToString();
-                    Session["UpdateMessage"] = null;
+                    string message = Session["BookingsMessage"].ToString();
+                    lblMessage.Text = message;
                 }
+               
             }
         }
 
@@ -29,7 +30,7 @@ namespace TACOSA
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.sp_GetAllTourists", conn))
+            using (SqlCommand cmd = new SqlCommand("dbo.adminSelectBookings", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -50,36 +51,13 @@ namespace TACOSA
             }
         }
 
-        protected void btnMainatin_Click(object sender, EventArgs e)
-        {
-            int touristId;
-
-            try
-            {
-                touristId = Convert.ToInt32(txtMaintain.Text.Trim());
-            }
-            catch (FormatException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
-            catch (OverflowException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
-
-            Session["AdminEditTouristID"] = touristId;
-            Response.Redirect("AdminUpdateTDetails.aspx");
-        }
-
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            int touristId;
+            int BookingID;
 
             try
             {
-                touristId = Convert.ToInt32(txtDelete.Text.Trim());
+                BookingID = Convert.ToInt32(txtDelete.Text.Trim());
             }
             catch (FormatException)
             {
@@ -96,10 +74,10 @@ namespace TACOSA
             string result = null;
 
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.sp_DeleteTourist", conn))
+            using (SqlCommand cmd = new SqlCommand("dbo.adminDeleteBookings", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TouristID", touristId);
+                cmd.Parameters.AddWithValue("@BookingID", BookingID);
 
                 try
                 {
@@ -120,13 +98,13 @@ namespace TACOSA
                 }
             }
 
-            if (result == "Success")
+            if (result == "Bookings deleted successfully.")
             {
-                lblMessage.Text = "Tourist and related bookings deleted successfully.";
+                lblMessage.Text = result;
                 txtDelete.Text = "";
 
                 using (SqlConnection conn = new SqlConnection(connStr))
-                using (SqlCommand cmd = new SqlCommand("dbo.sp_GetAllTourists", conn))
+                using (SqlCommand cmd = new SqlCommand("dbo.adminDeleteBookings", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -146,19 +124,39 @@ namespace TACOSA
                     }
                 }
             }
-            else if (result == "HasUpcomingBookings")
-            {
-                lblMessage.Text = "This tourist has upcoming bookings and cannot be deleted until they are cancelled.";
-            }
             else
             {
                 lblMessage.Text = "Delete did not complete as expected.";
             }
         }
 
+        protected void btnMainatin_Click(object sender, EventArgs e)
+        {
+            int bookingID;
+
+            try
+            {
+                bookingID = Convert.ToInt32(txtMaintain.Text.Trim());
+            }
+            catch (FormatException)
+            {
+                lblMessage.Text = "Please enter a valid Booking ID.";
+                return;
+            }
+            catch (OverflowException)
+            {
+                lblMessage.Text = "Please enter a valid Booking ID.";
+                return;
+            }
+
+            Session["adminEditBookings"] = bookingID;
+            Response.Redirect("adminUpdateBooking.aspx");
+        }
+
         protected void bntAddNewT_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminAddNewT.aspx");
+            Response.Redirect("adminNewBooking.aspx");
+
         }
     }
 }

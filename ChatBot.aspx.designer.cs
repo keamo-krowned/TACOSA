@@ -11,7 +11,7 @@ namespace TACOSA
 {
 
 
-    public partial class AdminMaintainAttBookings
+    public partial class ChatBot
     {
 
         /// <summary>
@@ -33,34 +33,48 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTitle;
 
         /// <summary>
-        /// gvBookings control.
+        /// lblHeading control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvBookings;
+        protected global::System.Web.UI.WebControls.Label lblHeading;
 
         /// <summary>
-        /// txtDelete control.
+        /// txtQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDeleteID;
+        protected global::System.Web.UI.WebControls.TextBox txtQuestion;
 
-        
         /// <summary>
-        /// lblMessage control.
+        /// btnAnswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.Button btnAnswer;
 
-        
-        
+        /// <summary>
+        /// lblAnswer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAnswer;
+
+        /// <summary>
+        /// btnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

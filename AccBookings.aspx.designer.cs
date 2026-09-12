@@ -24,40 +24,40 @@ namespace TACOSA
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblTacosa control.
+        /// HyperLinkTACOSA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTacosa;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkTACOSA;
 
         /// <summary>
-        /// Label6 control.
+        /// HyperLinkAttractions0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkAttractions0;
 
         /// <summary>
-        /// lblAttractions control.
+        /// HyperLinkAttractions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAttractions;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkAttractions;
 
         /// <summary>
-        /// lblAttractions0 control.
+        /// HyperLinkBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAttractions0;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkBookings;
 
         /// <summary>
         /// lblAccommodationName control.
@@ -321,13 +321,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.DropDownList ddlPeople;
 
         /// <summary>
-        /// RegularExpressionValidator3 control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
         /// <summary>
         /// lblLabel13 control.
@@ -348,13 +348,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.DropDownList ddlRooms;
 
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
         /// lblLabel7 control.

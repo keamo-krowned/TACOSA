@@ -139,9 +139,6 @@
                         <asp:Label ID="lblLocation1" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr1" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable1" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -160,9 +157,6 @@
                         <asp:Label ID="lblName2" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation2" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr2" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable2" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -187,9 +181,6 @@
                         <asp:Label ID="lblName3" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation3" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr3" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable3" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -223,9 +214,6 @@
                         <asp:Label ID="lblLocation4" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr4" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable4" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -251,9 +239,6 @@
                         <asp:Label ID="lblLocation5" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr5" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable5" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -276,9 +261,6 @@
                         <asp:Label ID="lblName6" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation6" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr6" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable6" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -315,9 +297,6 @@
                         <asp:Label ID="lblLocation7" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr7" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable7" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -339,9 +318,6 @@
                         <asp:Label ID="lblLocation8" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr8" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable8" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -361,9 +337,6 @@
                         <asp:Label ID="lblName9" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation9" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr9" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable9" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -397,9 +370,6 @@
                         <asp:Label ID="lblLocation10" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr10" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable10" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -421,9 +391,6 @@
                         <asp:Label ID="lblLocation11" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr11" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable11" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -443,9 +410,6 @@
                         <asp:Label ID="lblName12" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation12" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr12" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable12" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -472,9 +436,6 @@
                         <asp:Label ID="lblLocation13" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr13" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable13" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -495,9 +456,6 @@
                         <asp:Label ID="lblLocation14" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr14" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable14" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -516,9 +474,6 @@
                         <asp:Label ID="lblName15" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation15" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr15" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable15" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
@@ -544,9 +499,6 @@
                         <asp:Label ID="lblLocation16" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr16" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable16" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -568,9 +520,6 @@
                         <asp:Label ID="lblLocation17" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
-                        <asp:Label ID="lblDescr17" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
                         <asp:Label ID="lblAvailable17" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <br />
@@ -589,9 +538,6 @@
                         <asp:Label ID="lblName18" runat="server" ForeColor="#FFFFFF" style="font-size: large; font-weight: 700" Text="Label"></asp:Label>
                         <br />
                         <asp:Label ID="lblLocation18" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
-                        <br />
-                        <br />
-                        <asp:Label ID="lblDescr18" runat="server" ForeColor="#FFFFFF" Text="Label"></asp:Label>
                         <br />
                         <br />
                         <asp:Label ID="lblAvailable18" runat="server" ForeColor="#FFFFFF" style="font-weight: 700" Text="Label"></asp:Label>

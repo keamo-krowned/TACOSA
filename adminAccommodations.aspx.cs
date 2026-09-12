@@ -10,16 +10,16 @@ using System.Web.UI.WebControls;
 
 namespace TACOSA
 {
-    public partial class AdminMaintainTourist : System.Web.UI.Page
+    public partial class adminAccommodations : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                if (Session["UpdateMessage"] != null)
+                if (Session["accMessage"] != null)
                 {
-                    lblMessage.Text = Session["UpdateMessage"].ToString();
-                    Session["UpdateMessage"] = null;
+                    lblMessage.Text = Session["accMessage"].ToString();
+                    Session["accMessage"] = null;
                 }
             }
         }
@@ -28,10 +28,10 @@ namespace TACOSA
         {
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
+            string query = "SELECT * FROM Accommodations ORDER BY AccommodationID;";
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.sp_GetAllTourists", conn))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.CommandType = CommandType.StoredProcedure;
 
                 try
                 {
@@ -50,36 +50,13 @@ namespace TACOSA
             }
         }
 
-        protected void btnMainatin_Click(object sender, EventArgs e)
-        {
-            int touristId;
-
-            try
-            {
-                touristId = Convert.ToInt32(txtMaintain.Text.Trim());
-            }
-            catch (FormatException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
-            catch (OverflowException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
-
-            Session["AdminEditTouristID"] = touristId;
-            Response.Redirect("AdminUpdateTDetails.aspx");
-        }
-
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            int touristId;
+            int accID;
 
             try
             {
-                touristId = Convert.ToInt32(txtDelete.Text.Trim());
+                accID = Convert.ToInt32(txtDelete.Text.Trim());
             }
             catch (FormatException)
             {
@@ -94,12 +71,11 @@ namespace TACOSA
 
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
             string result = null;
-
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.sp_DeleteTourist", conn))
+            using (SqlCommand cmd = new SqlCommand("dbo.deleteAccommodation", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TouristID", touristId);
+                cmd.Parameters.AddWithValue("@accID", accID);
 
                 try
                 {
@@ -110,6 +86,7 @@ namespace TACOSA
                         if (reader.Read())
                         {
                             result = reader["Result"].ToString();
+                            lblMessage.Text = result;
                         }
                     }
                 }
@@ -119,46 +96,34 @@ namespace TACOSA
                     return;
                 }
             }
+        }
 
-            if (result == "Success")
+        protected void btnMainatin_Click(object sender, EventArgs e)
+        {
+            int accId;
+
+            try
             {
-                lblMessage.Text = "Tourist and related bookings deleted successfully.";
-                txtDelete.Text = "";
-
-                using (SqlConnection conn = new SqlConnection(connStr))
-                using (SqlCommand cmd = new SqlCommand("dbo.sp_GetAllTourists", conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    try
-                    {
-                        conn.Open();
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-
-                        GridView1.DataSource = dt;
-                        GridView1.DataBind();
-                    }
-                    catch (SqlException ex)
-                    {
-                        lblMessage.Text = ex.Message;
-                    }
-                }
+                accId = Convert.ToInt32(txtMaintain.Text.Trim());
             }
-            else if (result == "HasUpcomingBookings")
+            catch (FormatException)
             {
-                lblMessage.Text = "This tourist has upcoming bookings and cannot be deleted until they are cancelled.";
+                lblMessage.Text = "Please enter a valid Accommodation ID.";
+                return;
             }
-            else
+            catch (OverflowException)
             {
-                lblMessage.Text = "Delete did not complete as expected.";
+                lblMessage.Text = "Please enter a valid Accommodation ID.";
+                return;
             }
+
+            Session["adminEditAcc"] = accId;
+            Response.Redirect("editAccommodation.aspx");
         }
 
         protected void bntAddNewT_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminAddNewT.aspx");
+            Response.Redirect("addAccommodation.aspx");
         }
     }
 }
