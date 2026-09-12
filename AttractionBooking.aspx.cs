@@ -225,6 +225,7 @@ namespace TACOSA
             // Clear the textbox and show success
             txtDelete.Text = "";
             Response.Write("<script>alert('Booking Cancelled Successfully.');</script>");
+            Response.Redirect("Attractions.aspx");
         }
     }
     
