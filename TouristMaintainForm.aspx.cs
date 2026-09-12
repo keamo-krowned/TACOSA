@@ -76,6 +76,11 @@ namespace TACOSA
                         Session.Clear();
                         Response.Redirect("LandingPage.aspx");
                     }
+                    else if (result == "HasUpcomingBookings")
+                    {
+                        lblError.ForeColor = System.Drawing.Color.Red;
+                        lblError.Text = "You must cancel your upcoming bookings before deleting your account.";
+                    }
                     else
                     {
                         lblError.Text = "Account not found.";
