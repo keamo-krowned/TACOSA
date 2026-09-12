@@ -163,6 +163,9 @@
       <DependentUpon>adminBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+	<Compile Include="adminBookings.aspx.designer.cs">
+      <DependentUpon>adminBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminMaintainAttBookings.aspx.cs">
       <DependentUpon>AdminMaintainAttBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -195,6 +198,11 @@
       <DependentUpon>adminNewBooking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+<<<<<<< HEAD
+	<Compile Include="adminNewBooking.aspx.designer.cs">
+      <DependentUpon>adminNewBooking.aspx</DependentUpon>
+    </Compile>
+=======
     <Compile Include="adminNewBooking.aspx.designer.cs">
       <DependentUpon>adminNewBooking.aspx</DependentUpon>
     </Compile>
@@ -205,6 +213,7 @@
     <Compile Include="adminUpdateBooking.aspx.designer.cs">
       <DependentUpon>adminUpdateBooking.aspx</DependentUpon>
     </Compile>
+>>>>>>> d055dd10138c1a35e23410974ba9c224a2d5db5e
     <Compile Include="Bookings.aspx.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
