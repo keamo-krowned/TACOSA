@@ -69,6 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addAccommodation.aspx" />
+    <Content Include="adminAccommodations.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
@@ -79,6 +81,7 @@
     <Content Include="Attractions.aspx" />
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="editAccommodation.aspx" />
     <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
     <Content Include="LandingPage.aspx" />
@@ -147,13 +150,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addAccommodation.aspx.cs">
+      <DependentUpon>addAccommodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addAccommodation.aspx.designer.cs">
+      <DependentUpon>addAccommodation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminAccommodations.aspx.cs">
+      <DependentUpon>adminAccommodations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminAccommodations.aspx.designer.cs">
+      <DependentUpon>adminAccommodations.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bookings.aspx.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Bookings.aspx.designer.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="AccBookings.aspx.cs">
       <DependentUpon>AccBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -213,6 +230,13 @@
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editAccommodation.aspx.cs">
+      <DependentUpon>editAccommodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editAccommodation.aspx.designer.cs">
+      <DependentUpon>editAccommodation.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
