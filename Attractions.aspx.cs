@@ -56,7 +56,7 @@ namespace TACOSA
                     lblName17,
                     lblName18
                 };
-
+                /*
                 Label[] descriptions =
                 {
                     lblDescr1,
@@ -78,7 +78,7 @@ namespace TACOSA
                     lblDescr17,
                     lblDescr18
                 };
-
+                */
                 Label[] locations =
                 {
                     lblLocation1,
@@ -169,7 +169,8 @@ namespace TACOSA
                 for (int i = 0; i < dt.Rows.Count && i < names.Length; i++)
                 {
                     names[i].Text = dt.Rows[i]["AttractionName"].ToString();
-                    descriptions[i].Text = dt.Rows[i]["AttractionDescription"].ToString();
+                    /* 
+                    descriptions[i].Text = dt.Rows[i]["AttractionDescription"].ToString(); */
                     locations[i].Text = dt.Rows[i]["AttractionLocation"].ToString();
                     ratings[i].Text = "⭐" + dt.Rows[i]["Rating"].ToString();
                     prices[i].Text = "R" + Convert.ToDecimal(dt.Rows[i]["PricePerDay"]).ToString("0.00") + " /day";
