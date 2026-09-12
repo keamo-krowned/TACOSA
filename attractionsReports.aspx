@@ -15,14 +15,21 @@
             <tr>
                 <td>&nbsp;</td>
                 <td style="text-align: center">
-                    <asp:Label ID="Label2" runat="server" style="font-weight: 700; text-align: center" Text="Attraction request page"></asp:Label>
+                    <asp:Label ID="lblAttraction" runat="server" style="font-weight: 700; text-align: center" Text="Attraction request page"></asp:Label>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td style="text-align: center">
+                    <asp:Label ID="lblWelcome" runat="server" style="font-weight: 700; text-align: center"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Chart ID="Chart1" runat="server" Height="544px" Width="1264px">
+                    <asp:Chart ID="Chart1" runat="server" Height="544px" Width="1574px">
                         <Series>
                             <asp:Series Name="Series1">
                             </asp:Series>
@@ -39,6 +46,15 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table style="width: 100%; height: 361px;">
+            <tr>
+                <td>
+                    <asp:GridView ID="GVattractions" runat="server" DataSourceID="SqlDataSource1" Height="295px" Width="1477px">
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                </td>
             </tr>
         </table>
     </form>
