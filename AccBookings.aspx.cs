@@ -91,6 +91,30 @@ namespace TACOSA
         {
             try
             {
+                //Ensure dates were selected on calendars
+                if (CalendarCheckIN.SelectedDate == DateTime.MinValue || CalendarCheckOUT.SelectedDate == DateTime.MinValue)
+                {
+                    lblCalculatedPrice.Text = "Please select both Check-In and Check-Out dates.";
+                    lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
+                    return;
+                }
+
+                // 2. Ensure Check-In date is not before the current date
+                if (CalendarCheckIN.SelectedDate < DateTime.Now.Date)
+                {
+                    lblCalculatedPrice.Text = "Check-In date cannot be before today's date.";
+                    lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
+                    return;
+                }
+
+                // 3. Ensure Check-Out date is after Check-In date
+                if (CalendarCheckOUT.SelectedDate <= CalendarCheckIN.SelectedDate)
+                {
+                    lblCalculatedPrice.Text = "Check-Out date must be after the Check-In date.";
+                    lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
+                    return;
+                }
+
                 // Parse conversion
                 int touristID = 1;
                 if (Session["TouristID"] != null)
@@ -109,8 +133,6 @@ namespace TACOSA
                 // Get price per night from Session
                 decimal pricePerNight = Convert.ToDecimal(Session["PricePerNight"]);
 
-                
-
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
                     conn.Open();
@@ -118,8 +140,6 @@ namespace TACOSA
                     using (SqlCommand cmd = new SqlCommand("createAccBooking", conn))
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                        //insert data into the database using the stored procedure
-
                         // Calculate total price
                         decimal totalPriceCharged = totalNights * numOfRooms * pricePerNight;
 
@@ -134,11 +154,9 @@ namespace TACOSA
 
                         string bookingID = (cmd.ExecuteScalar()).ToString();
 
-                        if (bookingID!=null)
+                        if (bookingID != null)
                         {
-                            //REDIRECT TO PAYMENT
                             Session["BookingID"] = bookingID;
-
                             Response.Redirect("TransactionPage.aspx");
                         }
                         lblCalculatedPrice.Text = "R" + totalPriceCharged.ToString("F2");
@@ -146,7 +164,7 @@ namespace TACOSA
                     }
                 }
             }
-            catch (SqlException) //SQL error and exception handling
+            catch (SqlException)
             {
                 lblCalculatedPrice.Text = "A database error occurred. Please try again.";
                 lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
@@ -154,7 +172,7 @@ namespace TACOSA
             catch (Exception)
             {
                 lblCalculatedPrice.Text = "An error occurred while processing your booking. Please check your inputs.";
-                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon; //maroon colour for errors specifically
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
             }
         }
 
