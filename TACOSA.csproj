@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminMaintainAttBookings.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
@@ -147,13 +148,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaintainAttBookings.aspx.cs">
+      <DependentUpon>AdminMaintainAttBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaintainAttBookings.aspx.designer.cs">
+      <DependentUpon>AdminMaintainAttBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bookings.aspx.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Bookings.aspx.designer.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
-	  </Compile>
+    </Compile>
     <Compile Include="AccBookings.aspx.cs">
       <DependentUpon>AccBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
