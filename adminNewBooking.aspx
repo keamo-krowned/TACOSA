@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminUpdateBooking.aspx.cs" Inherits="TACOSA.adminUpdateBooking" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminNewBooking.aspx.cs" Inherits="TACOSA.adminNewBooking" %>
 
 <!DOCTYPE html>
 
@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
+
 
 
         .auto-style48 {
@@ -73,13 +74,11 @@
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
-        <div>
-
-        </div>
+        
         <table class="auto-style48">
             <tr>
                 <td class="auto-style17" colspan="2"><strong>
-                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="What Information Do You Want To Change?" ForeColor="#663300"></asp:Label>
+                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Create A New Booking" ForeColor="#663300"></asp:Label>
                     </strong></td>
             </tr>
             <tr>
@@ -88,7 +87,7 @@
             </tr>
             <tr>
                 <td class="auto-style35">
-                    <asp:Label ID="lblTouristID" runat="server" Text="TouristID:"></asp:Label>
+                    <asp:Label ID="lblTouristID" runat="server" Text="Tourist ID:"></asp:Label>
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtTouristID" runat="server" Width="226px"></asp:TextBox>
@@ -121,10 +120,11 @@
                 <td class="auto-style35">
                     &nbsp;</td>
                 <td class="auto-style51">
-                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Submit changes" Width="166px" />
+                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Create Booking" Width="166px" />
                 </td>
             </tr>
         </table>
+        
     </form>
 </body>
 </html>

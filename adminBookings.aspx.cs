@@ -14,7 +14,15 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                if (Session["BookingsMessage"]!=null)
+                {
+                    string message = Session["BookingsMessage"].ToString();
+                    lblMessage.Text = message;
+                }
+               
+            }
         }
 
         protected void btnViewAll_Click(object sender, EventArgs e)
@@ -22,8 +30,7 @@ namespace TACOSA
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.adminSelectBookings" +
-                "", conn))
+            using (SqlCommand cmd = new SqlCommand("dbo.adminSelectBookings", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -93,7 +100,7 @@ namespace TACOSA
 
             if (result == "Bookings deleted successfully.")
             {
-                lblMessage.Text = "Booking deleted successfully.";
+                lblMessage.Text = result;
                 txtDelete.Text = "";
 
                 using (SqlConnection conn = new SqlConnection(connStr))
@@ -144,6 +151,11 @@ namespace TACOSA
 
             Session["adminEditBookings"] = bookingID;
             Response.Redirect("adminUpdateBooking.aspx");
+        }
+
+        protected void bntAddNewT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

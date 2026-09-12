@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminBookings.aspx" />
+    <Content Include="adminNewBooking.aspx" />
     <Content Include="adminUpdateBooking.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
@@ -155,6 +156,13 @@
     </Compile>
     <Compile Include="adminBookings.aspx.designer.cs">
       <DependentUpon>adminBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminNewBooking.aspx.cs">
+      <DependentUpon>adminNewBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminNewBooking.aspx.designer.cs">
+      <DependentUpon>adminNewBooking.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminUpdateBooking.aspx.cs">
       <DependentUpon>adminUpdateBooking.aspx</DependentUpon>

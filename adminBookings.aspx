@@ -250,7 +250,7 @@
             <tr>
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style19">
-                    <asp:Button ID="bntAddNewT" runat="server" BackColor="#663300" ForeColor="White" OnClick="bntAddNewT_Click" Text="Add New Bookings" Width="174px" style="margin-left: 0px" />
+                    <asp:Button ID="btnNewBooking" runat="server" BackColor="#663300" ForeColor="White" OnClick="bntAddNewT_Click" Text="Add New Bookings" Width="174px" style="margin-left: 0px" />
                 </td>
                 <td class="auto-style15">
                     <asp:TextBox ID="txtDelete" runat="server" Width="233px"></asp:TextBox>
