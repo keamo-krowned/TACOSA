@@ -31,6 +31,7 @@ namespace TACOSA
 
 
                 string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+               
                 string query = "INSERT INTO Bookings(TouristID, BookingType, BookingStatus) VALUES (@touristID," +
                     "@bookingType, @bookingStatus);";
                 string type = txtType.Text.Trim();
@@ -60,6 +61,42 @@ namespace TACOSA
                 lblError.Text = ex.Message;
             }
             
+        }
+
+        public void CustomValidatorCal1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if (Calendar1.SelectedDate == DateTime.MinValue)
+            {
+                args.IsValid = false;
+            }
+            else if (Calendar1.SelectedDate < DateTime.Today)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+        }
+
+        public void CustomValidatorCal2_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if (Calendar2.SelectedDate == DateTime.MinValue)
+            {
+                args.IsValid = false;
+            }
+            else if (Calendar2.SelectedDate < DateTime.Today)
+            {
+                args.IsValid = false;
+            }
+            else if(Calendar2.SelectedDate< Calendar1.SelectedDate)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
         }
     }
 }

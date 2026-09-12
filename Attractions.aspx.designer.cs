@@ -69,15 +69,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation1;
 
         /// <summary>
-        /// lblDescr1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr1;
-
-        /// <summary>
         /// lblAvailable1 control.
         /// </summary>
         /// <remarks>
@@ -139,15 +130,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation2;
-
-        /// <summary>
-        /// lblDescr2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr2;
 
         /// <summary>
         /// lblAvailable2 control.
@@ -213,15 +195,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation3;
 
         /// <summary>
-        /// lblDescr3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr3;
-
-        /// <summary>
         /// lblAvailable3 control.
         /// </summary>
         /// <remarks>
@@ -283,15 +256,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation4;
-
-        /// <summary>
-        /// lblDescr4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr4;
 
         /// <summary>
         /// lblAvailable4 control.
@@ -357,15 +321,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation5;
 
         /// <summary>
-        /// lblDescr5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr5;
-
-        /// <summary>
         /// lblAvailable5 control.
         /// </summary>
         /// <remarks>
@@ -427,15 +382,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation6;
-
-        /// <summary>
-        /// lblDescr6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr6;
 
         /// <summary>
         /// lblAvailable6 control.
@@ -501,15 +447,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation7;
 
         /// <summary>
-        /// lblDescr7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr7;
-
-        /// <summary>
         /// lblAvailable7 control.
         /// </summary>
         /// <remarks>
@@ -573,15 +510,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation8;
 
         /// <summary>
-        /// lblDescr8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr8;
-
-        /// <summary>
         /// lblAvailable8 control.
         /// </summary>
         /// <remarks>
@@ -643,15 +571,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation9;
-
-        /// <summary>
-        /// lblDescr9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr9;
 
         /// <summary>
         /// lblAvailable9 control.
@@ -735,15 +654,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation10;
 
         /// <summary>
-        /// lblDescr10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr10;
-
-        /// <summary>
         /// lblAvailable10 control.
         /// </summary>
         /// <remarks>
@@ -807,15 +717,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation11;
 
         /// <summary>
-        /// lblDescr11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr11;
-
-        /// <summary>
         /// lblAvailable11 control.
         /// </summary>
         /// <remarks>
@@ -877,15 +778,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation12;
-
-        /// <summary>
-        /// lblDescr12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr12;
 
         /// <summary>
         /// lblAvailable12 control.
@@ -960,15 +852,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation13;
 
         /// <summary>
-        /// lblDescr13 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr13;
-
-        /// <summary>
         /// lblAvailable13 control.
         /// </summary>
         /// <remarks>
@@ -1032,15 +915,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation14;
 
         /// <summary>
-        /// lblDescr14 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr14;
-
-        /// <summary>
         /// lblAvailable14 control.
         /// </summary>
         /// <remarks>
@@ -1102,15 +976,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation15;
-
-        /// <summary>
-        /// lblDescr15 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr15;
 
         /// <summary>
         /// lblAvailable15 control.
@@ -1185,15 +1050,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation16;
 
         /// <summary>
-        /// lblDescr16 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr16;
-
-        /// <summary>
         /// lblAvailable16 control.
         /// </summary>
         /// <remarks>
@@ -1257,15 +1113,6 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblLocation17;
 
         /// <summary>
-        /// lblDescr17 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr17;
-
-        /// <summary>
         /// lblAvailable17 control.
         /// </summary>
         /// <remarks>
@@ -1327,15 +1174,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLocation18;
-
-        /// <summary>
-        /// lblDescr18 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescr18;
 
         /// <summary>
         /// lblAvailable18 control.

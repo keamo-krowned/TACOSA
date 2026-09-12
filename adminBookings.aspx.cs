@@ -155,6 +155,7 @@ namespace TACOSA
 
         protected void bntAddNewT_Click(object sender, EventArgs e)
         {
+            Response.Redirect("adminNewBooking.aspx");
 
         }
     }
