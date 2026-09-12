@@ -65,12 +65,31 @@ namespace TACOSA
 
                     if (!string.IsNullOrEmpty(imagePath))
                     {
-                        Image1.ImageUrl = "~/Images/" + imagePath;
+                        // Replace backslashes with forward slashes because of the way its stores in the database
+                        imagePath = imagePath.Replace("\\", "/");
+
+                        // Remove any leading slash so it doesn't break the URL
+                        if (imagePath.StartsWith("/"))
+                        {
+                            imagePath = imagePath.Substring(1);
+                        }
+
+                        //Checks if the word Images/ is already in the path
+                        if (imagePath.ToLower().StartsWith("images/"))
+                        {
+                            // if image is already there? just adds "~/"
+                            Image1.ImageUrl = "~/" + imagePath;
+                        }
+                        else
+                        {
+                            // adding the .png part
+                            Image1.ImageUrl = "~/Images/" + imagePath;
+                        }
                     }
                     else
                     {
-                        //just a place holder 
-                        Image1.ImageUrl = "~/Images/no-image.png"; 
+                        // Just a placeholder 
+                        Image1.ImageUrl = "~/Images/no-image.png";
                     }
 
                 }
@@ -134,7 +153,7 @@ namespace TACOSA
                     {
                         cmdBooking.Parameters.AddWithValue("@TouristID", touristId);
 
-                        // ExecuteScalar runs the INSERT and returns the new BookingID
+                        // inserts and returns the new BookingID
                         newBookingID = Convert.ToInt32(cmdBooking.ExecuteScalar());
                     }
 
