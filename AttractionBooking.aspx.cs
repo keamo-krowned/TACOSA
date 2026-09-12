@@ -91,9 +91,14 @@ namespace TACOSA
                         // Just a placeholder 
                         Image1.ImageUrl = "~/Images/no-image.png";
                     }
-
+                        dt.Rows[0]["Rating"].ToString();
+                    //lblCategory.Text =
+                    //"R" +
+                    //Convert.ToDecimal(dt.Rows[0]["PricePerDay"])
+                    //.ToString("N2", CultureInfo.GetCultureInfo("en-ZA"));
                 }
             }
+
         }
         protected void btnBook_Click(object sender, EventArgs e)
         {

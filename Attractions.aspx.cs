@@ -57,6 +57,7 @@ namespace TACOSA
                     lblName18
                 };
                 /*
+
                 Label[] descriptions =
                 {
                     lblDescr1,
@@ -79,6 +80,7 @@ namespace TACOSA
                     lblDescr18
                 };
                 */
+
                 Label[] locations =
                 {
                     lblLocation1,

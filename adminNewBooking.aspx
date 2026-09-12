@@ -22,6 +22,7 @@
         }
         .auto-style7 {
             width: 301px;
+            width: 211px;
             height: 26px;
             text-align: right;
         }
@@ -31,6 +32,7 @@
         }
         .auto-style35 {
             width: 301px;
+            width: 211px;
             text-align: right;
             height: 48px;
         }
@@ -40,6 +42,7 @@
         }
         .auto-style13 {
             width: 301px;
+            width: 211px;
             height: 47px;
             text-align: right;
         }
@@ -51,6 +54,9 @@
             width: 301px;
             height: 49px;
             display:flex;
+            width: 211px;
+            text-align: right;
+            height: 49px;
         }
         .auto-style40 {
             width: 202px;
@@ -60,6 +66,9 @@
         }
         .auto-style49 {
             width: 301px;
+        }
+        .auto-style49 {
+            width: 211px;
             text-align: right;
             height: 73px;
         }
@@ -87,6 +96,7 @@
             <tr>
                 <td class="auto-style17" colspan="2"><strong>
                     <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Create A New Accommodation Booking" ForeColor="#663300"></asp:Label>
+                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="Create A New Booking" ForeColor="#663300"></asp:Label>
                     </strong></td>
             </tr>
             <tr>
