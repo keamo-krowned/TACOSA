@@ -45,6 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,6 +72,9 @@
   <ItemGroup>
     <Content Include="addAccommodation.aspx" />
     <Content Include="adminAccommodations.aspx" />
+    <Content Include="adminBookings.aspx" />
+    <Content Include="adminNewBooking.aspx" />
+    <Content Include="adminUpdateBooking.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
     <Content Include="Accommodations.aspx" />
@@ -79,6 +83,8 @@
     <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="ChatBot.aspx" />
+    <Content Include="ChatbotButton.ascx" />
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="editAccommodation.aspx" />
@@ -164,6 +170,27 @@
     <Compile Include="adminAccommodations.aspx.designer.cs">
       <DependentUpon>adminAccommodations.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminBookings.aspx.cs">
+      <DependentUpon>adminBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminBookings.aspx.designer.cs">
+      <DependentUpon>adminBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminNewBooking.aspx.cs">
+      <DependentUpon>adminNewBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminNewBooking.aspx.designer.cs">
+      <DependentUpon>adminNewBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminUpdateBooking.aspx.cs">
+      <DependentUpon>adminUpdateBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminUpdateBooking.aspx.designer.cs">
+      <DependentUpon>adminUpdateBooking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bookings.aspx.cs">
       <DependentUpon>Bookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +247,20 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChatBot.aspx.cs">
+      <DependentUpon>ChatBot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatBot.aspx.designer.cs">
+      <DependentUpon>ChatBot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatbotButton.ascx.cs">
+      <DependentUpon>ChatbotButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatbotButton.ascx.designer.cs">
+      <DependentUpon>ChatbotButton.ascx</DependentUpon>
+    </Compile>
     <Compile Include="confirmationPage.aspx.cs">
       <DependentUpon>confirmationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +279,7 @@
     <Compile Include="editAccommodation.aspx.designer.cs">
       <DependentUpon>editAccommodation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GroqChatBot.cs" />
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
