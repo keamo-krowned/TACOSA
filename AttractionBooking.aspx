@@ -280,8 +280,13 @@
              </div>
         <div>
 
-            <asp:Button ID="btnBook" runat="server" OnClick="btnBook_Click" Text="Book Now" Width="228px" />
+            <asp:Button ID="btnBook" runat="server" OnClick="btnBook_Click" Text="Book Now" Width="214px" />
             <br />
+            <br />
+
+            <asp:Label ID="Label9" runat="server" Text="Delete booking by BookingID:"></asp:Label>
+            <asp:TextBox ID="txtDelete" runat="server"></asp:TextBox>
+            <asp:Button ID="btnDeleteBooking" runat="server" OnClick="btnDeleteBooking_Click" Text="Delete Now" Width="228px" />
 
         </div>
     </form>

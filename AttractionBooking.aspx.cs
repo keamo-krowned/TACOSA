@@ -30,7 +30,7 @@ namespace TACOSA
 
                 if (string.IsNullOrEmpty(id))
                 {
-                    Response.Redirect("Attractions.aspx"); // send them back if no ID
+                    Response.Redirect("Attractions.aspx"); // send them back if no id
                     return;
                 }
 
@@ -108,12 +108,7 @@ namespace TACOSA
                 }
 
                 // getting the cookies
-                string touristId = Session["TouristID"] as string;
-                if (string.IsNullOrEmpty(touristId))
-                {
-                    Response.Write("<script>alert('You must be logged in to book.');</script>");
-                    return;
-                }
+                string touristId = "2"; 
 
                 string conStr = @"Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;Persist Security Info=True;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True";
 
@@ -153,7 +148,7 @@ namespace TACOSA
                     {
                         cmdBooking.Parameters.AddWithValue("@TouristID", touristId);
 
-                        // inserts and returns the new BookingID
+                        // insert and returns the new BookingID
                         newBookingID = Convert.ToInt32(cmdBooking.ExecuteScalar());
                     }
 
@@ -187,6 +182,44 @@ namespace TACOSA
                     }
                 }
             }
+        }
+
+        protected void btnDeleteBooking_Click(object sender, EventArgs e)
+        {
+            //Check if the user actually typed an ID into the textbox
+            if (string.IsNullOrWhiteSpace(txtDelete.Text))
+            {
+                Response.Write("<script>alert('Please enter a Booking ID to delete.');</script>");
+                return;
+            }
+
+            string bookingID = txtDelete.Text.Trim();
+            string conStr = @"Data Source=tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;Persist Security Info=True;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True";
+
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                con.Open();
+
+                // Delete from attraction bookings first
+                string deleteAttraction = "DELETE FROM AttractionBookings WHERE BookingID = @BookingID";
+                using (SqlCommand cmd = new SqlCommand(deleteAttraction, con))
+                {
+                    cmd.Parameters.AddWithValue("@BookingID", bookingID);
+                    cmd.ExecuteNonQuery();
+                }
+
+                // Delete from bookings page
+                string deleteMain = "DELETE FROM Bookings WHERE BookingID = @BookingID";
+                using (SqlCommand cmd = new SqlCommand(deleteMain, con))
+                {
+                    cmd.Parameters.AddWithValue("@BookingID", bookingID);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            // Clear the textbox and show success
+            txtDelete.Text = "";
+            Response.Write("<script>alert('Booking Cancelled Successfully.');</script>");
         }
     }
     
