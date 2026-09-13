@@ -33,13 +33,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTitle;
 
         /// <summary>
-        /// lblAccommodation control.
+        /// lblTouristID0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAccommodation;
+        protected global::System.Web.UI.WebControls.Label lblTouristID0;
 
         /// <summary>
         /// txtAcc control.
@@ -85,24 +85,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-
-        /// <summary>
-        /// lblType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblType;
-
-        /// <summary>
-        /// txtType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtType;
 
         /// <summary>
         /// lblNumPeople control.
