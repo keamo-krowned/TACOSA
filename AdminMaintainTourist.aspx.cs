@@ -146,6 +146,10 @@ namespace TACOSA
                     }
                 }
             }
+            else if (result == "HasUpcomingBookings")
+            {
+                lblMessage.Text = "This tourist has upcoming bookings and cannot be deleted until they are cancelled.";
+            }
             else
             {
                 lblMessage.Text = "Delete did not complete as expected.";

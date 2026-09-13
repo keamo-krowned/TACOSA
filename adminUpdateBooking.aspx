@@ -5,126 +5,356 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
     <style type="text/css">
 
-
-        .auto-style48 {
-            width: 100%;
+       
+        .booking-table {
+            width: 700px;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0 12px;
         }
+
+       
+        .label-cell {
+            width: 300px;
+            text-align: right;
+            padding-right: 20px;
+            vertical-align: middle;
+        }
+
         
+        .input-cell {
+            width: 300px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        
+        .calendar-row td {
+            vertical-align: top;
+        }
+
+        
+        .calendar-cell {
+            text-align: center;
+            vertical-align: top;
+        }
+
+        
+        .calendar-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        
+        .calendar-validator {
+            display: block;
+            margin-top: 5px;
+        }
+
         .auto-style17 {
             height: 35px;
             text-align: center;
         }
+
         .auto-style4 {
             font-size: x-large;
         }
-        .auto-style7 {
-            width: 211px;
-            height: 26px;
-            text-align: right;
-        }
-        .auto-style20 {
-            width: 202px;
-            height: 26px;
-        }
-        .auto-style35 {
-            width: 211px;
-            text-align: right;
-            height: 48px;
-        }
-        .auto-style36 {
-            width: 202px;
-            height: 48px;
-        }
-        .auto-style13 {
-            width: 211px;
-            height: 47px;
-            text-align: right;
-        }
-        .auto-style43 {
-            width: 202px;
-            height: 47px;
-        }
-        .auto-style39 {
-            width: 211px;
-            text-align: right;
-            height: 49px;
-        }
-        .auto-style40 {
-            width: 202px;
-            height: 49px;
-        }
-        .auto-style49 {
-            width: 211px;
-            text-align: right;
-            height: 73px;
-        }
-        .auto-style50 {
-            width: 202px;
-            height: 73px;
-        }
-        .auto-style51 {
-            width: 202px;
-            height: 48px;
-            text-align: right;
-        }
+
     </style>
 </head>
-<body style="background-color: #FFF3A3">
-    <form id="form1" runat="server">
-        <div>
 
-        </div>
-        <table class="auto-style48">
+<body style="background-color: #FFF3A3">
+
+    <form id="form1" runat="server">
+
+        <table class="booking-table">
+
             <tr>
-                <td class="auto-style17" colspan="2"><strong>
-                    <asp:Label ID="lblTitle" runat="server" CssClass="auto-style4" Text="What Information Do You Want To Change?" ForeColor="#663300"></asp:Label>
-                    </strong></td>
-            </tr>
-            <tr>
-                <td class="auto-style7"></td>
-                <td class="auto-style20"></td>
-            </tr>
-            <tr>
-                <td class="auto-style35">
-                    <asp:Label ID="lblTouristID" runat="server" Text="TouristID:"></asp:Label>
-                </td>
-                <td class="auto-style36">
-                    <asp:TextBox ID="txtTouristID" runat="server" Width="226px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style13">
-                    <asp:Label ID="lblType" runat="server" Text="Booking Type:"></asp:Label>
-                </td>
-                <td class="auto-style43">
-                    <asp:TextBox ID="txtType" runat="server" Width="225px"></asp:TextBox>
+                <td class="auto-style17" colspan="2">
+                    <strong>
+                        <asp:Label ID="lblTitle"
+                            runat="server"
+                            CssClass="auto-style4"
+                            Text="What Information Do You Want To Change?"
+                            ForeColor="#663300">
+                        </asp:Label>
+                    </strong>
                 </td>
             </tr>
+
+
             <tr>
-                <td class="auto-style39">
-                    <asp:Label ID="lblStatus" runat="server" Text="Booking Status:"></asp:Label>
+                <td class="label-cell">
+                    <asp:Label ID="lblTouristID0"
+                        runat="server"
+                        Text="Accommodation ID:">
+                    </asp:Label>
                 </td>
-                <td class="auto-style40">
-                    <asp:TextBox ID="txtStatus" runat="server" Width="226px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style49">
-                    </td>
-                <td class="auto-style50">
-                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
-                    </td>
-            </tr>
-            <tr>
-                <td class="auto-style35">
-                    &nbsp;</td>
-                <td class="auto-style51">
-                    <asp:Button ID="btnSubmitChanges" runat="server" BackColor="#663300" OnClick="btnSubmitChanges_Click" Text="Submit changes" Width="166px" />
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtAcc"
+                        runat="server"
+                        Width="226px">
+                    </asp:TextBox>
                 </td>
             </tr>
+
+
+            <tr>
+                <td class="label-cell">
+                    <asp:Label ID="lblTouristID"
+                        runat="server"
+                        Text="TouristID:">
+                    </asp:Label>
+                </td>
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtTouristID"
+                        runat="server"
+                        Width="226px">
+                    </asp:TextBox>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="label-cell">
+                    <asp:Label ID="lblNumPeople"
+                        runat="server"
+                        Text="Number Of People:">
+                    </asp:Label>
+                </td>
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtPeople"
+                        runat="server"
+                        Width="225px"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-cell">
+                    <asp:Label ID="lblNumPeople0"
+                        runat="server"
+                        Text="Number Of Rooms:">
+                    </asp:Label>
+                </td>
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtRooms"
+                        runat="server"
+                        Width="225px">
+                    </asp:TextBox>
+                </td>
+            </tr>
+
+
+            <tr class="calendar-row">
+                <td colspan="2">
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+
+                        <div class="calendar-cell">
+
+                            <asp:Label ID="lblCheckIn"
+                                runat="server"
+                                Text="Check In Date:"
+                                CssClass="calendar-label">
+                            </asp:Label>
+
+                            <asp:Calendar ID="Calendar1"
+                                runat="server"
+                                BackColor="#FFFFCC"
+                                BorderColor="#FFCC66"
+                                BorderWidth="1px"
+                                DayNameFormat="Shortest"
+                                Font-Names="Verdana"
+                                Font-Size="8pt"
+                                ForeColor="#663399"
+                                Height="200px"
+                                ShowGridLines="True"
+                                Width="220px"
+                                OnSelectionChanged="Calendar1_SelectionChanged">
+
+                                <DayHeaderStyle
+                                    BackColor="#FFCC66"
+                                    Font-Bold="True"
+                                    Height="1px" />
+
+                                <NextPrevStyle
+                                    Font-Size="9pt"
+                                    ForeColor="#FFFFCC" />
+
+                                <OtherMonthDayStyle
+                                    ForeColor="#CC9966" />
+
+                                <SelectedDayStyle
+                                    BackColor="#CCCCFF"
+                                    Font-Bold="True" />
+
+                                <SelectorStyle
+                                    BackColor="#FFCC66" />
+
+                                <TitleStyle
+                                    BackColor="#990000"
+                                    Font-Bold="True"
+                                    Font-Size="9pt"
+                                    ForeColor="#FFFFCC" />
+
+                                <TodayDayStyle
+                                    BackColor="#FFCC66"
+                                    ForeColor="White" />
+
+                            </asp:Calendar>
+
+                            <asp:CustomValidator
+                                ID="CustomValidatorCal1"
+                                runat="server"
+                                ErrorMessage="Date Cannot be in the past."
+                                ForeColor="Red"
+                                OnServerValidate="CustomValidatorCal1_ServerValidate"
+                                CssClass="calendar-validator">
+                            </asp:CustomValidator>
+
+                        </div>
+
+
+                        <div class="calendar-cell">
+
+                            <asp:Label ID="lblCheckOut"
+                                runat="server"
+                                Text="Check Out Date:"
+                                CssClass="calendar-label">
+                            </asp:Label>
+
+                            <asp:Calendar ID="Calendar2"
+                                runat="server"
+                                BackColor="#FFFFCC"
+                                BorderColor="#FFCC66"
+                                BorderWidth="1px"
+                                DayNameFormat="Shortest"
+                                Font-Names="Verdana"
+                                Font-Size="8pt"
+                                ForeColor="#663399"
+                                Height="200px"
+                                ShowGridLines="True"
+                                Width="220px">
+
+                                <DayHeaderStyle
+                                    BackColor="#FFCC66"
+                                    Font-Bold="True"
+                                    Height="1px" />
+
+                                <NextPrevStyle
+                                    Font-Size="9pt"
+                                    ForeColor="#FFFFCC" />
+
+                                <OtherMonthDayStyle
+                                    ForeColor="#CC9966" />
+
+                                <SelectedDayStyle
+                                    BackColor="#CCCCFF"
+                                    Font-Bold="True" />
+
+                                <SelectorStyle
+                                    BackColor="#FFCC66" />
+
+                                <TitleStyle
+                                    BackColor="#990000"
+                                    Font-Bold="True"
+                                    Font-Size="9pt"
+                                    ForeColor="#FFFFCC" />
+
+                                <TodayDayStyle
+                                    BackColor="#FFCC66"
+                                    ForeColor="White" />
+
+                            </asp:Calendar>
+
+                            <asp:CustomValidator
+                                ID="CustomValidatorCal2"
+                                runat="server"
+                                ErrorMessage="Required Field."
+                                ForeColor="Red"
+                                OnServerValidate="CustomValidatorCal2_ServerValidate"
+                                CssClass="calendar-validator">
+                            </asp:CustomValidator>
+
+                        </div>
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-cell">
+                    <asp:Label ID="lblGrandTotal"
+                        runat="server"
+                        Text="Grand Total:">
+                    </asp:Label>
+                </td>
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtGrandPrice"
+                        runat="server"
+                        Width="226px">
+                    </asp:TextBox>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="label-cell">
+                    <asp:Label ID="lblStatus0"
+                        runat="server"
+                        Text="Booking Status:">
+                    </asp:Label>
+                </td>
+
+                <td class="input-cell">
+                    <asp:TextBox ID="txtStatus"
+                        runat="server"
+                        Width="226px"></asp:TextBox>
+                </td>
+            </tr>
+
+
+           
+            <tr>
+                <td class="label-cell">
+                </td>
+
+                <td class="input-cell">
+                    <asp:Label ID="lblError"
+                        runat="server"
+                        ForeColor="Red">
+                    </asp:Label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-cell">
+                </td>
+
+                <td class="input-cell">
+                    <asp:Button ID="btnSubmitChanges"
+                        runat="server"
+                        BackColor="#663300"
+                        OnClick="btnSubmitChanges_Click"
+                        Text="Submit changes"
+                        Width="166px" />
+                </td>
+            </tr>
+
         </table>
+
     </form>
+
 </body>
 </html>
+

@@ -30,7 +30,7 @@ namespace TACOSA
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connStr))
-            using (SqlCommand cmd = new SqlCommand("dbo.adminSelectBookings", conn))
+            using (SqlCommand cmd = new SqlCommand("adminSelectBookings", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -53,22 +53,8 @@ namespace TACOSA
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            int BookingID;
-
-            try
-            {
-                BookingID = Convert.ToInt32(txtDelete.Text.Trim());
-            }
-            catch (FormatException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
-            catch (OverflowException)
-            {
-                lblMessage.Text = "Please enter a valid Tourist ID.";
-                return;
-            }
+            int BookingID = Convert.ToInt32(txtDelete.Text.Trim());
+            
 
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
             string result = null;
@@ -155,7 +141,7 @@ namespace TACOSA
 
         protected void bntAddNewT_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("adminNewBooking.aspx");
         }
     }
 }

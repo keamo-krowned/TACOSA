@@ -202,7 +202,7 @@
             <asp:Label
                 ID="Label5"
                 runat="server"
-                Text="BOOKINGS"
+                Text="ACCBOOKINGS"
                 style="
                     display:inline-block;
                     padding:12px 30px;
@@ -216,8 +216,7 @@
                     white-space:nowrap;
                     cursor:pointer;
                 "
-                onclick="window.location.href='Bookings.aspx';">
-            </asp:Label>
+                onclick="window.location.href='Bookings.aspx';"></asp:Label>
 
         </td>
 
@@ -238,14 +237,15 @@
                     <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Bookings" OnClick="btnViewAll_Click" />
                 </td>
                 <td class="auto-style19">
-                    <asp:Label ID="lblAdd" runat="server" Text="Add New Booking"></asp:Label>
+                    <asp:Label ID="lblAdd" runat="server" Text="Add New Accommodation Booking"></asp:Label>
                 </td>
                 <td class="auto-style15">
-                    <asp:Label ID="lblDelete" runat="server" Text="Delete Booking By ID"></asp:Label>
+                    <asp:Label ID="lblDelete" runat="server" Text="Delete Accommodation Booking By ID"></asp:Label>
                 </td>
                 <td class="auto-style1">
-                    <asp:Label ID="lblMaintain" runat="server" Text="Maintain Bookings Details By ID"></asp:Label>
+                    <asp:Label ID="lblMaintain" runat="server" Text="Maintain Accommodation Bookings Details By ID"></asp:Label>
                 </td>
+                
             </tr>
             <tr>
                 <td class="auto-style16">&nbsp;</td>
