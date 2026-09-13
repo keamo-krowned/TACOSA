@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminBookings.aspx.cs" Inherits="TACOSA.adminBookings" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminTransactions.aspx.cs" Inherits="TACOSA.adminTransactions" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
     <title></title>
     <style type="text/css">
 
+
         .auto-style12 {
             height: 73px;
             width: 157px;
@@ -14,10 +15,12 @@
         .auto-style17 {
             height: 73px;
             width: 285px;
+            text-align: center;
         }
         .auto-style13 {
             height: 73px;
             width: 202px;
+            text-align: center;
         }
         .auto-style14 {
             height: 73px;
@@ -70,10 +73,30 @@
         .auto-style21 {
             width: 308px;
         }
-        </style>
+        .auto-style22 {
+            width: 157px;
+            height: 121px;
+        }
+        .auto-style23 {
+            width: 285px;
+            text-align: center;
+            height: 121px;
+        }
+        .auto-style24 {
+            width: 202px;
+            text-align: center;
+            height: 121px;
+        }
+        .auto-style25 {
+            text-align: center;
+            width: 308px;
+            height: 121px;
+        }
+    </style>
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
+        
                 <table style="
     width:100%;
     border-collapse:collapse;
@@ -114,6 +137,32 @@
 
 
         <!-- ACCOMMODATIONS -->
+        <td style="
+            width:19%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkTourists0" 
+                runat="server" 
+                NavigateUrl="~/AdminMaintainTourist.aspx"
+                Text="TRANSACTIONS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
         <td style="
             width:19%;
             text-align:center;
@@ -205,24 +254,21 @@
             white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="Label5"
-                runat="server"
+            <asp:HyperLink 
+                ID="lnkAccBookings" 
+                runat="server" 
+                NavigateUrl="~/AdminMaintainTourist.aspx"
                 Text="ACCBOOKINGS"
                 style="
-                    display:inline-block;
-                    padding:12px 30px;
-                    border:2px solid #6B4226;
-                    border-radius:30px;
-                    color:white;
-                    background-color:#6B4226;
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    letter-spacing:2px;
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
                     white-space:nowrap;
+                    text-decoration:none;
                     cursor:pointer;
-                "
-                onclick="window.location.href='Bookings.aspx';"></asp:Label>
+                "></asp:HyperLink>
 
         </td>
 
@@ -232,48 +278,43 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style12"></td>
-                <td class="auto-style17"></td>
-                <td class="auto-style13">
-                    <asp:Label ID="lblMessage" runat="server"></asp:Label>
+                <td class="auto-style17">
+                    <asp:Label ID="lblAdd" runat="server" Text="Add New Transactions"></asp:Label>
                 </td>
-                <td class="auto-style14"></td>
+                <td class="auto-style13">
+                    &nbsp;</td>
+                <td class="auto-style14">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10">
-                    <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Bookings" OnClick="btnViewAll_Click" />
+                <td class="auto-style22">
+                    <asp:Button ID="btnViewAll" runat="server" BackColor="#663300" ForeColor="White" Text="View all Transactions" OnClick="btnViewAll_Click" />
                 </td>
-                <td class="auto-style19">
-                    <asp:Label ID="lblAdd" runat="server" Text="Add New Accommodation Booking"></asp:Label>
+                <td class="auto-style23">
+                    <asp:Button ID="btnNewBooking" runat="server" BackColor="#663300" ForeColor="White" OnClick="bntAddNewT_Click" Text="Add New Transactions" Width="174px" style="margin-left: 0px" />
                 </td>
-                <td class="auto-style15">
-                    <asp:Label ID="lblDelete" runat="server" Text="Delete Accommodation Booking By ID"></asp:Label>
-                </td>
-                <td class="auto-style1">
-                    <asp:Label ID="lblMaintain" runat="server" Text="Maintain Accommodation Bookings Details By ID"></asp:Label>
+                <td class="auto-style24">
+                    &nbsp;</td>
+                <td class="auto-style25">
+                    <asp:Label ID="lblMessage" runat="server"></asp:Label>
                 </td>
                 
             </tr>
             <tr>
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style19">
-                    <asp:Button ID="btnNewBooking" runat="server" BackColor="#663300" ForeColor="White" OnClick="bntAddNewT_Click" Text="Add New Bookings" Width="174px" style="margin-left: 0px" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="txtDelete" runat="server" Width="233px"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style1">
-                    <asp:TextBox ID="txtMaintain" runat="server" Width="233px"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11"></td>
                 <td class="auto-style20">&nbsp;</td>
                 <td class="auto-style9">
-                    <asp:Button ID="btnDelete" runat="server" BackColor="#FFCCCC" ForeColor="Red" Text="Delete Bookings By ID" OnClick="btnDelete_Click" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style7">
-                    <asp:Button ID="btnMainatin" runat="server" BackColor="#663300" ForeColor="White" Text="Maintain Detail" Width="227px" OnClick="btnMainatin_Click" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style10">&nbsp;</td>
@@ -288,6 +329,7 @@
                 </td>
             </tr>
         </table>
+        
     </form>
 </body>
 </html>

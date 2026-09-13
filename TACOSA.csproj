@@ -71,11 +71,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminAddTransaction.aspx" />
     <Content Include="adminBookings.aspx" />
     <Content Include="AdminMaintainAttBookings.aspx" />
     <Content Include="adminNewBooking.aspx" />
     <Content Include="addAccommodation.aspx" />
     <Content Include="adminAccommodations.aspx" />
+    <Content Include="adminTransactions.aspx" />
     <Content Include="adminUpdateBooking.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
@@ -92,6 +94,7 @@
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="editAccommodation.aspx" />
+    <Content Include="editTransactions.aspx" />
     <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
     <Content Include="LandingPage.aspx" />
@@ -161,11 +164,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminAddTransaction.aspx.cs">
+      <DependentUpon>adminAddTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminAddTransaction.aspx.designer.cs">
+      <DependentUpon>adminAddTransaction.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminBookings.aspx.cs">
       <DependentUpon>adminBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-	<Compile Include="adminBookings.aspx.designer.cs">
+    <Compile Include="adminBookings.aspx.designer.cs">
       <DependentUpon>adminBookings.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminMaintainAttBookings.aspx.cs">
@@ -195,6 +205,13 @@
     </Compile>
     <Compile Include="adminNewBooking.aspx.designer.cs">
       <DependentUpon>adminNewBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminTransactions.aspx.cs">
+      <DependentUpon>adminTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminTransactions.aspx.designer.cs">
+      <DependentUpon>adminTransactions.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminUpdateBooking.aspx.cs">
       <DependentUpon>adminUpdateBooking.aspx</DependentUpon>
@@ -304,6 +321,13 @@
     </Compile>
     <Compile Include="editAccommodation.aspx.designer.cs">
       <DependentUpon>editAccommodation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editTransactions.aspx.cs">
+      <DependentUpon>editTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editTransactions.aspx.designer.cs">
+      <DependentUpon>editTransactions.aspx</DependentUpon>
     </Compile>
     <Compile Include="GroqChatBot.cs" />
     <Compile Include="homepage.aspx.cs">
