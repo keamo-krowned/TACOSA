@@ -25,13 +25,13 @@ namespace TACOSA
         protected void btnClose_Click(object sender, EventArgs e)
         {
             // when user clicks this button, we want to ensure that the user is redirected to the home page
-            Response.Redirect("");
+            Response.Redirect("homePage.aspx");
         }
 
         protected void btnNextBooking_Click(object sender, EventArgs e)
         {
             // when user clicks this button, we want to ensure that the user is redirected to the booking page
-            Response.Redirect("");
+            Response.Redirect("bookingPage.aspx");
         }
     }
 }
