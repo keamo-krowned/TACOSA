@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #fff383">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #CC6600">
 <head runat="server">
     <title></title>
     <style type="text/css">
@@ -120,8 +120,8 @@
 
                         <asp:Label ID="Label10" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <asp:Label ID="Label11" runat="server" Text="CVV:" style="color: #FFFFFF"></asp:Label>
-                        <br /><br />
                         <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="23px"></asp:TextBox>
+                        <br /><br />
                         <br />
                         <br /><br />
 
@@ -191,12 +191,13 @@
             <tr>
                 <td style="text-align: center">
                         <asp:Label ID="Label12" runat="server" Text="-----------------------------------OR------------------------------------------"></asp:Label>
+                        <asp:Label ID="lblerror" runat="server"></asp:Label>
                         </td>
             </tr>
             <tr>
                 <td style="text-align: center">
                         <strong>
-                        <asp:Button ID="btnCancel" runat="server" BackColor="#6B4226" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" Width="429px" BorderColor="#6B4226" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
+                        <asp:Button ID="btnCancel" runat="server" BackColor="#6B4226" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="btnCancel_Click" Width="429px" BorderColor="#6B4226" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
                         </strong>
                     </td>
             </tr>
