@@ -10,7 +10,7 @@
     <style type="text/css">
         .auto-style1 {
             height: 49px;
-            text-align: center;
+            text-align: left;
         }
         .auto-style2 {
             width: 315px;
@@ -30,20 +30,20 @@
         <table style="width: 100%; height: 334px;">
             <tr>
                 <td colspan="3" style="text-align: center">
-            <asp:Label ID="lblAccPerMonth" runat="server" style="font-size: xx-large"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblAccPerMonth" runat="server" style="font-size: xx-large"></asp:Label>
                     <br />
                     <asp:Label ID="lblWelcome" runat="server"></asp:Label>
+                    <br />
+                    <asp:Label ID="lblError" runat="server" style="color:red;"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Chart ID="Chart1" runat="server" Height="532px" Width="1259px" BackColor="SaddleBrown" DataSourceID="SqlDataSource2">
+                   
+                    <asp:Chart ID="Chart1" runat="server" Height="532px" Width="1393px" BackColor="Sienna">
                         <series>
-                            <asp:Series Name="Series1">
+                            <asp:Series Name="Accommodations" ChartType="Column" Color="#336600">
                             </asp:Series>
                         </series>
                         <chartareas>
@@ -51,21 +51,30 @@
                             </asp:ChartArea>
                         </chartareas>
                     </asp:Chart>
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                 </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         <table style="width: 100%; height: 569px;">
             <tr>
                 <td>
-                    <asp:GridView ID="GVAccommodations" runat="server" Height="373px" Width="1393px">
+                    
+                    <asp:GridView ID="GVAccommodations" runat="server" 
+                        Height="605px" 
+                        Width="1393px"
+                        BackColor="#DEBA84"
+                        BorderColor="#DEBA84"
+                        BorderWidth="1px"
+                        CellPadding="3" BorderStyle="None" CellSpacing="2">
+                        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+                        <HeaderStyle BackColor="#A55129" ForeColor="White" Font-Bold="True"/>
+                        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#FFF1D4" />
+                        <SortedAscendingHeaderStyle BackColor="#B95C30" />
+                        <SortedDescendingCellStyle BackColor="#F1E5CE" />
+                        <SortedDescendingHeaderStyle BackColor="#93451F" />
                     </asp:GridView>
                 </td>
             </tr>
@@ -78,14 +87,22 @@
             </tr>
             <tr>
                 <td class="auto-style1">
-                    <asp:Button ID="Button2" runat="server" BackColor="#00CC00" Height="40px" style="text-align: center" Text="Export data to  MS Excel" Width="182px" />
+                    <asp:Button ID="Button2" runat="server" 
+                        BackColor="#00CC00" 
+                        Height="40px" 
+                        style="text-align: left" 
+                        Text="Export data to MS Excel" 
+                        Width="198px" ToolTip="click to export data to MS excel" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button3" runat="server" 
+                        BackColor="#993300" 
+                        Height="40px" 
+                        style="text-align: left" 
+                        Text="return to reports" 
+                        Width="198px" OnClick="Button3_Click" ToolTip="click to return to request page" />
                 </td>
-                <td class="auto-style3">
-                    <asp:Button ID="Button1" runat="server" BackColor="#FF3300" Height="42px" style="text-align: center" Text="export data to pdf form" Width="165px" />
-                </td>
-                <td class="auto-style1">
-                    <asp:Button ID="Button3" runat="server" BackColor="#0066FF" Height="42px" style="text-align: center" Text="export data to MS Word" Width="146px" />
-                </td>
+                <td class="auto-style3"></td>
+                <td class="auto-style1"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
