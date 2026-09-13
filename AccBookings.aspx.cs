@@ -139,7 +139,7 @@ namespace TACOSA
                             //REDIRECT TO PAYMENT
                             Session["BookingID"] = bookingID;
 
-                            Response.Redirect("TransactionPage.aspx");
+                            Response.Redirect("transactionPage.aspx");
                         }
                         lblCalculatedPrice.Text = "R" + totalPriceCharged.ToString("F2");
                         Session["GrandTotal"] = totalPriceCharged;
