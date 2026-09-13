@@ -267,7 +267,7 @@
                 </td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="BtnContinue" runat="server" BackColor="#3333FF" Text="Continue" Width="142px" OnClick="BtnContinue_Click" />
+                    <asp:Button ID="BtnContinue" runat="server" BackColor="#663300" Text="Continue" Width="142px" OnClick="BtnContinue_Click" ForeColor="White" />
                 </td>
             </tr>
         </table>

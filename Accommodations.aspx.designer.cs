@@ -105,6 +105,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice1;
 
         /// <summary>
+        /// lblHotelRating1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHotelRating1;
+
+        /// <summary>
         /// hplHotelView1 control.
         /// </summary>
         /// <remarks>
@@ -148,6 +157,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblHotelPrice2;
+
+        /// <summary>
+        /// lblHotelRating2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHotelRating2;
 
         /// <summary>
         /// hplHotelView2 control.
@@ -195,6 +213,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice3;
 
         /// <summary>
+        /// lblHotelRating3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHotelRating3;
+
+        /// <summary>
         /// hplHotelView3 control.
         /// </summary>
         /// <remarks>
@@ -240,6 +267,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblHotelPrice4;
 
         /// <summary>
+        /// lblHotelRating4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHotelRating4;
+
+        /// <summary>
         /// hplHotelView4 control.
         /// </summary>
         /// <remarks>
@@ -283,6 +319,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblHotelPrice5;
+
+        /// <summary>
+        /// lblHotelRating5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHotelRating5;
 
         /// <summary>
         /// hplHotelView5 control.
@@ -339,6 +384,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHPrice1;
 
         /// <summary>
+        /// lblGHRating1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGHRating1;
+
+        /// <summary>
         /// hplGHView1 control.
         /// </summary>
         /// <remarks>
@@ -382,6 +436,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGHPrice2;
+
+        /// <summary>
+        /// lblGHRating2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGHRating2;
 
         /// <summary>
         /// hplGHView2 control.
@@ -429,6 +492,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHPrice3;
 
         /// <summary>
+        /// lblGHRating3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGHRating3;
+
+        /// <summary>
         /// hplGHView3 control.
         /// </summary>
         /// <remarks>
@@ -474,6 +546,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblGHPrice4;
 
         /// <summary>
+        /// lblGHRating4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGHRating4;
+
+        /// <summary>
         /// hplGHView4 control.
         /// </summary>
         /// <remarks>
@@ -517,6 +598,15 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGHPrice5;
+
+        /// <summary>
+        /// lblGHRating5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGHRating5;
 
         /// <summary>
         /// hplGHView5 control.

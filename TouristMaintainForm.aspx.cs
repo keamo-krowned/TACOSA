@@ -74,7 +74,12 @@ namespace TACOSA
                     if (result == "Success")
                     {
                         Session.Clear();
-                        Response.Redirect("homepage.aspx");
+                        Response.Redirect("LandingPage.aspx");
+                    }
+                    else if (result == "HasUpcomingBookings")
+                    {
+                        lblError.ForeColor = System.Drawing.Color.Red;
+                        lblError.Text = "You must cancel your upcoming bookings before deleting your account.";
                     }
                     else
                     {
