@@ -256,25 +256,26 @@
             white-space:nowrap;
         ">
 
-            <asp:Label
-                ID="Label5"
-                runat="server"
-                Text="BOOKINGS"
-                style="
-                    display:inline-block;
-                    padding:12px 30px;
-                    border:2px solid #6B4226;
-                    border-radius:30px;
-                    color:white;
-                    background-color:#6B4226;
-                    font-family:Georgia, serif;
-                    font-weight:bold;
-                    letter-spacing:2px;
-                    white-space:nowrap;
-                    cursor:pointer;
-                "
-                onclick="window.location.href='Bookings.aspx';">
-            </asp:Label>
+            <asp:HyperLink
+    ID="btnBookings"
+    runat="server"
+    Text="BOOKINGS"
+    NavigateUrl="~/Bookings.aspx"
+    style="
+        display:inline-block;
+        padding:12px 30px;
+        border:2px solid #6B4226;
+        border-radius:30px;
+        color:white;
+        background-color:#6B4226;
+        font-family:Georgia, serif;
+        font-weight:bold;
+        letter-spacing:2px;
+        white-space:nowrap;
+        cursor:pointer;
+        text-decoration:none;
+    ">
+</asp:HyperLink>
 
         </td>
 

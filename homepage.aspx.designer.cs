@@ -60,13 +60,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.HyperLink lnkMyProfile;
 
         /// <summary>
-        /// Label5 control.
+        /// btnBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.HyperLink btnBookings;
 
         /// <summary>
         /// Image1 control.
