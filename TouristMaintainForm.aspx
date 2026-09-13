@@ -42,9 +42,15 @@
         .auto-style10 {
             width: 317px;
             height: 34px;
+            text-align: center;
         }
         .auto-style11 {
             height: 34px;
+        }
+        .auto-style12 {
+            height: 26px;
+            width: 317px;
+            text-align: center;
         }
     </style>
 </head>
@@ -59,7 +65,7 @@
                 </td>
                 <td class="auto-style5"></td>
                 <td class="auto-style1">
-                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4"></asp:Label>
+                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4" ForeColor="#6B4226"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -77,10 +83,10 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" OnClick="BtnDeleteAccount_Click" />
+                    <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="White" Text="Delete Account" OnClick="BtnDeleteAccount_Click" BackColor="#6B4226" BorderColor="#6B4226" Height="69px" Width="247px" />
                 </td>
-                <td class="auto-style5">
-                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
+                <td class="auto-style12">
+                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" BackColor="#6B4226" BorderColor="#6B4226" ForeColor="White" Height="62px" Width="245px" />
                 </td>
                 <td class="auto-style1"></td>
             </tr>
@@ -98,7 +104,7 @@
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style6">&nbsp;</td>
                 <td class="auto-style8">
-                    <asp:Button ID="BtnHomePage" runat="server" BackColor="#3366FF" OnClick="BtnHomePage_Click" Text="Back To Home Page" />
+                    <asp:Button ID="BtnHomePage" runat="server" BackColor="#6B4226" OnClick="BtnHomePage_Click" Text="Back To Home Page" ForeColor="White" />
                 </td>
             </tr>
         </table>
