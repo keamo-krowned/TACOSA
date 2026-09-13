@@ -35,7 +35,7 @@ namespace TACOSA
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection("Data Source = tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True;Encrypt=True")) // use conn string to create connection
+                using (SqlConnection connection = new SqlConnection("Data Source = tacosapro2026.database.windows.net;Initial Catalog=cmpg-TacosaProject;User ID=systemAdmin;Password=LetsgoTacosa77;TrustServerCertificate=True;Encrypt=True")) // use conn string to create connection. automatically added conn.close
                 {
                     connection.Open(); // open the connection
 
@@ -48,14 +48,14 @@ namespace TACOSA
                       JOIN Attractions a
                        ON ab.AttractionID = a.AttractionID
                        GROUP BY a.AttractionName
-                       ORDER BY TotalVisits DESC"; 
+                       ORDER BY TotalVisits DESC";  // query to get top 5 acc
 
                     SqlCommand command = new SqlCommand(query, connection); // create the command
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable dataTable = new DataTable();
+                    DataTable dataTable = new DataTable(); // new data table
                     adapter.Fill(dataTable);
 
-                    if (dataTable.Rows.Count > 0)
+                    if (dataTable.Rows.Count > 0) // if statement to check if there is any type of record held
                     {
                         // we want to bind the data to the GridView and Chart
                         GVattractions.DataSource = dataTable;
@@ -68,7 +68,7 @@ namespace TACOSA
                         {
                             Chart1.Series["Attractions"].Points.AddXY(
                                 row["AttractionName"].ToString(),
-                                Convert.ToInt32(row["TotalVisits"])
+                                Convert.ToInt32(row["TotalVisits"]) // assign the xy values of our chart
                             );
                         }
 
