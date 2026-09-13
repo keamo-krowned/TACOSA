@@ -272,6 +272,7 @@
     </Compile>
     <Compile Include="attractionsReports.aspx.designer.cs">
       <DependentUpon>attractionsReports.aspx</DependentUpon>
+	</Compile>
     <Compile Include="ChatBot.aspx.cs">
       <DependentUpon>ChatBot.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
