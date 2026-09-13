@@ -10,7 +10,7 @@
             width: 100%;
         }
         .card-box {
-            background-color: saddlebrown;
+            background-color: #6B4226;
             border-radius: 12px;
             padding: 25px;
             box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
@@ -37,15 +37,18 @@
         .auto-style17 {
             color: #FFFFFF;
         }
+        .auto-style18 {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div style="font-size: xx-large; text-align: center; color: #3366FF">
-            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #663300" Text="SECURE PAYMENT PORTAL"></asp:Label>
+            <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #6B4226" Text="SECURE PAYMENT PORTAL" Font-Names="Georgia"></asp:Label>
         </div>
         <div style="font-weight: 700; color: #663300; font-size: xx-large; text-align:center;">
-            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#996633"></asp:Label>
+            <asp:Label ID="Label13" runat="server" Text="TACOSA!" ForeColor="#6B4226" Font-Names="Georgia"></asp:Label>
         </div>
 
         <table class="auto-style14">
@@ -54,38 +57,71 @@
                 <td style="vertical-align: top;" class="auto-style16">
                     <div class="card-box">
                         <asp:Label ID="Label3" runat="server" style="color: #CC0000" Text="*"></asp:Label>
-                        <asp:Label ID="Label4" runat="server" Text="Card Number:" style="font-size: large" CssClass="auto-style17"></asp:Label>
+                        <strong>
+                        <asp:Label ID="Label4" runat="server" Text="Card Number:" style="font-size: large" CssClass="auto-style17" Font-Names="Georgia"></asp:Label>
+                        </strong>
                         <br />
                         <asp:TextBox ID="txtCardNO" runat="server" ToolTip="ENTER CARD NUMBER" Width="278px" Height="25px"></asp:TextBox>
                         <br /><br />
 
-                        <asp:Label ID="Label5" runat="server" style="color: #CC0000" Text="*"></asp:Label>
-                        <asp:Label ID="Label8" runat="server" Text="Card Holder name:" style="font-size: large" CssClass="auto-style17"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" style="color: #663300" Text="*"></asp:Label>
+                        <strong>
+                        <asp:Label ID="Label8" runat="server" Text="Card Holder name:" style="font-size: large" CssClass="auto-style17" Font-Names="geeorgia"></asp:Label>
+                        </strong>
                         <br /><br />
                         <asp:TextBox ID="txtCardholderName" runat="server" ToolTip="ENTER NAME OF CARD" Width="279px" Height="23px"></asp:TextBox>
                         <br /><br />
 
                         <asp:Label ID="Label7" runat="server" style="color: #CC0000" Text="*"></asp:Label>
+                        <strong>
                         <asp:Label ID="Label9" runat="server" Text="Expiry date:" style="font-size: large; color: #FFFFFF;"></asp:Label>
+                        </strong>
                         <br />
-                        <asp:Calendar ID="CalExpirydate" runat="server" BackColor="White" BorderColor="Black" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="225px" NextPrevFormat="ShortMonth" Width="547px" BorderStyle="Solid" CellSpacing="1" ToolTip="ENTER CARD EXPIRY DATE">
-                            <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
-                            <DayStyle BackColor="#CCCCCC" />
-                            <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
-                            <OtherMonthDayStyle ForeColor="#999999" />
-                            <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                            <TitleStyle BackColor="#333399" Font-Bold="True" Font-Size="12pt" ForeColor="White" BorderStyle="Solid" Height="12pt" />
-                            <TodayDayStyle BackColor="#999999" ForeColor="White" />
-                        </asp:Calendar>
-                        <br />
+
+
+
+                        <asp:Calendar ID="CalExpirydate" runat="server"
+    BackColor="White"
+    BorderColor="Black"
+    Font-Names="Verdana"
+    Font-Size="9pt"
+    ForeColor="Black"
+    Height="225px"
+    NextPrevFormat="ShortMonth"
+    Width="547px"
+    BorderStyle="Solid"
+    CellSpacing="1">
+
+    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
+
+    <DayStyle BackColor="#CCCCCC" />
+
+    <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
+
+    <OtherMonthDayStyle ForeColor="#999999" />
+
+    <SelectedDayStyle BackColor="#FFFFFF" ForeColor="White" />
+
+    <TitleStyle
+        BackColor="#663300"
+        Font-Bold="True"
+        Font-Size="12pt"
+        ForeColor="White"
+        BorderStyle="Solid"
+        Height="12pt" />
+
+    <TodayDayStyle BackColor="#999999" ForeColor="White" />
+
+</asp:Calendar>
+
+
+
+                        <br /><br />
 
                         <asp:Label ID="Label10" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <asp:Label ID="Label11" runat="server" Text="CVV:" style="color: #FFFFFF"></asp:Label>
-                        <br />
-                        <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="23px"></asp:TextBox>
-                        <br />
-
                         <br /><br />
+                        <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="23px"></asp:TextBox>
                         <br />
                         <br /><br />
 
@@ -96,7 +132,7 @@
 
                 <td style="width: 50%; vertical-align: top;">
                     <div class="card-box">
-                        <asp:Label ID="Label14" runat="server" style="font-weight: 700; text-decoration: underline; color: #FFFFFF; font-size: xx-large;" Text="Payment Summary:" ForeColor="#990033"></asp:Label>
+                        <asp:Label ID="Label14" runat="server" style="font-weight: 700; text-decoration: underline; color: #FFFFFF; font-size: xx-large;" Text="Payment Summary:" ForeColor="#990033" Font-Names="Georgia"></asp:Label>
                         <br /><br />
 
                         <div class="summary-row">
@@ -135,8 +171,8 @@
                         </div>
                         <hr />
                         <div class="summary-row">
-                            <span class="summary-label" style="font-size: x-large; color: green;">Total:</span>
-                            <asp:Label ID="lblGrandTotal" runat="server" style="font-size: x-large; color: green; font-weight: bold;"></asp:Label>
+                            <span class="summary-label" style="font-size: x-large; color: white;">Total:</span>
+                            <asp:Label ID="lblGrandTotal" runat="server" style="font-size: x-large; color: white; font-weight: bold;" ForeColor="White"></asp:Label>
                         </div>
                     </div>
                 </td>
@@ -146,7 +182,10 @@
             <tr>
                 <td class="auto-style15" style="text-align: center">
 
-                        <asp:Button ID="btnPayment" runat="server" BackColor="#336600" BorderColor="#339933" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" OnClick="btnPayment_Click" />
+                        <strong>
+
+                        <asp:Button ID="btnPayment" runat="server" BackColor="#6B4226" BorderColor="#6B4226" Height="35px" Text="CONFIRM PAYMENT" ToolTip="CLICK TO CONFIRM PAYMENT!" Width="433px" style="text-align: center" OnClick="btnPayment_Click" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
+                        </strong>
                         </td>
             </tr>
             <tr>
@@ -156,7 +195,9 @@
             </tr>
             <tr>
                 <td style="text-align: center">
-                        <asp:Button ID="btnCancel" runat="server" BackColor="Red" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" Width="429px" />
+                        <strong>
+                        <asp:Button ID="btnCancel" runat="server" BackColor="#6B4226" Height="41px" Text="CANCEL PAYMENT/ RETURN" ToolTip="CLICK TO CANCEL PAYMENT" OnClick="Button1_Click" Width="429px" BorderColor="#6B4226" CssClass="auto-style18" Font-Names="Georgia" ForeColor="White" />
+                        </strong>
                     </td>
             </tr>
         </table>
