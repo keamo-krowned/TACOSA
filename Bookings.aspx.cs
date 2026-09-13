@@ -100,7 +100,7 @@ namespace TACOSA
 
                                 lnkPay.Text = "PAY";
                                 lnkPay.CssClass = "buttons";
-                                lnkPay.NavigateUrl = "transactionPage.aspx";
+                                lnkPay.NavigateUrl = "transactionPage.aspx?id="+id;
                                 lnkSpan.Controls.Add(lnkPay);
 
 
