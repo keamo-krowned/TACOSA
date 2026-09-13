@@ -321,10 +321,10 @@
                 <td class="auto-style36">
                     &nbsp;</td>
                 <td class="auto-style37">
-                    <asp:Button ID="btnBook" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" OnClick="btnBook_Click" />
+                    <asp:Button ID="btnBook" runat="server" BackColor="#663300" Font-Bold="True" ForeColor="White" Height="39px" Text="Book Now" Width="130px" BorderStyle="Groove" OnClick="btnBook_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnCancel" runat="server" BackColor="Maroon" Font-Bold="True" ForeColor="#EE6C46" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" OnClick="btnCancel_Click" CausesValidation="False" />
+                    <asp:Button ID="btnCancel" runat="server" BackColor="#663300" Font-Bold="True" ForeColor="White" Height="39px" Text="Cancel Booking" Width="130px" BorderStyle="Groove" OnClick="btnCancel_Click" CausesValidation="False" />
                 </td>
             </tr>
         </table>
