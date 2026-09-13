@@ -268,7 +268,7 @@
                 </td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style22">
-                    <asp:Button ID="btnAdd" runat="server" BackColor="#663300" ForeColor="White" OnClick="btnAdd_Click" Text="Add New Toruist" Width="124px" />
+                    <asp:Button ID="btnAdd" runat="server" BackColor="#663300" ForeColor="White" OnClick="btnAdd_Click" Text="Add New Toruist" Width="183px" />
                 </td>
             </tr>
         </table>
