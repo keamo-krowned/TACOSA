@@ -18,7 +18,6 @@ namespace TACOSA
             if (!IsPostBack)
             {
                 txtTouristID.Attributes["placeholder"] = "15";
-                txtType.Attributes["placeholder"] = "Accommodation";
                 txtStatus.Attributes["placeholder"] = "Pending";
                 
             }
@@ -32,28 +31,68 @@ namespace TACOSA
 
                 string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
                
-                string query = "INSERT INTO Bookings(TouristID, BookingType, BookingStatus) VALUES (@touristID," +
-                    "@bookingType, @bookingStatus);";
-                string type = txtType.Text.Trim();
+                string bookingID;
+                int numPeople = Convert.ToInt32(txtPeople.Text.Trim());
+                int rooms = Convert.ToInt32(txtRooms.Text.Trim());
+                int accID = Convert.ToInt32(txtAcc.Text.Trim());
+                int roomsAvailable;
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
-                    using (SqlCommand cmd = new SqlCommand("query", conn))
+                    using (SqlCommand cmd = new SqlCommand("createAccBooking", conn))
                     {
-                        
-                        if (type != "Attraction" || type != "Accommodation")
+                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                        using (SqlDataReader reader1 = cmd.ExecuteReader())
                         {
-                            lblError.Text = "Please enter either 'Attraction' or 'Accomodation' \nas the booking type";
+                            cmd.Parameters.AddWithValue("@AccommodationID", accID);
+                            if (reader1.Read())
+                            {
+                                if (numPeople > Convert.ToInt32(reader1["CapacityPerRoom"])* Convert.ToInt32(reader1["RoomsAvailable"]))
+                                {
+                                    lblError.Text = "The number of guests exceeds the accommodation Capacity." +
+                                        "\nPlease Enter an amount that can accommodate enough people per room.";
+                                    return;
+
+                                    roomsAvailable = Convert.ToInt32(reader1["RoomsAvailable"]) - rooms;
+                                }
+                            }
+                        }
+
+                        cmd.Parameters.AddWithValue("@AccommodationID", accID);
+                        cmd.Parameters.AddWithValue("@TouristID", Convert.ToInt32(txtTouristID.Text.Trim()));
+                        cmd.Parameters.AddWithValue("@status", txtStatus.Text.Trim());
+                        cmd.Parameters.AddWithValue("@TotalPriceCharged", Convert.ToDecimal(txtGrandPrice.Text));
+                        cmd.Parameters.AddWithValue("@NumOfPeople", numPeople);
+                        cmd.Parameters.AddWithValue("@NumOfRooms", rooms);
+                        cmd.Parameters.AddWithValue("@CheckInDate", Convert.ToDateTime(Calendar1.SelectedDate));
+                        cmd.Parameters.AddWithValue("@CheckOutDate", Convert.ToDateTime(Calendar2.SelectedDate));
+
+                        
+                        
+                        try
+                        {
+                            conn.Open();
+
+                            using (SqlDataReader reader2 = cmd.ExecuteReader())
+                            {
+                                if (reader2.Read())
+                                {
+
+
+                                    bookingID = reader2["BookingID"].ToString();
+                                    Session["BookingsMessage"] = "New Accommodation booking ID: " + bookingID + " created successfully.";
+                                    Response.Redirect("adminBookings.aspx");
+                                }
+                            }
+                        }
+                        catch (SqlException ex)
+                        {
+                            lblError.Text = ex.Message;
                             return;
                         }
-                        cmd.Parameters.AddWithValue("@touristID", txtTouristID.Text.Trim());
-                        cmd.Parameters.AddWithValue("@bookingType", type);
-                        cmd.Parameters.AddWithValue("@bookingStatus", txtStatus.Text.Trim());
-
-
                     }
                 }
-                Session["BookingsMessage"] = "New " + type + " booking created successfully.";
-                Response.Redirect("adminBookings.aspx");
+                
 
             }
             catch (SqlException ex)
@@ -61,6 +100,13 @@ namespace TACOSA
                 lblError.Text = ex.Message;
             }
             
+        }
+
+        
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
 
         public void CustomValidatorCal1_ServerValidate(object source, ServerValidateEventArgs args)
@@ -99,7 +145,7 @@ namespace TACOSA
             }
         }
 
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        protected void Calendar1_SelectionChanged1(object sender, EventArgs e)
         {
 
         }

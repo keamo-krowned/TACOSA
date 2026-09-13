@@ -203,7 +203,6 @@
                 ID="Label5"
                 runat="server"
                 Text="ACCBOOKINGS"
-                
                 style="
                     display:inline-block;
                     padding:12px 30px;
@@ -218,7 +217,8 @@
                     cursor:pointer;
                 "
                 onclick="window.location.href='Bookings.aspx';"></asp:Label>
-                &nbsp;</asp:Label></td>
+
+        </td>
 
     </tr>
 
@@ -244,7 +244,6 @@
                 </td>
                 <td class="auto-style1">
                     <asp:Label ID="lblMaintain" runat="server" Text="Maintain Accommodation Bookings Details By ID"></asp:Label>
-                   
                 </td>
                 
             </tr>
