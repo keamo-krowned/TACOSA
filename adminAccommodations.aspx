@@ -120,6 +120,32 @@
         ">
 
             <asp:HyperLink 
+                ID="lnkAccommodation1" 
+                runat="server" 
+                NavigateUrl="~/adminTransactions.aspx"
+                Text="TRANSACTIONS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
+        <td style="
+            width:19%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
                 ID="lnkAccommodation0" 
                 runat="server" 
                 NavigateUrl="~/Reports.aspx"

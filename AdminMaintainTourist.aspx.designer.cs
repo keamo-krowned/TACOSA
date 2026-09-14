@@ -33,6 +33,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTacosa;
 
         /// <summary>
+        /// lnkAccommodation1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkAccommodation1;
+
+        /// <summary>
         /// lnkAccommodation0 control.
         /// </summary>
         /// <remarks>
@@ -69,13 +78,13 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.HyperLink lnkTourists;
 
         /// <summary>
-        /// Label5 control.
+        /// lnkTourists0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.HyperLink lnkTourists0;
 
         /// <summary>
         /// lblTitle control.
