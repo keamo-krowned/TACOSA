@@ -30,7 +30,10 @@ namespace TACOSA
                 lblError.Text = "Please enter an email address";
                 return;
             }
-
+            if (txtEmail.Text == "admin@tacosa.com")
+            {
+                Response.Redirect("adminAccommodations.aspx");
+            }
             string query = "SELECT TouristID, FirstName, LastName FROM Tourist WHERE TouristEmail = @Email";
 
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -58,10 +61,7 @@ namespace TACOSA
                                 userCookie["Name"] = fullName;
                                 Response.Cookies.Add(userCookie);
 
-                                if(lblEmail.Text=="admin@tacosa.com")
-                                {
-                                    Response.Redirect("homepage.aspx");
-                                }
+                                
                                 Response.Redirect("homepage.aspx");
                             }
                             else

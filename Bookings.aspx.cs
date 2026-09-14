@@ -78,8 +78,6 @@ namespace TACOSA
                                 decimal price = Convert.ToDecimal(reader["TotalPriceCharged"]);
                                 string imgPath = reader["ImagePath"].ToString();
 
-                                //create session for accommodationID
-                                Session["AttID"] = reader["AttractionID"].ToString();
                                 //create the booking card dynamically
                                 HtmlGenericControl bookingCard = new HtmlGenericControl("div");
                                 bookingCard.Attributes["class"] = "cardCss";
@@ -174,9 +172,7 @@ namespace TACOSA
                             decimal price = Convert.ToDecimal(read["TotalPriceCharged"]);
                             string imgPath = read["ImagePath"].ToString();
 
-                                //create session for accommodationID
-                                Session["AccID"] = read["AccommodationID"].ToString();
-
+                               
                             //create the booking card dynamically
                             HtmlGenericControl bookingCard = new HtmlGenericControl("div");
                             bookingCard.Attributes["class"] = "cardCss";
