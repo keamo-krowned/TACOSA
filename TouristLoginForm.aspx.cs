@@ -13,6 +13,7 @@ namespace TACOSA
 {
     public partial class TouristLoginForm : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             txtEmail.Attributes["placeholder"] = "johndoe223@email.com ";
@@ -57,6 +58,10 @@ namespace TACOSA
                                 userCookie["Name"] = fullName;
                                 Response.Cookies.Add(userCookie);
 
+                                if(lblEmail.Text=="admin@tacosa.com")
+                                {
+                                    Response.Redirect("homepage.aspx");
+                                }
                                 Response.Redirect("homepage.aspx");
                             }
                             else

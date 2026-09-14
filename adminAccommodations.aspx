@@ -72,7 +72,182 @@
 </head>
 <body style="background-color: #FFF3A3">
     <form id="form1" runat="server">
-        
+                                <table style="
+    width:100%;
+    border-collapse:collapse;
+    background-color:#FFF3A3;
+    padding:0;
+    margin:0;
+">
+
+    <tr>
+
+        <!-- TACOSA -->
+        <td style="
+            width:27%;
+            padding-left:2%;
+            padding-top:25px;
+            padding-bottom:25px;
+            text-align:left;
+            vertical-align:middle;
+        ">
+
+            <asp:Label
+                ID="lblTacosa"
+                runat="server"
+                Text="TACOSA"
+                style="
+                    font-family:Georgia, serif;
+                    font-size:26px;
+                    font-weight:bold;
+                    color:#6B4226;
+                    letter-spacing:2px;
+                    cursor:pointer;
+                    white-space:nowrap;
+                "
+                onclick="window.location.href='homepage.aspx';">
+            </asp:Label>
+
+        </td>
+
+
+        <!-- ACCOMMODATIONS -->
+        <td style="
+            width:19%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkAccommodation0" 
+                runat="server" 
+                NavigateUrl="~/Reports.aspx"
+                Text="REPORTS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
+        <td style="
+            width:19%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkAccommodation" 
+                runat="server" 
+                NavigateUrl="~/adminAccommodations.aspx"
+                Text="ACCOMMODATIONS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
+        <!-- ATTRACTIONS -->
+        <td style="
+            width:18%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkAttractions" 
+                runat="server" 
+                NavigateUrl="~/AdminMaintainAttBookings.aspx"
+                Text="ATTRACTIONS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
+        <!-- MY PROFILE -->
+        <td style="
+            width:14%;
+            text-align:center;
+            vertical-align:middle;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkTourists" 
+                runat="server" 
+                NavigateUrl="~/AdminMaintainTourist.aspx"
+                Text="TOURISTS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+
+        <!-- BOOKINGS -->
+        <td style="
+            width:22%;
+            text-align:center;
+            vertical-align:middle;
+            padding-right:2%;
+            white-space:nowrap;
+        ">
+
+            <asp:HyperLink 
+                ID="lnkTourists0" 
+                runat="server" 
+                NavigateUrl="~/adminBookings.aspx"
+                Text="ACCBOOKINGS"
+                style="
+                    font-family:Georgia, serif; 
+                    font-size:17px; 
+                    font-weight:bold; 
+                    color:#6B4226; 
+                    letter-spacing:1px; 
+                    white-space:nowrap;
+                    text-decoration:none;
+                    cursor:pointer;
+                "></asp:HyperLink>
+
+        </td>
+
+    </tr>
+
+</table>
         <div class="auto-style1">
     <asp:Label ID="lblTitle" runat="server" CssClass="auto-style2" ForeColor="#663300" Text="Mainatin Accommodations"></asp:Label>
 <div>

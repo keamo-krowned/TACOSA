@@ -33,6 +33,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label lblTacosa;
 
         /// <summary>
+        /// lnkAccommodation0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkAccommodation0;
+
+        /// <summary>
         /// lnkAccommodation control.
         /// </summary>
         /// <remarks>
