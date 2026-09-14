@@ -76,7 +76,7 @@ namespace TACOSA
                         Session.Clear();
                         Response.Redirect("LandingPage.aspx");
                     }
-                    else if (result == "HasUpcomingBookings")
+                    else if (result == "HasUpcomingBooking")
                     {
                         lblError.ForeColor = System.Drawing.Color.Red;
                         lblError.Text = "You must cancel your upcoming bookings before deleting your account.";

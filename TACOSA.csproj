@@ -45,6 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -70,26 +71,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminAddTransaction.aspx" />
     <Content Include="adminBookings.aspx" />
     <Content Include="AdminMaintainAttBookings.aspx" />
     <Content Include="adminNewBooking.aspx" />
     <Content Include="addAccommodation.aspx" />
     <Content Include="adminAccommodations.aspx" />
+    <Content Include="adminTransactions.aspx" />
     <Content Include="adminUpdateBooking.aspx" />
     <Content Include="Bookings.aspx" />
     <Content Include="AccBookings.aspx" />
+    <Content Include="accommodationReports.aspx" />
     <Content Include="Accommodations.aspx" />
     <Content Include="AdminAddNewT.aspx" />
     <Content Include="AdminMaintainTourist.aspx" />
     <Content Include="AdminUpdateTDetails.aspx" />
     <Content Include="AttractionBooking.aspx" />
     <Content Include="Attractions.aspx" />
+    <Content Include="attractionsReports.aspx" />
     <Content Include="ChatBot.aspx" />
     <Content Include="ChatbotButton.ascx" />
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="DeleteBooking.aspx" />
     <Content Include="editAccommodation.aspx" />
+    <Content Include="editTransactions.aspx" />
     <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
     <Content Include="LandingPage.aspx" />
@@ -116,6 +122,7 @@
     <Content Include="Images\Welfare.PNG" />
     <Content Include="Images\wineFarm.PNG" />
     <Content Include="Images\Zoo.PNG" />
+    <Content Include="Reports.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Images\56e06a3c7219bdf861826f9445f68cfa.jpg" />
     <Content Include="Images\5a7ed66ada4a74dc2c525662e6e8f823.jpg" />
@@ -159,6 +166,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminAddTransaction.aspx.cs">
+      <DependentUpon>adminAddTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminAddTransaction.aspx.designer.cs">
+      <DependentUpon>adminAddTransaction.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminBookings.aspx.cs">
       <DependentUpon>adminBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -194,6 +208,13 @@
     <Compile Include="adminNewBooking.aspx.designer.cs">
       <DependentUpon>adminNewBooking.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminTransactions.aspx.cs">
+      <DependentUpon>adminTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminTransactions.aspx.designer.cs">
+      <DependentUpon>adminTransactions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminUpdateBooking.aspx.cs">
       <DependentUpon>adminUpdateBooking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +235,13 @@
     </Compile>
     <Compile Include="AccBookings.aspx.designer.cs">
       <DependentUpon>AccBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accommodationReports.aspx.cs">
+      <DependentUpon>accommodationReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accommodationReports.aspx.designer.cs">
+      <DependentUpon>accommodationReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Accommodations.aspx.cs">
       <DependentUpon>Accommodations.aspx</DependentUpon>
@@ -257,6 +285,13 @@
     <Compile Include="Attractions.aspx.designer.cs">
       <DependentUpon>Attractions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="attractionsReports.aspx.cs">
+      <DependentUpon>attractionsReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attractionsReports.aspx.designer.cs">
+      <DependentUpon>attractionsReports.aspx</DependentUpon>
+	</Compile>
     <Compile Include="ChatBot.aspx.cs">
       <DependentUpon>ChatBot.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,6 +331,13 @@
     <Compile Include="editAccommodation.aspx.designer.cs">
       <DependentUpon>editAccommodation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="editTransactions.aspx.cs">
+      <DependentUpon>editTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editTransactions.aspx.designer.cs">
+      <DependentUpon>editTransactions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GroqChatBot.cs" />
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -312,6 +354,13 @@
       <DependentUpon>LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TouristLoginForm.aspx.cs">
       <DependentUpon>TouristLoginForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -59,7 +59,7 @@
                 </td>
                 <td class="auto-style5"></td>
                 <td class="auto-style1">
-                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4"></asp:Label>
+                    <asp:Label ID="lblWelcome" runat="server" CssClass="auto-style4" ForeColor="#663300"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -80,7 +80,7 @@
                     <asp:Button ID="BtnDeleteAccount" runat="server" Font-Bold="True" ForeColor="Red" Text="Delete Account" OnClick="BtnDeleteAccount_Click" />
                 </td>
                 <td class="auto-style5">
-                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" />
+                    <asp:Button ID="BtnUpdateDetails" runat="server" OnClick="BtnUpdateDetails_Click" Text="Update Details" BackColor="#663300" ForeColor="White" />
                 </td>
                 <td class="auto-style1"></td>
             </tr>
@@ -98,7 +98,7 @@
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style6">&nbsp;</td>
                 <td class="auto-style8">
-                    <asp:Button ID="BtnHomePage" runat="server" BackColor="#3366FF" OnClick="BtnHomePage_Click" Text="Back To Home Page" />
+                    <asp:Button ID="BtnHomePage" runat="server" BackColor="#663300" OnClick="BtnHomePage_Click" Text="Back To Home Page" ForeColor="White" />
                 </td>
             </tr>
         </table>

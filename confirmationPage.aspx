@@ -77,10 +77,10 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="btnNextBooking" runat="server" BackColor="#009933" OnClick="btnNextBooking_Click" Text="Create a new booking....." Width="186px" />
+                    <asp:Button ID="btnNextBooking" runat="server" BackColor="#009933" OnClick="btnNextBooking_Click" Text="Create a new booking....." Width="186px" Height="61px" />
                 </td>
                 <td>
-                    <asp:Button ID="btnClose" runat="server" BackColor="#CC0000" OnClick="btnClose_Click" Text="Close page" Width="195px" />
+                    <asp:Button ID="btnClose" runat="server" BackColor="#CC0000" OnClick="btnClose_Click" Text="Close page" Width="195px" Height="70px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
