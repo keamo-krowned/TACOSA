@@ -112,9 +112,8 @@ namespace TACOSA
                     return;
                 }
 
-                // getting the cookies
-                string touristId = Session["TouristID"] as string;
-                if (string.IsNullOrEmpty(touristId))
+                string touristId = Session["TouristID"].ToString();
+                if (Session["TouristID"]==null)
                 {
                     Response.Write("<script>alert('You must be logged in to book.');</script>");
                     return;
@@ -182,7 +181,7 @@ namespace TACOSA
                         if (rowsAffected > 0)
                         {
                             Session["TotalBookingPrice"] = totalPrice;
-                            Session["NewBookingID"] = newBookingID;
+                            Session["BookingID"] = newBookingID;
                             Response.Redirect("transactionPage.aspx");
                         }
                         else

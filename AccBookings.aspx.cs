@@ -56,7 +56,9 @@ namespace TACOSA
                             //Details
                             lblAccCapacity.Text = reader["CapacityPerRoom"].ToString();
                             lblRoomsAvailable.Text = reader["RoomsAvailable"].ToString();
-                            lblAccPricePerNight.Text = "R" + Convert.ToDecimal(reader["PricePerNight"]).ToString("F2") + "/Night";
+                            decimal pricePerNight = Convert.ToDecimal(reader["PricePerNight"]);
+                            lblAccPricePerNight.Text = "R" + pricePerNight.ToString("F2") + "/Night";
+                            Session["PricePerNight"] = pricePerNight;
                             lblRoomTypes.Text = reader["RoomTypeName"].ToString();
 
                             //Contact Details
@@ -103,6 +105,23 @@ namespace TACOSA
                 DateTime checkInDate = CalendarCheckIN.SelectedDate;
                 DateTime checkOutDate = CalendarCheckOUT.SelectedDate;
 
+                //VALIDATE CALENDAR
+                if (CalendarCheckIN.SelectedDate == DateTime.MinValue ||
+                 CalendarCheckOUT.SelectedDate == DateTime.MinValue)
+                {
+                    lblCalculatedPrice.Text = "Please select both check-in and check-out dates.";
+                    lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
+                    return;
+                }
+
+                
+                if (checkOutDate <= checkInDate)
+                {
+                    lblCalculatedPrice.Text = "Check-out date must be after check-in date.";
+                    lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
+                    return;
+                }
+
                 // Calculate total days
                 int totalDays = (checkOutDate - checkInDate).Days;
 
@@ -114,49 +133,56 @@ namespace TACOSA
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
                     conn.Open();
-
+                   
                     using (SqlCommand cmd = new SqlCommand("createAccBooking", conn))
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
                         //insert data into the database using the stored procedure
-
+                        
                         // Calculate total price
                         decimal totalPriceCharged = totalDays * numOfRooms * pricePerNight;
-
+    
                         cmd.Parameters.AddWithValue("@TouristID", touristID);
-                        cmd.Parameters.AddWithValue("@BookingType", "Accommodation");
                         cmd.Parameters.AddWithValue("@AccommodationID", accommodationID);
+                        cmd.Parameters.AddWithValue("@status", "Pending");
                         cmd.Parameters.AddWithValue("@TotalPriceCharged", totalPriceCharged);
                         cmd.Parameters.AddWithValue("@NumOfPeople", numOfPeople);
                         cmd.Parameters.AddWithValue("@CheckInDate", checkInDate);
                         cmd.Parameters.AddWithValue("@CheckOutDate", checkOutDate);
                         cmd.Parameters.AddWithValue("@NumOfRooms", numOfRooms);
 
-                        string bookingID = (cmd.ExecuteScalar()).ToString();
 
-                        if (bookingID!=null)
+                        object bookingResult = cmd.ExecuteScalar();
+
+                        if (bookingResult != null)
                         {
+
+                            string bookingID = bookingResult.ToString();
                             //REDIRECT TO PAYMENT
                             Session["BookingID"] = bookingID;
 
                             Response.Redirect("transactionPage.aspx");
                         }
+                        
                         lblCalculatedPrice.Text = "R" + totalPriceCharged.ToString("F2");
                         Session["GrandTotal"] = totalPriceCharged;
                     }
                 }
             }
-            catch (SqlException) //SQL error and exception handling
+            catch (SqlException ex) //SQL error and exception handling
             {
-                lblCalculatedPrice.Text = "A database error occurred. Please try again.";
+                lblCalculatedPrice.Text = "SQL ERROR: " + ex.Message;
                 lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
             }
-            catch (Exception)
+            
+            catch (Exception ex)
             {
-                lblCalculatedPrice.Text = "An error occurred while processing your booking. Please check your inputs.";
-                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon; //maroon colour for errors specifically
+                lblCalculatedPrice.Text = "NORMAL ERROR: " + ex.Message;
+                lblCalculatedPrice.ForeColor = System.Drawing.Color.Maroon;
             }
         }
+
+        
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {

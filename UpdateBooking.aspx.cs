@@ -153,7 +153,7 @@ namespace TACOSA
                                                             TotalPriceCharged = @totalPrice
                                                             WHERE BookingID = @BookingID;", conn))
                     {
-                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                       
                         cmd.Parameters.AddWithValue("@checkIn", inDate);
                         cmd.Parameters.AddWithValue("@checkOut", outDate);
                         cmd.Parameters.AddWithValue("@numPeople", people);

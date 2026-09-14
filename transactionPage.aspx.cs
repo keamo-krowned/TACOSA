@@ -12,6 +12,11 @@ namespace TACOSA
             txtCardholderName.Attributes["placeholder"] = "John Doe/Jane Doe";
             txtCVVNumber.Attributes["placeholder"] = "123";
             CalExpirydate.Attributes["placeholder"] = "Select Expiry Date";
+            if (Session["BookingID"]==null)
+            {
+                lblerror.Text = "No booking was recorded for a transaction to occur.";
+                return;
+            }
         }
 
         protected void btnPayment_Click(object sender, EventArgs e)
@@ -33,8 +38,7 @@ namespace TACOSA
                         conn);
 
                     // get BookingID from session
-                    cmd.Parameters.AddWithValue("@BookingID",
-                        Session["bookingID"] != null ? Session["bookingID"] : (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@BookingID", Convert.ToInt16(Session["BookingId"]));
 
                     // get amount from label - safely handle empty label
                     decimal total = 0;
@@ -77,7 +81,9 @@ namespace TACOSA
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+       
+
+        protected void btnCancel_Click(object sender, EventArgs e)
         {
             // when user clicks cancel button, redirect to home page
             Response.Redirect("homePage.aspx");

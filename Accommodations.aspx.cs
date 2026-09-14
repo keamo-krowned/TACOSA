@@ -20,7 +20,7 @@ namespace TACOSA
             hlkAcc.BackColor = System.Drawing.ColorTranslator.FromHtml("#6B4226");
             int size = 10;
             //set arrays for sql statements and display objects
-            int[] arrayID = { 17, 18, 19, 20, 21 , 1, 5, 7, 8, 14, 22};
+            int[] arrayID = { 17, 18, 19, 20, 21 , 1, 22, 7, 8, 14, };
             Image[] images = {imgHotel1, imgHotel2, imgHotel3, imgHotel4, imgHotel5, imgGH1,
                                imgGH2, imgGH3, imgGH4, imgGH5};
 
@@ -65,6 +65,7 @@ namespace TACOSA
                             loc.Text = reader["AccommodationLocation"].ToString();
                             price.Text = "R" + Convert.ToDecimal(reader["PricePerNight"]).ToString("F2") + "/Night";
                             rating.Text = Convert.ToDecimal(reader["Rating"]).ToString("F1");
+                          
                         }
                     }
 

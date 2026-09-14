@@ -13,10 +13,10 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string bookingID;
+          
             if (!IsPostBack)
             {
-                bookingID = Request.QueryString["id"];
+                string bookingID = Request.QueryString["id"];
                 if (!string.IsNullOrEmpty(bookingID))
                 {
                     string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
@@ -32,8 +32,9 @@ namespace TACOSA
                                 {
                                     if (reader["Result"].ToString()== "Bookings deleted successfully.")
                                     {
-                                        Session["TouristMessage"] = reader["Result"].ToString();
+                                        
                                         Label1.Text = reader["Result"].ToString();
+                                        Response.Redirect("Bookings.aspx");
                                     }
                                 }
                                 

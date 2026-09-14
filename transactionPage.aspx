@@ -40,9 +40,12 @@
         .auto-style18 {
             font-weight: bold;
         }
+        body{
+    background-color:#FFF3A3;
+}
     </style>
 </head>
-<body>
+<body >
     <form id="form1" runat="server">
         <div style="font-size: xx-large; text-align: center; color: #3366FF">
             <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline; color: #6B4226" Text="SECURE PAYMENT PORTAL" Font-Names="Georgia"></asp:Label>
