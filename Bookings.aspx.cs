@@ -14,14 +14,18 @@ namespace TACOSA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(IsPostBack)
+            {
+                lblZeroBookings.Visible = true;
+                lblZeroBookings.Text = Session["TouristMessage"].ToString();
+            }
             loadBookings();
         }
 
         
         private void loadBookings()
         {
-            /*int touristID = Convert.ToInt32(Session["TouristID"]);*/
-            Session["TouristID"] = 2;
+            int touristID = Convert.ToInt16(Session["TouristID"]);
             if (Session["TouristID"] == null)
             {
                 lblZeroBookings.Text = "You have not logged in yet.";
@@ -30,7 +34,6 @@ namespace TACOSA
             }
 
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
-            int touristID = Convert.ToInt32(Session["TouristID"]);
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 try
@@ -60,7 +63,9 @@ namespace TACOSA
                             DateTime outDate = Convert.ToDateTime(read["CheckOutDate"].ToString());
                             decimal price = Convert.ToDecimal(read["TotalPriceCharged"]);
                             string imgPath = read["ImagePath"].ToString();
-                            
+
+                                //create session for accommodationID
+                                Session["AccID"] = read["AccommodationID"].ToString();
 
                             //create the booking card dynamically
                             HtmlGenericControl bookingCard = new HtmlGenericControl("div");
@@ -116,7 +121,7 @@ namespace TACOSA
                                 HyperLink lnkDelete = new HyperLink(); 
                                 lnkDelete.Text = "DELETE";
                                 lnkDelete.CssClass = "buttons";
-                                lnkDelete.NavigateUrl = "DeleteBooking.aspx?BookingID=" + id;
+                                lnkDelete.NavigateUrl = "DeleteBooking.aspx";
                                 lnkSpan.Controls.Add(lnkDelete);
 
                                 bookingText.Controls.Add(lnkSpan);

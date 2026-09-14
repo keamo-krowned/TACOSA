@@ -72,7 +72,7 @@ namespace TACOSA
                     {
                         if (reader.Read())
                         {
-                            Session["TouristID"] = Convert.ToInt32(reader["NewTouristID"]);
+                            Session["TouristID"] = reader["NewTouristID"].ToString();
                         }
                     }
 

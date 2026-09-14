@@ -88,6 +88,7 @@
     <Content Include="ChatbotButton.ascx" />
     <Content Include="confirmationPage.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="DeleteBooking.aspx" />
     <Content Include="editAccommodation.aspx" />
     <Content Include="Images\cape-land.jpg" />
     <Content Include="Images\Landing.png" />
@@ -154,6 +155,7 @@
     <Content Include="TouristRegister.aspx" />
     <Content Include="TouristUpdateDetailsForm.aspx" />
     <Content Include="transactionPage.aspx" />
+    <Content Include="UpdateBooking.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -161,7 +163,7 @@
       <DependentUpon>adminBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-	<Compile Include="adminBookings.aspx.designer.cs">
+    <Compile Include="adminBookings.aspx.designer.cs">
       <DependentUpon>adminBookings.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminMaintainAttBookings.aspx.cs">
@@ -280,6 +282,13 @@
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="DeleteBooking.aspx.cs">
+      <DependentUpon>DeleteBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteBooking.aspx.designer.cs">
+      <DependentUpon>DeleteBooking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="editAccommodation.aspx.cs">
       <DependentUpon>editAccommodation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -337,6 +346,13 @@
     </Compile>
     <Compile Include="transactionPage.aspx.designer.cs">
       <DependentUpon>transactionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBooking.aspx.cs">
+      <DependentUpon>UpdateBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateBooking.aspx.designer.cs">
+      <DependentUpon>UpdateBooking.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

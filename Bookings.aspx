@@ -93,6 +93,10 @@
                 opacity: 0.8;
             }
 
+            .auto-style1 {
+                height: 20px;
+            }
+
         </style> 
 
     </head> 
@@ -100,7 +104,7 @@
         <form id="form1" runat="server"> 
             <table style="width:100%; border-collapse:collapse; background-color:#FFF3A3; margin-bottom:20px;">
                 <tr> 
-                    <td colspan="4" style="height:20px;"></td>
+                    <td colspan="4" class="auto-style1"></td>
 
                 </tr> 
                 <tr> 

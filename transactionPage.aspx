@@ -15,7 +15,7 @@
             padding: 25px;
             box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
             margin: 15px;
-            height: 499px;
+            height: 565px;
             width: 577px;
         }
         .summary-row {
