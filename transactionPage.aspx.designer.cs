@@ -69,6 +69,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtCardNO;
 
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
         /// Label5 control.
         /// </summary>
         /// <remarks>
@@ -96,6 +105,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtCardholderName;
 
         /// <summary>
+        /// RequiredFieldValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+
+        /// <summary>
         /// Label7 control.
         /// </summary>
         /// <remarks>
@@ -114,13 +132,22 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// CalExpirydate control.
+        /// txtExpire control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalExpirydate;
+        protected global::System.Web.UI.WebControls.TextBox txtExpire;
+
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
         /// Label10 control.
@@ -150,6 +177,15 @@ namespace TACOSA
         protected global::System.Web.UI.WebControls.TextBox txtCVVNumber;
 
         /// <summary>
+        /// RequiredFieldValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+
+        /// <summary>
         /// Label14 control.
         /// </summary>
         /// <remarks>
@@ -166,24 +202,6 @@ namespace TACOSA
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMerchantName;
-
-        /// <summary>
-        /// lblBooking control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBooking;
-
-        /// <summary>
-        /// lblCheckin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCheckin;
 
         /// <summary>
         /// lblCheckout control.

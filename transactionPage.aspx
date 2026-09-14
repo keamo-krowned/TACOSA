@@ -65,7 +65,10 @@
                         </strong>
                         <br />
                         <asp:TextBox ID="txtCardNO" runat="server" ToolTip="ENTER CARD NUMBER" Width="278px" Height="25px"></asp:TextBox>
-                        <br /><br />
+                        <br />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCardNO" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
 
                         <asp:Label ID="Label5" runat="server" style="color: #663300" Text="*"></asp:Label>
                         <strong>
@@ -73,7 +76,10 @@
                         </strong>
                         <br /><br />
                         <asp:TextBox ID="txtCardholderName" runat="server" ToolTip="ENTER NAME OF CARD" Width="279px" Height="23px"></asp:TextBox>
-                        <br /><br />
+                        <br />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCardholderName" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
 
                         <asp:Label ID="Label7" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <strong>
@@ -83,48 +89,21 @@
 
 
 
-                        <asp:Calendar ID="CalExpirydate" runat="server"
-    BackColor="White"
-    BorderColor="Black"
-    Font-Names="Verdana"
-    Font-Size="9pt"
-    ForeColor="Black"
-    Height="225px"
-    NextPrevFormat="ShortMonth"
-    Width="547px"
-    BorderStyle="Solid"
-    CellSpacing="1">
-
-    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
-
-    <DayStyle BackColor="#CCCCCC" />
-
-    <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
-
-    <OtherMonthDayStyle ForeColor="#999999" />
-
-    <SelectedDayStyle BackColor="#FFFFFF" ForeColor="White" />
-
-    <TitleStyle
-        BackColor="#663300"
-        Font-Bold="True"
-        Font-Size="12pt"
-        ForeColor="White"
-        BorderStyle="Solid"
-        Height="12pt" />
-
-    <TodayDayStyle BackColor="#999999" ForeColor="White" />
-
-</asp:Calendar>
+                        <asp:TextBox ID="txtExpire" runat="server" Width="264px" TextMode="Date"></asp:TextBox>
 
 
 
-                        <br /><br />
+                        <br />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtExpire" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
 
                         <asp:Label ID="Label10" runat="server" style="color: #CC0000" Text="*"></asp:Label>
                         <asp:Label ID="Label11" runat="server" Text="CVV:" style="color: #FFFFFF"></asp:Label>
+                        <br />
                         <asp:TextBox ID="txtCVVNumber" runat="server" ToolTip="ENTER CVV NUMBER" Width="245px" Height="23px"></asp:TextBox>
-                        <br /><br />
+                        <br />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCVVNumber" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                         <br /><br />
 
@@ -144,17 +123,7 @@
                         </div>
                         <hr />
                         <div class="summary-row">
-                            <span class="summary-label">Booking:</span>
-                            <asp:Label ID="lblBooking" runat="server" CssClass="auto-style17"></asp:Label>
-                        </div>
-                        <hr class="auto-style17" />
-                        <div class="summary-row">
-                            <span class="summary-label">Check-in date:</span>
-                            <asp:Label ID="lblCheckin" runat="server" CssClass="auto-style17"></asp:Label>
-                        </div>
-                        <hr />
-                        <div class="summary-row">
-                            <span class="summary-label">Check-out date:</span>
+                            <span class="summary-label">Booking date:</span>
                             <asp:Label ID="lblCheckout" runat="server" CssClass="auto-style17"></asp:Label>
                         </div>
                         <hr class="auto-style17" />

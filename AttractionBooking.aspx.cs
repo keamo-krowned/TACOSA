@@ -181,14 +181,32 @@ namespace TACOSA
                         if (rowsAffected > 0)
                         {
                             Session["TotalBookingPrice"] = totalPrice;
-                            Session["BookingID"] = newBookingID;
-                            Response.Redirect("transactionPage.aspx");
+                            Response.Redirect("transactionPage.aspx?id="+ newBookingID);
                         }
                         else
                         {
                             Response.Write("<script>alert('Booking failed. Please try again.');</script>");
                         }
                     }
+                }
+            }
+        }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            DateTime bookingDate = Convert.ToDateTime(txtDate.Text);
+            {
+                if(bookingDate == DateTime.MinValue)
+                {
+                    args.IsValid = false;
+                }
+                else if(bookingDate <DateTime.Today)
+                {
+                    args.IsValid = false;
+                }
+                else
+                {
+                    args.IsValid = true;
                 }
             }
         }

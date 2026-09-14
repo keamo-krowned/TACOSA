@@ -25,13 +25,15 @@ namespace TACOSA
         
         private void loadBookings()
         {
-            int touristID = Convert.ToInt16(Session["TouristID"]);
             if (Session["TouristID"] == null)
             {
                 lblZeroBookings.Text = "You have not logged in yet.";
                 lblZeroBookings.Visible = true;
-                Response.Redirect("TouristRegister.aspx");
+                Response.Redirect("TouristLoginForm.aspx");
+                return;
             }
+
+            int touristID = Convert.ToInt32(Session["TouristID"]);
 
             string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -78,7 +80,6 @@ namespace TACOSA
 
                                 //create session for accommodationID
                                 Session["AttID"] = reader["AttractionID"].ToString();
-
                                 //create the booking card dynamically
                                 HtmlGenericControl bookingCard = new HtmlGenericControl("div");
                                 bookingCard.Attributes["class"] = "cardCss";
@@ -116,9 +117,8 @@ namespace TACOSA
 
                                     lnkPay.Text = "PAY";
                                     lnkPay.CssClass = "buttons";
-                                    lnkPay.NavigateUrl = "transactionPage.aspx";
+                                    lnkPay.NavigateUrl = "transactionPage.aspx?id="+ id;
                                     lnkSpan.Controls.Add(lnkPay);
-                                    Session["BookingID"] = id;
 
                                     // changing details hyperlinks
                                     HyperLink lnkUpdate = new HyperLink();
@@ -215,9 +215,9 @@ namespace TACOSA
 
                                 lnkPay.Text = "PAY";
                                 lnkPay.CssClass = "buttons";
-                                lnkPay.NavigateUrl = "transactionPage.aspx";
+                                lnkPay.NavigateUrl = "transactionPage.aspx?id="+ id;
                                 lnkSpan.Controls.Add(lnkPay);
-                                    Session["BookingID"] = id;
+                                  
 
                                 // changing details hyperlinks
                                 HyperLink lnkUpdate = new HyperLink();

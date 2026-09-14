@@ -266,7 +266,7 @@
 
             <asp:Label ID="Label6" runat="server" Text="Date:"></asp:Label>
             <asp:TextBox ID="txtDate" runat="server" TextMode="Date"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the required input before proceeding" ForeColor="Red" ControlToValidate="txtDate"></asp:RequiredFieldValidator>
+            <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Please select a date. No past dates allowed. " ForeColor="Red" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
         </p>
         <div>
 
